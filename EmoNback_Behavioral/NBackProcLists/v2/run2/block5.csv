@@ -1,0 +1,11 @@
+ID	Weight	Stimulus	TargetType	CorrectResponse	StimType	BlockType	TargetStimulus
+1	1	VM Stimuli/2F_HO.bmp	nonlure	nontarget	PosFace	0-Back	VM Stimuli/36M_HO.bmp
+2	1	VM Stimuli/BF009_HO.bmp	nonlure	nontarget	PosFace	0-Back	VM Stimuli/36M_HO.bmp
+3	1	VM Stimuli/BM030_HO.bmp	nonlure	nontarget	PosFace	0-Back	VM Stimuli/36M_HO.bmp
+4	1	VM Stimuli/AM02_HO.bmp	nonlure	nontarget	PosFace	0-Back	VM Stimuli/36M_HO.bmp
+5	1	VM Stimuli/36M_HO.bmp	target	Target	PosFace	0-Back	VM Stimuli/36M_HO.bmp
+6	1	VM Stimuli/AM02_HO.bmp	lure	nontarget	PosFace	0-Back	VM Stimuli/36M_HO.bmp
+7	1	VM Stimuli/36M_HO.bmp	target	Target	PosFace	0-Back	VM Stimuli/36M_HO.bmp
+8	1	VM Stimuli/BF009_HO.bmp	lure	nontarget	PosFace	0-Back	VM Stimuli/36M_HO.bmp
+9	1	VM Stimuli/2F_HO.bmp	lure	nontarget	PosFace	0-Back	VM Stimuli/36M_HO.bmp
+10	1	VM Stimuli/BF01_HO.bmp	nonlure	nontarget	PosFace	0-Back	VM Stimuli/36M_HO.bmp

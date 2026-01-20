@@ -1,0 +1,11 @@
+ID	Weight	Stimulus	TargetType	CorrectResponse	StimType	BlockType
+1	1	VM Stimuli/PL_099_O81.1.bmp	nonlure	nontarget	Place	2-Back
+2	1	VM Stimuli/PL_100_O82.1.bmp	nonlure	nontarget	Place	2-Back
+3	1	VM Stimuli/PL_097_O75.1.bmp	nonlure	nontarget	Place	2-Back
+4	1	VM Stimuli/PL_100_O82.1.bmp	target	Target	Place	2-Back
+5	1	VM Stimuli/PL_099_O81.1.bmp	lure	nontarget	Place	2-Back
+6	1	VM Stimuli/PL_096_O69.1.bmp	nonlure	nontarget	Place	2-Back
+7	1	VM Stimuli/PL_095_O65.1.bmp	nonlure	nontarget	Place	2-Back
+8	1	VM Stimuli/PL_096_O69.1.bmp	target	Target	Place	2-Back
+9	1	VM Stimuli/PL_094_O6.1.bmp	nonlure	nontarget	Place	2-Back
+10	1	VM Stimuli/PL_094_O6.1.bmp	lure	nontarget	Place	2-Back

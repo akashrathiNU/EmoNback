@@ -1,0 +1,11 @@
+ID	Weight	Stimulus	TargetType	CorrectResponse	StimType	BlockType	TargetStimulus
+1	1	VM Stimuli/PL_041_LEXINGTON17.bmp	nonlure	nontarget	Place	0-Back	VM Stimuli/PL_040_LEXINGTON16.bmp
+2	1	VM Stimuli/PL_044_SCENE01.bmp	nonlure	nontarget	Place	0-Back	VM Stimuli/PL_040_LEXINGTON16.bmp
+3	1	VM Stimuli/PL_040_LEXINGTON16.bmp	target	Target	Place	0-Back	VM Stimuli/PL_040_LEXINGTON16.bmp
+4	1	VM Stimuli/PL_040_LEXINGTON16.bmp	target	Target	Place	0-Back	VM Stimuli/PL_040_LEXINGTON16.bmp
+5	1	VM Stimuli/PL_043_LEXINGTON19.bmp	nonlure	nontarget	Place	0-Back	VM Stimuli/PL_040_LEXINGTON16.bmp
+6	1	VM Stimuli/PL_043_LEXINGTON19.bmp	lure	nontarget	Place	0-Back	VM Stimuli/PL_040_LEXINGTON16.bmp
+7	1	VM Stimuli/PL_044_SCENE01.bmp	lure	nontarget	Place	0-Back	VM Stimuli/PL_040_LEXINGTON16.bmp
+8	1	VM Stimuli/o89.1.bmp	nonlure	nontarget	Place	0-Back	VM Stimuli/PL_040_LEXINGTON16.bmp
+9	1	VM Stimuli/PL_034_FOXISLAND.bmp	nonlure	nontarget	Place	0-Back	VM Stimuli/PL_040_LEXINGTON16.bmp
+10	1	VM Stimuli/PL_042_LEXINGTON18.bmp	lure	nontarget	Place	0-Back	VM Stimuli/PL_040_LEXINGTON16.bmp

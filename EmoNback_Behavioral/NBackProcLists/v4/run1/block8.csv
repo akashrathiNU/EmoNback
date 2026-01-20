@@ -1,0 +1,11 @@
+ID	Weight	Stimulus	TargetType	CorrectResponse	StimType	BlockType
+1	1	VM Stimuli/WF034_FO.bmp	nonlure	nontarget	NegFace	2-Back
+2	1	VM Stimuli/43M_FO.bmp	nonlure	nontarget	NegFace	2-Back
+3	1	VM Stimuli/5F_FO.bmp	nonlure	nontarget	NegFace	2-Back
+4	1	VM Stimuli/43M_FO.bmp	target	Target	NegFace	2-Back
+5	1	VM Stimuli/5F_FO.bmp	target	Target	NegFace	2-Back
+6	1	VM Stimuli/BF10_FO.bmp	nonlure	nontarget	NegFace	2-Back
+7	1	VM Stimuli/BF10_FO.bmp	lure	nontarget	NegFace	2-Back
+8	1	VM Stimuli/BM05_FO.bmp	nonlure	nontarget	NegFace	2-Back
+9	1	VM Stimuli/33M_FO.bmp	nonlure	nontarget	NegFace	2-Back
+10	1	VM Stimuli/33M_FO.bmp	lure	nontarget	NegFace	2-Back

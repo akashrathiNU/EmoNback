@@ -1,0 +1,11 @@
+ID	Weight	Stimulus	TargetType	CorrectResponse	StimType	BlockType	TargetStimulus
+1	1	VM Stimuli/BM04_NC.bmp	nonlure	nontarget	NeutFace	0-Back	VM Stimuli/LF209_NC.bmp
+2	1	VM Stimuli/AM04_NC.bmp	nonlure	nontarget	NeutFace	0-Back	VM Stimuli/LF209_NC.bmp
+3	1	VM Stimuli/LF209_NC.bmp	target	Target	NeutFace	0-Back	VM Stimuli/LF209_NC.bmp
+4	1	VM Stimuli/BM04_NC.bmp	lure	nontarget	NeutFace	0-Back	VM Stimuli/LF209_NC.bmp
+5	1	VM Stimuli/LF209_NC.bmp	target	Target	NeutFace	0-Back	VM Stimuli/LF209_NC.bmp
+6	1	VM Stimuli/AF235_NC.bmp	nonlure	nontarget	NeutFace	0-Back	VM Stimuli/LF209_NC.bmp
+7	1	VM Stimuli/AM04_NC.bmp	lure	nontarget	NeutFace	0-Back	VM Stimuli/LF209_NC.bmp
+8	1	VM Stimuli/WM036_NC.bmp	nonlure	nontarget	NeutFace	0-Back	VM Stimuli/LF209_NC.bmp
+9	1	VM Stimuli/WM036_NC.bmp	lure	nontarget	NeutFace	0-Back	VM Stimuli/LF209_NC.bmp
+10	1	VM Stimuli/BF201_NC.bmp	nonlure	nontarget	NeutFace	0-Back	VM Stimuli/LF209_NC.bmp
