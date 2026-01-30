@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2025.1.1">
+<PsychoPy2experiment encoding="utf-8" version="2024.2.4">
   <Settings>
+    <Param val="3" valType="str" updates="None" name="Audio latency priority"/>
     <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
     <Param val="" valType="str" updates="None" name="Completed URL"/>
     <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
     <Param val="u'data/sub-%s_ses-%s_emoback' % (expInfo['Please enter the Subject ID:'], expInfo['Please enter the Session Number:'])" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
     <Param val="Thank you for your patience." valType="str" updates="None" name="End Message"/>
-    <Param val="{'Please enter the Subject ID:': '', 'Please enter the Session Number:': '[1, 2]', &quot;Enter subject\\'s handedness:&quot;: &quot;['Right', 'Left']&quot;, 'Please select version:': '[1,2,3,4]'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="{'Please enter the Subject ID:': '', 'Please enter the Session Number:': '[1, 2]', &quot;Enter subject\\'s handedness:&quot;: &quot;['Right', 'Left']&quot;, 'Please select version:': '[1,2,3,4]', 'Initial run:': '[1, 2]'}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
     <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
@@ -17,9 +18,9 @@
     <Param val="False" valType="bool" updates="None" name="Save csv file"/>
     <Param val="False" valType="bool" updates="None" name="Save excel file"/>
     <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
-    <Param val="True" valType="bool" updates="None" name="Save log file"/>
-    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
-    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save log file"/>
+    <Param val="False" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="False" valType="bool" updates="None" name="Save wide csv file"/>
     <Param val="1" valType="num" updates="None" name="Screen"/>
     <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
     <Param val="False" valType="bool" updates="None" name="Show mouse"/>
@@ -61,7 +62,9 @@
     <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
     <Param val="neon.local" valType="str" updates="None" name="plCompanionAddress"/>
     <Param val="8080" valType="num" updates="None" name="plCompanionPort"/>
+    <Param val="True" valType="bool" updates="None" name="plCompanionRecordingEnabled"/>
     <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
     <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
     <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
     <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
@@ -157,13 +160,13 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
-      <CodeComponent name="setupLogic" plugin="None">
-        <Param val="# Import modules at the very top&amp;#10;import os&amp;#10;import re&amp;#10;import csv&amp;#10;import pandas as pd&amp;#10;from psychopy import data&amp;#10;&amp;#10;# Get root folder&amp;#10;expRoot = os.getcwd()&amp;#10;" valType="extendedCode" updates="constant" name="Before Experiment"/>
+      <CodeComponent name="skip_run_1_logic_13" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="# Version selected&amp;#10;selectedVersion = int(expInfo['Please select version:'])&amp;#10;versionFolder = f&quot;NBackProcLists/v{selectedVersion}&quot;&amp;#10;versionPath = os.path.join(expRoot, versionFolder)&amp;#10;&amp;#10;# Paths to runs&amp;#10;run1Folder = os.path.join(versionPath, 'run1')&amp;#10;run2Folder = os.path.join(versionPath, 'run2')&amp;#10;&amp;#10;# Numeric sort function for blocks&amp;#10;def numeric_sort(value):&amp;#10;    match = re.search(r'block(\d+)', value, re.IGNORECASE)&amp;#10;    return int(match.group(1)) if match else 0&amp;#10;&amp;#10;# Sorted list of block CSV files&amp;#10;blockFilesRun1 = sorted(&amp;#10;    [f for f in os.listdir(run1Folder) if f.endswith('.csv')],&amp;#10;    key=numeric_sort&amp;#10;)&amp;#10;blockFilesRun2 = sorted(&amp;#10;    [f for f in os.listdir(run2Folder) if f.endswith('.csv')],&amp;#10;    key=numeric_sort&amp;#10;)&amp;#10;&amp;#10;# Initial block index&amp;#10;blockIndex1 = 0&amp;#10;blockIndex2 = 0&amp;#10;&amp;#10;# Get number of blocks per run&amp;#10;num_blocks_run1 = len(blockFilesRun1)&amp;#10;num_blocks_run2 = len(blockFilesRun2)&amp;#10;&amp;#10;# Load current block CSV dynamically&amp;#10;blockFile1 = os.path.join(run1Folder, blockFilesRun1[blockIndex1])&amp;#10;blockFile2 = os.path.join(run2Folder, blockFilesRun2[blockIndex2])&amp;#10;&amp;#10;# Handedness logic&amp;#10;if expInfo[&quot;Enter subject's handedness:&quot;].lower() == 'right':&amp;#10;    matchKey = '1'&amp;#10;    noMatchKey = '2'&amp;#10;    leftSideOfScreen = &quot;MATCH\nPOINTER&quot;&amp;#10;    rightSideOfScreen = &quot;NO MATCH\nMIDDLE&quot;&amp;#10;else:&amp;#10;    matchKey = '2'&amp;#10;    noMatchKey = '1'&amp;#10;    leftSideOfScreen = &quot;NO MATCH\nMIDDLE&quot;&amp;#10;    rightSideOfScreen = &quot;MATCH\nPOINTER&quot;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="if ((expInfo[&quot;handedness&quot;].toLowerCase() === &quot;right&quot;)) {&amp;#10;    matchKey = &quot;2&quot;;&amp;#10;    noMatchKey = &quot;3&quot;;&amp;#10;} else {&amp;#10;    matchKey = &quot;3&quot;;&amp;#10;    noMatchKey = &quot;2&quot;;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="# Skip this routine if initial run is 2&amp;#10;if initialRun == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -172,7 +175,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="setupLogic" valType="code" updates="None" name="name"/>
+        <Param val="skip_run_1_logic_13" valType="code" updates="None" name="name"/>
       </CodeComponent>
     </Routine>
     <Routine name="Instructions">
@@ -254,6 +257,23 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
+      <CodeComponent name="skip_run_1_logic" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# Skip this routine if initial run is 2&amp;#10;if initialRun == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="skip_run_1_logic" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="Instructions_2">
       <RoutineSettingsComponent name="Instructions_2" plugin="None">
@@ -405,6 +425,23 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </ImageComponent>
+      <CodeComponent name="skip_run_1_logic_2" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# Skip this routine if initial run is 2&amp;#10;if initialRun == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="skip_run_1_logic_2" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="Instructions_3">
       <RoutineSettingsComponent name="Instructions_3" plugin="None">
@@ -685,6 +722,23 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
+      <CodeComponent name="skip_run_1_logic_3" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# Skip this routine if initial run is 2&amp;#10;if initialRun == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="skip_run_1_logic_3" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="Instructions_4">
       <RoutineSettingsComponent name="Instructions_4" plugin="None">
@@ -765,6 +819,23 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
+      <CodeComponent name="skip_run_1_logic_4" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# Skip this routine if initial run is 2&amp;#10;if initialRun == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="skip_run_1_logic_4" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="Instructions_5">
       <RoutineSettingsComponent name="Instructions_5" plugin="None">
@@ -845,6 +916,23 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
+      <CodeComponent name="skip_run_1_logic_5" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# Skip this routine if initial run is 2&amp;#10;if initialRun == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="skip_run_1_logic_5" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="Waiting4Scanner">
       <RoutineSettingsComponent name="Waiting4Scanner" plugin="None">
@@ -864,7 +952,7 @@
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
       <KeyboardComponent name="Continue_7" plugin="None">
-        <Param val="'t'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="'5'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="" valType="str" updates="None" name="deviceLabel"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -921,10 +1009,27 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="The task will begin momentarily. Waiting for scanner. Get ready..." valType="str" updates="constant" name="text"/>
+        <Param val="The task will begin momentarily. Waiting for scanner. Get ready…" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
+      <CodeComponent name="skip_run_1_logic_6" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# Skip this routine if initial run is 2&amp;#10;if initialRun == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="skip_run_1_logic_6" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="CueFix_Run1">
       <RoutineSettingsComponent name="CueFix_Run1" plugin="None">
@@ -947,7 +1052,7 @@
         <Param val="center" valType="str" updates="constant" name="alignment"/>
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="True" valType="bool" updates="constant" name="autoLog"/>
-        <Param val="True" valType="bool" updates="constant" name="bold"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
         <Param val="None" valType="color" updates="constant" name="borderColor"/>
         <Param val="0" valType="num" updates="constant" name="borderWidth"/>
         <Param val="$(1.0000, -1.0000, 1.0000)" valType="color" updates="constant" name="color"/>
@@ -963,7 +1068,7 @@
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
         <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
         <Param val="Cue_Fix" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
@@ -971,7 +1076,7 @@
         <Param val="visible" valType="str" updates="constant" name="overflow"/>
         <Param val="0" valType="num" updates="constant" name="padding"/>
         <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0.05)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="(1, 1)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="list" updates="constant" name="speechPoint"/>
@@ -1002,6 +1107,23 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="run_Block_1" valType="code" updates="None" name="name"/>
       </CodeComponent>
+      <CodeComponent name="skip_loop_logic" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if initialRun == 2:&amp;#10;    BlockLoop_Run1.finished = True&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="skip_loop_logic" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="Fix5Sec">
       <RoutineSettingsComponent name="Fix5Sec" plugin="None">
@@ -1024,7 +1146,7 @@
         <Param val="center" valType="str" updates="constant" name="alignment"/>
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="True" valType="bool" updates="constant" name="autoLog"/>
-        <Param val="True" valType="bool" updates="constant" name="bold"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
         <Param val="None" valType="color" updates="constant" name="borderColor"/>
         <Param val="0" valType="num" updates="constant" name="borderWidth"/>
         <Param val="black" valType="color" updates="constant" name="color"/>
@@ -1040,7 +1162,7 @@
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
         <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
         <Param val="Fix_5_Sec" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
@@ -1048,7 +1170,7 @@
         <Param val="visible" valType="str" updates="constant" name="overflow"/>
         <Param val="0" valType="num" updates="constant" name="padding"/>
         <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0.05)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="(1, 1)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="list" updates="constant" name="speechPoint"/>
@@ -1062,6 +1184,23 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
+      <CodeComponent name="skip_run_1_logic_8" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# Skip this routine if initial run is 2&amp;#10;if initialRun == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="skip_run_1_logic_8" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="Fix15Sec">
       <RoutineSettingsComponent name="Fix15Sec" plugin="None">
@@ -1084,7 +1223,7 @@
         <Param val="center" valType="str" updates="constant" name="alignment"/>
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="True" valType="bool" updates="constant" name="autoLog"/>
-        <Param val="True" valType="bool" updates="constant" name="bold"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
         <Param val="None" valType="color" updates="constant" name="borderColor"/>
         <Param val="0" valType="num" updates="constant" name="borderWidth"/>
         <Param val="black" valType="color" updates="constant" name="color"/>
@@ -1100,7 +1239,7 @@
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
         <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
         <Param val="Fix_15_Sec" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
@@ -1108,7 +1247,7 @@
         <Param val="visible" valType="str" updates="constant" name="overflow"/>
         <Param val="0" valType="num" updates="constant" name="padding"/>
         <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0.05)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="(1, 1)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="list" updates="constant" name="speechPoint"/>
@@ -1122,6 +1261,23 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
+      <CodeComponent name="skip_run_1_logic_7" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# Skip this routine if initial run is 2&amp;#10;if initialRun == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="skip_run_1_logic_7" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="Instructions_6">
       <RoutineSettingsComponent name="Instructions_6" plugin="None">
@@ -1202,6 +1358,23 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
+      <CodeComponent name="increase_run" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if initialRun == 2:&amp;#10;    initialRun = 3" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="increase_run" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="Instructions_7">
       <RoutineSettingsComponent name="Instructions_7" plugin="None">
@@ -1384,7 +1557,7 @@
         <Param val="center" valType="str" updates="constant" name="alignment"/>
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="True" valType="bool" updates="constant" name="autoLog"/>
-        <Param val="True" valType="bool" updates="constant" name="bold"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
         <Param val="None" valType="color" updates="constant" name="borderColor"/>
         <Param val="0" valType="num" updates="constant" name="borderWidth"/>
         <Param val="$(1.0000, -1.0000, 1.0000)" valType="color" updates="constant" name="color"/>
@@ -1400,7 +1573,7 @@
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
         <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
         <Param val="Cue_Fix_2" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
@@ -1408,7 +1581,7 @@
         <Param val="visible" valType="str" updates="constant" name="overflow"/>
         <Param val="0" valType="num" updates="constant" name="padding"/>
         <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0.05)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="(1, 1)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="list" updates="constant" name="speechPoint"/>
@@ -1499,6 +1672,23 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
+      <CodeComponent name="skip_loop_logic_2" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if initialRun == 2:&amp;#10;    TrialLoop_Run1.finished = True&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="skip_loop_logic_2" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="Cue0Back">
       <RoutineSettingsComponent name="Cue0Back" plugin="None">
@@ -1592,9 +1782,9 @@
         <Param val="Cue_TargetImage" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0.15, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0.25, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.4, 0.4)" valType="list" updates="constant" name="size"/>
         <Param val="0" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
@@ -1605,6 +1795,65 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </ImageComponent>
+      <CodeComponent name="skip_run_1_logic_9" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# Skip this routine if initial run is 2&amp;#10;if initialRun == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="skip_run_1_logic_9" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <TextboxComponent name="Zero_back" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="True" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="Zero_back" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(0.25, 0.25)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="0-back" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+      </TextboxComponent>
     </Routine>
     <Routine name="Fix">
       <RoutineSettingsComponent name="Fix" plugin="None">
@@ -1627,7 +1876,7 @@
         <Param val="center" valType="str" updates="constant" name="alignment"/>
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="True" valType="bool" updates="constant" name="autoLog"/>
-        <Param val="True" valType="bool" updates="constant" name="bold"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
         <Param val="None" valType="color" updates="constant" name="borderColor"/>
         <Param val="0" valType="num" updates="constant" name="borderWidth"/>
         <Param val="black" valType="color" updates="constant" name="color"/>
@@ -1643,7 +1892,7 @@
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
         <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
         <Param val="End_Fix" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
@@ -1651,7 +1900,7 @@
         <Param val="visible" valType="str" updates="constant" name="overflow"/>
         <Param val="0" valType="num" updates="constant" name="padding"/>
         <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0.05)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="(1, 1)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="list" updates="constant" name="speechPoint"/>
@@ -1665,6 +1914,23 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
+      <CodeComponent name="skip_run_1_logic_11" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# Skip this routine if initial run is 2&amp;#10;if initialRun == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="skip_run_1_logic_11" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="Stim">
       <RoutineSettingsComponent name="Stim" plugin="None">
@@ -1716,9 +1982,9 @@
         <Param val="StimulusImage" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0.1)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.4, 0.4)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1846,9 +2112,26 @@
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="# ---------- IMPORT ----------&amp;#10;from datetime import datetime&amp;#10;&amp;#10;# ---------- 1. Get current date and time ----------&amp;#10;now = datetime.now()&amp;#10;dateStr = now.strftime('%Y-%m-%d')   # e.g., 2026-01-08&amp;#10;timeStr = now.strftime('%H:%M:%S')   # e.g., 14:23:01&amp;#10;&amp;#10;# ---------- 2. What they should have pressed ----------&amp;#10;thisExp.addData('correctKey', correctKey)&amp;#10;&amp;#10;# ---------- 3. What they actually pressed ----------&amp;#10;if response.keys is None:&amp;#10;    thisExp.addData('pressedKey', 'NA')&amp;#10;    thisExp.addData('accuracy', 'NA')&amp;#10;    thisExp.addData('RT', 'NA')&amp;#10;else:&amp;#10;    thisExp.addData('pressedKey', response.keys)&amp;#10;    thisExp.addData('accuracy', response.corr)&amp;#10;    thisExp.addData('RT', response.rt)&amp;#10;&amp;#10;# ---------- 4. Date and time ----------&amp;#10;thisExp.addData('date', dateStr)&amp;#10;thisExp.addData('time', timeStr)&amp;#10;&amp;#10;# ---------- 5. Trial metadata ----------&amp;#10;thisExp.addData('version', expInfo['Please select version:'])&amp;#10;thisExp.addData('run', currentRun)&amp;#10;thisExp.addData('block', currentBlock)&amp;#10;thisExp.addData('id', ID)                  # From Excel&amp;#10;thisExp.addData('stimulus', Stimulus)      # Stimulus filename&amp;#10;thisExp.addData('stimType', StimType)      # Condition label&amp;#10;&amp;#10;# ---------- 6. Finish this row ----------&amp;#10;thisExp.nextEntry()&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="# -------------------------------&amp;#10;# Collect trial data&amp;#10;# -------------------------------&amp;#10;&amp;#10;from datetime import date&amp;#10;from datetime import datetime&amp;#10;# Get current date and time&amp;#10;current_datetime = datetime.now()&amp;#10;# Format the time as a string (e.g., &quot;14:30:45&quot;)&amp;#10;formatted_time = current_datetime.strftime(&quot;%H:%M:%S&quot;)&amp;#10;&amp;#10;response_key = response.keys if response.keys is not None else 'NA'&amp;#10;response_rt  = response.rt if response.keys is not None else 'NA'&amp;#10;accuracy     = response.corr if response.keys is not None else 'NA'&amp;#10;&amp;#10;if BlockType == &quot;0-Back&quot;:&amp;#10;    target_stim_value = TargetStimulus&amp;#10;elif BlockType == &quot;2-Back&quot;:&amp;#10;    target_stim_value = 'NA'&amp;#10;&amp;#10;trial_data = [&amp;#10;    expInfo[&quot;Please select version:&quot;],&amp;#10;    currentRun,&amp;#10;    currentBlock+1,&amp;#10;    ID,&amp;#10;    BlockType,&amp;#10;    StimType,&amp;#10;    Stimulus,&amp;#10;    target_stim_value,&amp;#10;    TargetType,&amp;#10;    response_key,&amp;#10;    response_rt,&amp;#10;    accuracy,&amp;#10;    expInfo[&quot;Enter subject\'s handedness:&quot;],&amp;#10;    date.today(),&amp;#10;    formatted_time,&amp;#10;    globalClock.getTime()&amp;#10;]&amp;#10;&amp;#10;# -------------------------------&amp;#10;# Append to CSV&amp;#10;# -------------------------------&amp;#10;&amp;#10;with open(filename, mode='a', newline='') as f:&amp;#10;    writer = csv.writer(f)&amp;#10;    writer.writerow(trial_data)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="recordDataLogic" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <CodeComponent name="skip_run_1_logic_10" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# Skip this routine if initial run is 2&amp;#10;if initialRun == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="skip_run_1_logic_10" valType="code" updates="None" name="name"/>
       </CodeComponent>
     </Routine>
     <Routine name="EndBlock_Run1">
@@ -1884,6 +2167,23 @@
         <Param val="# Move to next block&amp;#10;blockIndex1 += 1&amp;#10;&amp;#10;if blockIndex1 &gt;= len(blockFilesRun1):&amp;#10;    BlockLoop_Run1.finished = True&amp;#10;else:&amp;#10;    # Load current block CSV dynamically&amp;#10;    blockFile1 = os.path.join(run1Folder, blockFilesRun1[blockIndex1])&amp;#10;    # Load data from a CSV file into a list of dictionaries&amp;#10;    csvData1 = data.importConditions(blockFile1)&amp;#10;    # Convert the list of dictionaries to a pandas DataFrame&amp;#10;    df1 = pd.DataFrame(csvData1)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="blockLoopLogic_Run1" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <CodeComponent name="skip_run_1_logic_12" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# Skip this routine if initial run is 2&amp;#10;if initialRun == 2:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="skip_run_1_logic_12" valType="code" updates="None" name="name"/>
       </CodeComponent>
     </Routine>
     <Routine name="EndBlock_Run2">
@@ -1921,8 +2221,44 @@
         <Param val="blockLoopLogic_Run2" valType="code" updates="None" name="name"/>
       </CodeComponent>
     </Routine>
+    <Routine name="SetupExperiment">
+      <RoutineSettingsComponent name="SetupExperiment" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="SetupExperiment" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="setupLogic" plugin="None">
+        <Param val="# Import modules at the very top&amp;#10;import os&amp;#10;import re&amp;#10;import csv&amp;#10;import pandas as pd&amp;#10;from psychopy import data&amp;#10;&amp;#10;# Get root folder&amp;#10;expRoot = os.getcwd()&amp;#10;" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="# Version selected&amp;#10;selectedVersion = int(expInfo['Please select version:'])&amp;#10;versionFolder = f&quot;NBackProcLists/v{selectedVersion}&quot;&amp;#10;versionPath = os.path.join(expRoot, versionFolder)&amp;#10;&amp;#10;# Set initial run to variable&amp;#10;initialRun = expInfo[&quot;Initial run:&quot;]&amp;#10;&amp;#10;# Paths to runs&amp;#10;run1Folder = os.path.join(versionPath, 'run1')&amp;#10;run2Folder = os.path.join(versionPath, 'run2')&amp;#10;&amp;#10;# Numeric sort function for blocks&amp;#10;def numeric_sort(value):&amp;#10;    match = re.search(r'block(\d+)', value, re.IGNORECASE)&amp;#10;    return int(match.group(1)) if match else 0&amp;#10;&amp;#10;# Sorted list of block CSV files&amp;#10;blockFilesRun1 = sorted(&amp;#10;    [f for f in os.listdir(run1Folder) if f.endswith('.csv')],&amp;#10;    key=numeric_sort&amp;#10;)&amp;#10;blockFilesRun2 = sorted(&amp;#10;    [f for f in os.listdir(run2Folder) if f.endswith('.csv')],&amp;#10;    key=numeric_sort&amp;#10;)&amp;#10;&amp;#10;# Initial block index&amp;#10;blockIndex1 = 0&amp;#10;blockIndex2 = 0&amp;#10;&amp;#10;# Get number of blocks per run&amp;#10;num_blocks_run1 = len(blockFilesRun1)&amp;#10;num_blocks_run2 = len(blockFilesRun2)&amp;#10;&amp;#10;# Load current block CSV dynamically&amp;#10;blockFile1 = os.path.join(run1Folder, blockFilesRun1[blockIndex1])&amp;#10;blockFile2 = os.path.join(run2Folder, blockFilesRun2[blockIndex2])&amp;#10;&amp;#10;# Handedness logic&amp;#10;if expInfo[&quot;Enter subject's handedness:&quot;].lower() == 'right':&amp;#10;    matchKey = '1'&amp;#10;    noMatchKey = '2'&amp;#10;    leftSideOfScreen = &quot;MATCH\nPOINTER&quot;&amp;#10;    rightSideOfScreen = &quot;NO MATCH\nMIDDLE&quot;&amp;#10;else:&amp;#10;    matchKey = '2'&amp;#10;    noMatchKey = '1'&amp;#10;    leftSideOfScreen = &quot;NO MATCH\nMIDDLE&quot;&amp;#10;    rightSideOfScreen = &quot;MATCH\nPOINTER&quot;&amp;#10;&amp;#10;# Make sure data directory exists&amp;#10;dataDir = 'data'&amp;#10;if not os.path.exists(dataDir):&amp;#10;    os.makedirs(dataDir)&amp;#10;&amp;#10;# Filename (NO extension yet)&amp;#10;filename = u'data/sub-%s_ses-%s_emoback' % (&amp;#10;    expInfo['Please enter the Subject ID:'],&amp;#10;    expInfo['Please enter the Session Number:']&amp;#10;)&amp;#10;&amp;#10;# Add extension&amp;#10;filename = filename + '.csv'&amp;#10;&amp;#10;# -------------------------------&amp;#10;# CSV headers&amp;#10;# -------------------------------&amp;#10;&amp;#10;headers = [&amp;#10;    'Version',&amp;#10;    'Run',&amp;#10;    'BlockNumber',&amp;#10;    'TrialNumber',&amp;#10;    'BlockType',&amp;#10;    'Condition_Label',&amp;#10;    'Stimulus',&amp;#10;    'TargetStimulus',&amp;#10;    'TargetFlag',&amp;#10;    'Response',&amp;#10;    'RT',&amp;#10;    'Accuracy',&amp;#10;    'Handedness',&amp;#10;    'Date',&amp;#10;    'Time',&amp;#10;    'TimeSinceStart'&amp;#10;]&amp;#10;&amp;#10;# -------------------------------&amp;#10;# Create file if needed&amp;#10;# -------------------------------&amp;#10;&amp;#10;if not os.path.exists(filename):&amp;#10;    with open(filename, mode='w', newline='') as f:&amp;#10;        writer = csv.writer(f)&amp;#10;        writer.writerow(headers)&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="if ((expInfo[&quot;handedness&quot;].toLowerCase() === &quot;right&quot;)) {&amp;#10;    matchKey = &quot;2&quot;;&amp;#10;    noMatchKey = &quot;3&quot;;&amp;#10;} else {&amp;#10;    matchKey = &quot;3&quot;;&amp;#10;    noMatchKey = &quot;2&quot;;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="setupLogic" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
   </Routines>
   <Flow>
+    <Routine name="SetupExperiment"/>
     <Routine name="TitlePage"/>
     <Routine name="Instructions"/>
     <Routine name="Instructions_2"/>
