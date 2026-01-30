@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on Tue Jan 20 10:50:56 2026
+This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
+    on Fri Jan 30 14:16:44 2026
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -17,12 +17,11 @@ from psychopy import prefs
 from psychopy import plugins
 plugins.activatePlugins()
 prefs.hardware['audioLib'] = 'ptb'
+prefs.hardware['audioLatencyMode'] = '3'
 from psychopy import sound, gui, visual, core, data, event, logging, clock, colors, layout, hardware
 from psychopy.tools import environmenttools
-from psychopy.constants import (
-    NOT_STARTED, STARTED, PLAYING, PAUSED, STOPPED, STOPPING, FINISHED, PRESSED, 
-    RELEASED, FOREVER, priority
-)
+from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
+                                STOPPED, FINISHED, PRESSED, RELEASED, FOREVER, priority)
 
 import numpy as np  # whole numpy lib is available, prepend 'np.'
 from numpy import (sin, cos, tan, log, log10, pi, average,
@@ -39,11 +38,8 @@ deviceManager = hardware.DeviceManager()
 # ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 # store info about the experiment session
-psychopyVersion = '2025.1.1'
+psychopyVersion = '2024.2.4'
 expName = 'EmoNback_Practice'  # from the Builder filename that created this script
-expVersion = ''
-# a list of functions to run when the experiment ends (starts off blank)
-runAtExit = []
 # information about this experiment
 expInfo = {
     'Please enter the Subject ID:': 'AANNNAAA',
@@ -51,7 +47,6 @@ expInfo = {
     'Enter subject\'s handedness:': ["Right", "Left"],
     'date|hid': data.getDateStr(),
     'expName|hid': expName,
-    'expVersion|hid': expVersion,
     'psychopyVersion|hid': psychopyVersion,
 }
 
@@ -129,9 +124,9 @@ def setupData(expInfo, dataDir=None):
     
     # an ExperimentHandler isn't essential but helps with data saving
     thisExp = data.ExperimentHandler(
-        name=expName, version=expVersion,
+        name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Practice/EmoNback_Practice_lastrun.py',
+        originPath='/Users/akashrathi/Documents/Github/EmoNback/EmoNback_Practice/EmoNback_Practice_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -219,13 +214,9 @@ def setupWindow(expInfo=None, win=None):
             win._monitorFrameRate = win.getActualFrameRate(infoMsg='Attempting to measure frame rate of screen, please wait...')
         expInfo['frameRate'] = win._monitorFrameRate
     win.hideMessage()
-    if PILOTING:
-        # show a visual indicator if we're in piloting mode
-        if prefs.piloting['showPilotingIndicator']:
-            win.showPilotingIndicator()
-        # always show the mouse in piloting mode
-        if prefs.piloting['forceMouseVisible']:
-            win.mouseVisible = True
+    # show a visual indicator if we're in piloting mode
+    if PILOTING and prefs.piloting['showPilotingIndicator']:
+        win.showPilotingIndicator()
     
     return win
 
@@ -432,7 +423,7 @@ def setupDevices(expInfo, thisExp, win):
     # return True if completed successfully
     return True
 
-def pauseExperiment(thisExp, win=None, timers=[], currentRoutine=None):
+def pauseExperiment(thisExp, win=None, timers=[], playbackComponents=[]):
     """
     Pause this experiment, preventing the flow from advancing to the next routine until resumed.
     
@@ -445,8 +436,8 @@ def pauseExperiment(thisExp, win=None, timers=[], currentRoutine=None):
         Window for this experiment.
     timers : list, tuple
         List of timers to reset once pausing is finished.
-    currentRoutine : psychopy.data.Routine
-        Current Routine we are in at time of pausing, if any. This object tells PsychoPy what Components to pause/play/dispatch.
+    playbackComponents : list, tuple
+        List of any components with a `pause` method which need to be paused.
     """
     # if we are not paused, do nothing
     if thisExp.status != PAUSED:
@@ -455,9 +446,8 @@ def pauseExperiment(thisExp, win=None, timers=[], currentRoutine=None):
     # start a timer to figure out how long we're paused for
     pauseTimer = core.Clock()
     # pause any playback components
-    if currentRoutine is not None:
-        for comp in currentRoutine.getPlaybackComponents():
-            comp.pause()
+    for comp in playbackComponents:
+        comp.pause()
     # make sure we have a keyboard
     defaultKeyboard = deviceManager.getDevice('defaultKeyboard')
     if defaultKeyboard is None:
@@ -471,19 +461,14 @@ def pauseExperiment(thisExp, win=None, timers=[], currentRoutine=None):
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=['escape']):
             endExperiment(thisExp, win=win)
-        # dispatch messages on response components
-        if currentRoutine is not None:
-            for comp in currentRoutine.getDispatchComponents():
-                comp.device.dispatchMessages()
         # sleep 1ms so other threads can execute
         clock.time.sleep(0.001)
     # if stop was requested while paused, quit
     if thisExp.status == FINISHED:
         endExperiment(thisExp, win=win)
     # resume any playback components
-    if currentRoutine is not None:
-        for comp in currentRoutine.getPlaybackComponents():
-            comp.play()
+    for comp in playbackComponents:
+        comp.play()
     # reset any timers
     for timer in timers:
         timer.addTime(-pauseTimer.getTime())
@@ -763,11 +748,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "PracticeTrial1_Cue" ---
     CueFix_1 = visual.TextBox2(
          win, text='+', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.1,
          size=(1, 1), borderWidth=0.0,
          color=(1.0000, -1.0000, 1.0000), colorSpace='rgb',
          opacity=None,
-         bold=True, italic=False,
+         bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -797,10 +782,26 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='CueTargetImage_1', 
         image='VM Stimuli/PracticeNC1.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0.15, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0.25, 0), draggable=False, size=(0.4, 0.4),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
+    Zero_back = visual.TextBox2(
+         win, text='0-back', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0.25, 0.25), draggable=False,      letterHeight=0.03,
+         size=(0.5, 0.5), borderWidth=2.0,
+         color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+         opacity=None,
+         bold=True, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='Zero_back',
+         depth=-3, autoLog=True,
+    )
     
     # --- Initialize components for Routine "PracticeTrial_Stim" ---
     response = keyboard.Keyboard(deviceName='response')
@@ -808,7 +809,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Stim', 
         image='default.png', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0.1), draggable=False, size=(0.4, 0.4),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
@@ -848,11 +849,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "PracticeTrial_Feedback" ---
     Fix = visual.TextBox2(
          win, text='+', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.1,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
-         bold=True, italic=False,
+         bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -864,7 +865,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Feedback = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.05,
          size=(1, 1), borderWidth=0.0,
          color='white', colorSpace='rgb',
          opacity=None,
@@ -883,7 +884,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_9 = keyboard.Keyboard(deviceName='NextPage_9')
     Instructions_Space = visual.TextBox2(
          win, text='Press SPACE to continue', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.05,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -901,11 +902,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "PracticeTrial2_Cue" ---
     CueFix_2 = visual.TextBox2(
          win, text='+', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.1,
          size=(1, 1), borderWidth=0.0,
          color=(1.0000, -1.0000, 1.0000), colorSpace='rgb',
          opacity=None,
-         bold=True, italic=False,
+         bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -935,10 +936,26 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='CueTargetImage_2', 
         image='VM Stimuli/Place1.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0.15, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0.25, 0), draggable=False, size=(0.4, 0.4),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
+    Zero_back_2 = visual.TextBox2(
+         win, text='0-back', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0.25, 0.25), draggable=False,      letterHeight=0.03,
+         size=(0.5, 0.5), borderWidth=2.0,
+         color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+         opacity=None,
+         bold=True, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='Zero_back_2',
+         depth=-3, autoLog=True,
+    )
     
     # --- Initialize components for Routine "PracticeTrial_Stim" ---
     response = keyboard.Keyboard(deviceName='response')
@@ -946,7 +963,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Stim', 
         image='default.png', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0.1), draggable=False, size=(0.4, 0.4),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
@@ -986,11 +1003,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "PracticeTrial_Feedback" ---
     Fix = visual.TextBox2(
          win, text='+', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.1,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
-         bold=True, italic=False,
+         bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -1002,7 +1019,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Feedback = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.05,
          size=(1, 1), borderWidth=0.0,
          color='white', colorSpace='rgb',
          opacity=None,
@@ -1021,7 +1038,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_9 = keyboard.Keyboard(deviceName='NextPage_9')
     Instructions_Space = visual.TextBox2(
          win, text='Press SPACE to continue', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.05,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1880,7 +1897,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Stim', 
         image='default.png', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0.1), draggable=False, size=(0.4, 0.4),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
@@ -1920,11 +1937,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "PracticeTrial_Feedback" ---
     Fix = visual.TextBox2(
          win, text='+', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.1,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
-         bold=True, italic=False,
+         bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -1936,7 +1953,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Feedback = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.05,
          size=(1, 1), borderWidth=0.0,
          color='white', colorSpace='rgb',
          opacity=None,
@@ -1955,7 +1972,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_9 = keyboard.Keyboard(deviceName='NextPage_9')
     Instructions_Space = visual.TextBox2(
          win, text='Press SPACE to continue', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.05,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1976,7 +1993,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Stim', 
         image='default.png', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0.1), draggable=False, size=(0.4, 0.4),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
@@ -2016,11 +2033,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "PracticeTrial_Feedback" ---
     Fix = visual.TextBox2(
          win, text='+', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.1,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
-         bold=True, italic=False,
+         bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -2032,7 +2049,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Feedback = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.05,
          size=(1, 1), borderWidth=0.0,
          color='white', colorSpace='rgb',
          opacity=None,
@@ -2069,11 +2086,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "PracticeTrial5_Cue" ---
     CueFix_5 = visual.TextBox2(
          win, text='+', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.1,
          size=(1, 1), borderWidth=0.0,
          color=(1.0000, -1.0000, 1.0000), colorSpace='rgb',
          opacity=None,
-         bold=True, italic=False,
+         bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -2106,7 +2123,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Stim', 
         image='default.png', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0.1), draggable=False, size=(0.4, 0.4),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
@@ -2146,11 +2163,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "PracticeTrial_Feedback" ---
     Fix = visual.TextBox2(
          win, text='+', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.1,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
-         bold=True, italic=False,
+         bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -2162,7 +2179,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Feedback = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.05,
          size=(1, 1), borderWidth=0.0,
          color='white', colorSpace='rgb',
          opacity=None,
@@ -2180,11 +2197,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "PracticeTrial6_Cue" ---
     CueFix_6 = visual.TextBox2(
          win, text='+', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.1,
          size=(1, 1), borderWidth=0.0,
          color=(1.0000, -1.0000, 1.0000), colorSpace='rgb',
          opacity=None,
-         bold=True, italic=False,
+         bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -2214,10 +2231,26 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='CueTargetImage_6', 
         image='VM Stimuli/Place3.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0.15, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0.25, 0), draggable=False, size=(0.4, 0.4),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
+    Zero_back_3 = visual.TextBox2(
+         win, text='0-back', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0.25, 0.25), draggable=False,      letterHeight=0.03,
+         size=(0.5, 0.5), borderWidth=2.0,
+         color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+         opacity=None,
+         bold=True, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='Zero_back_3',
+         depth=-3, autoLog=True,
+    )
     
     # --- Initialize components for Routine "PracticeTrial_Stim" ---
     response = keyboard.Keyboard(deviceName='response')
@@ -2225,7 +2258,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Stim', 
         image='default.png', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0.1), draggable=False, size=(0.4, 0.4),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
@@ -2265,11 +2298,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "PracticeTrial_Feedback" ---
     Fix = visual.TextBox2(
          win, text='+', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.1,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
-         bold=True, italic=False,
+         bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -2281,7 +2314,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Feedback = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.05,
          size=(1, 1), borderWidth=0.0,
          color='white', colorSpace='rgb',
          opacity=None,
@@ -2299,11 +2332,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "PracticeTrial7_Cue" ---
     CueFix_7 = visual.TextBox2(
          win, text='+', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.1,
          size=(1, 1), borderWidth=0.0,
          color=(1.0000, -1.0000, 1.0000), colorSpace='rgb',
          opacity=None,
-         bold=True, italic=False,
+         bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -2336,7 +2369,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Stim', 
         image='default.png', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0.1), draggable=False, size=(0.4, 0.4),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
@@ -2376,11 +2409,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "PracticeTrial_Feedback" ---
     Fix = visual.TextBox2(
          win, text='+', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.1,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
-         bold=True, italic=False,
+         bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -2392,7 +2425,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Feedback = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.05,
          size=(1, 1), borderWidth=0.0,
          color='white', colorSpace='rgb',
          opacity=None,
@@ -2410,11 +2443,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "PracticeTrial8_Cue" ---
     CueFix_8 = visual.TextBox2(
          win, text='+', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.1,
          size=(1, 1), borderWidth=0.0,
          color=(1.0000, -1.0000, 1.0000), colorSpace='rgb',
          opacity=None,
-         bold=True, italic=False,
+         bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -2444,10 +2477,26 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='CueTargetImage_8', 
         image='VM Stimuli/PracticeNC2.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0.15, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0.25, 0), draggable=False, size=(0.4, 0.4),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
+    Zero_back_4 = visual.TextBox2(
+         win, text='0-back', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0.25, 0.25), draggable=False,      letterHeight=0.03,
+         size=(0.5, 0.5), borderWidth=2.0,
+         color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+         opacity=None,
+         bold=True, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='Zero_back_4',
+         depth=-3, autoLog=True,
+    )
     
     # --- Initialize components for Routine "PracticeTrial_Stim" ---
     response = keyboard.Keyboard(deviceName='response')
@@ -2455,7 +2504,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Stim', 
         image='default.png', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0.1), draggable=False, size=(0.4, 0.4),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
@@ -2495,11 +2544,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "PracticeTrial_Feedback" ---
     Fix = visual.TextBox2(
          win, text='+', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.1,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
-         bold=True, italic=False,
+         bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -2511,7 +2560,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Feedback = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.05), draggable=False,      letterHeight=0.05,
          size=(1, 1), borderWidth=0.0,
          color='white', colorSpace='rgb',
          opacity=None,
@@ -2676,8 +2725,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=TitlePage,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -2818,8 +2867,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions1,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -2980,8 +3029,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions2,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -3142,8 +3191,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions3,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -3284,8 +3333,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions5pt5,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -3488,8 +3537,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions6,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -3630,8 +3679,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions14,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -3772,8 +3821,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions6pt2,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -3815,13 +3864,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine PracticeTrial1_Cue
     PracticeTrial1_Cue = data.Routine(
         name='PracticeTrial1_Cue',
-        components=[CueFix_1, CueTarget_1, CueTargetImage_1],
+        components=[CueFix_1, CueTarget_1, CueTargetImage_1, Zero_back],
     )
     PracticeTrial1_Cue.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
     CueFix_1.reset()
     CueTarget_1.reset()
+    Zero_back.reset()
     # store start times for PracticeTrial1_Cue
     PracticeTrial1_Cue.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     PracticeTrial1_Cue.tStart = globalClock.getTime(format='float')
@@ -3954,6 +4004,40 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 CueTargetImage_1.status = FINISHED
                 CueTargetImage_1.setAutoDraw(False)
         
+        # *Zero_back* updates
+        
+        # if Zero_back is starting this frame...
+        if Zero_back.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+            # keep track of start time/frame for later
+            Zero_back.frameNStart = frameN  # exact frame index
+            Zero_back.tStart = t  # local t and not account for scr refresh
+            Zero_back.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Zero_back, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'Zero_back.started')
+            # update status
+            Zero_back.status = STARTED
+            Zero_back.setAutoDraw(True)
+        
+        # if Zero_back is active this frame...
+        if Zero_back.status == STARTED:
+            # update params
+            pass
+        
+        # if Zero_back is stopping this frame...
+        if Zero_back.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Zero_back.tStartRefresh + 2.5-frameTolerance:
+                # keep track of stop time/frame for later
+                Zero_back.tStop = t  # not accounting for scr refresh
+                Zero_back.tStopRefresh = tThisFlipGlobal  # on global time
+                Zero_back.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'Zero_back.stopped')
+                # update status
+                Zero_back.status = FINISHED
+                Zero_back.setAutoDraw(False)
+        
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
             thisExp.status = FINISHED
@@ -3965,8 +4049,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=PracticeTrial1_Cue,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -4023,9 +4107,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         thisSession.sendExperimentData()
     
     for thisPracticeLoop in practiceLoop:
-        practiceLoop.status = STARTED
-        if hasattr(thisPracticeLoop, 'status'):
-            thisPracticeLoop.status = STARTED
         currentLoop = practiceLoop
         thisExp.timestampOnFlip(win, 'thisRow.t', format=globalClock.format)
         if thisSession is not None:
@@ -4082,11 +4163,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Stim" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop, data.TrialHandler2) and thisPracticeLoop.thisN != practiceLoop.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Stim.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop, 'status') and thisPracticeLoop.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -4252,8 +4333,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Stim,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -4347,11 +4428,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Feedback" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop, data.TrialHandler2) and thisPracticeLoop.thisN != practiceLoop.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Feedback.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop, 'status') and thisPracticeLoop.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -4438,8 +4519,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Feedback,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -4473,23 +4554,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             routineTimer.reset()
         else:
             routineTimer.addTime(-2.000000)
-        # mark thisPracticeLoop as finished
-        if hasattr(thisPracticeLoop, 'status'):
-            thisPracticeLoop.status = FINISHED
-        # if awaiting a pause, pause now
-        if practiceLoop.status == PAUSED:
-            thisExp.status = PAUSED
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[globalClock], 
-            )
-            # once done pausing, restore running status
-            practiceLoop.status = STARTED
         thisExp.nextEntry()
         
     # completed 1.0 repeats of 'practiceLoop'
-    practiceLoop.status = FINISHED
     
     if thisSession is not None:
         # if running in a Session with a Liaison client, send data up to now
@@ -4598,8 +4665,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=InstructionsSpaceToContinue,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -4641,13 +4708,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine PracticeTrial2_Cue
     PracticeTrial2_Cue = data.Routine(
         name='PracticeTrial2_Cue',
-        components=[CueFix_2, CueTarget_2, CueTargetImage_2],
+        components=[CueFix_2, CueTarget_2, CueTargetImage_2, Zero_back_2],
     )
     PracticeTrial2_Cue.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
     CueFix_2.reset()
     CueTarget_2.reset()
+    Zero_back_2.reset()
     # store start times for PracticeTrial2_Cue
     PracticeTrial2_Cue.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     PracticeTrial2_Cue.tStart = globalClock.getTime(format='float')
@@ -4780,6 +4848,40 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 CueTargetImage_2.status = FINISHED
                 CueTargetImage_2.setAutoDraw(False)
         
+        # *Zero_back_2* updates
+        
+        # if Zero_back_2 is starting this frame...
+        if Zero_back_2.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+            # keep track of start time/frame for later
+            Zero_back_2.frameNStart = frameN  # exact frame index
+            Zero_back_2.tStart = t  # local t and not account for scr refresh
+            Zero_back_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Zero_back_2, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'Zero_back_2.started')
+            # update status
+            Zero_back_2.status = STARTED
+            Zero_back_2.setAutoDraw(True)
+        
+        # if Zero_back_2 is active this frame...
+        if Zero_back_2.status == STARTED:
+            # update params
+            pass
+        
+        # if Zero_back_2 is stopping this frame...
+        if Zero_back_2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Zero_back_2.tStartRefresh + 2.5-frameTolerance:
+                # keep track of stop time/frame for later
+                Zero_back_2.tStop = t  # not accounting for scr refresh
+                Zero_back_2.tStopRefresh = tThisFlipGlobal  # on global time
+                Zero_back_2.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'Zero_back_2.stopped')
+                # update status
+                Zero_back_2.status = FINISHED
+                Zero_back_2.setAutoDraw(False)
+        
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
             thisExp.status = FINISHED
@@ -4791,8 +4893,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=PracticeTrial2_Cue,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -4849,9 +4951,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         thisSession.sendExperimentData()
     
     for thisPracticeLoop2 in practiceLoop2:
-        practiceLoop2.status = STARTED
-        if hasattr(thisPracticeLoop2, 'status'):
-            thisPracticeLoop2.status = STARTED
         currentLoop = practiceLoop2
         thisExp.timestampOnFlip(win, 'thisRow.t', format=globalClock.format)
         if thisSession is not None:
@@ -4908,11 +5007,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Stim" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop2, data.TrialHandler2) and thisPracticeLoop2.thisN != practiceLoop2.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Stim.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop2, 'status') and thisPracticeLoop2.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -5078,8 +5177,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Stim,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -5173,11 +5272,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Feedback" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop2, data.TrialHandler2) and thisPracticeLoop2.thisN != practiceLoop2.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Feedback.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop2, 'status') and thisPracticeLoop2.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -5264,8 +5363,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Feedback,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -5299,23 +5398,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             routineTimer.reset()
         else:
             routineTimer.addTime(-2.000000)
-        # mark thisPracticeLoop2 as finished
-        if hasattr(thisPracticeLoop2, 'status'):
-            thisPracticeLoop2.status = FINISHED
-        # if awaiting a pause, pause now
-        if practiceLoop2.status == PAUSED:
-            thisExp.status = PAUSED
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[globalClock], 
-            )
-            # once done pausing, restore running status
-            practiceLoop2.status = STARTED
         thisExp.nextEntry()
         
     # completed 1.0 repeats of 'practiceLoop2'
-    practiceLoop2.status = FINISHED
     
     if thisSession is not None:
         # if running in a Session with a Liaison client, send data up to now
@@ -5424,8 +5509,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=InstructionsSpaceToContinue,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -5566,8 +5651,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions8,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -5708,8 +5793,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions11,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -5915,8 +6000,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions9,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -6142,8 +6227,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions21,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -6409,8 +6494,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions24,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -6656,8 +6741,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions25,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -6798,8 +6883,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions15,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -7004,8 +7089,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions32,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -7210,8 +7295,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions27,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -7416,8 +7501,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions33,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -7642,8 +7727,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions26,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -7848,8 +7933,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions34,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -8094,8 +8179,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions28,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -8360,8 +8445,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions29,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -8502,8 +8587,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions22,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -8644,8 +8729,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions30,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -8704,9 +8789,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         thisSession.sendExperimentData()
     
     for thisPracticeLoop3 in practiceLoop3:
-        practiceLoop3.status = STARTED
-        if hasattr(thisPracticeLoop3, 'status'):
-            thisPracticeLoop3.status = STARTED
         currentLoop = practiceLoop3
         thisExp.timestampOnFlip(win, 'thisRow.t', format=globalClock.format)
         if thisSession is not None:
@@ -8763,11 +8845,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Stim" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop3, data.TrialHandler2) and thisPracticeLoop3.thisN != practiceLoop3.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Stim.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop3, 'status') and thisPracticeLoop3.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -8933,8 +9015,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Stim,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -9028,11 +9110,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Feedback" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop3, data.TrialHandler2) and thisPracticeLoop3.thisN != practiceLoop3.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Feedback.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop3, 'status') and thisPracticeLoop3.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -9119,8 +9201,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Feedback,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -9154,23 +9236,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             routineTimer.reset()
         else:
             routineTimer.addTime(-2.000000)
-        # mark thisPracticeLoop3 as finished
-        if hasattr(thisPracticeLoop3, 'status'):
-            thisPracticeLoop3.status = FINISHED
-        # if awaiting a pause, pause now
-        if practiceLoop3.status == PAUSED:
-            thisExp.status = PAUSED
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[globalClock], 
-            )
-            # once done pausing, restore running status
-            practiceLoop3.status = STARTED
         thisExp.nextEntry()
         
     # completed 1.0 repeats of 'practiceLoop3'
-    practiceLoop3.status = FINISHED
     
     if thisSession is not None:
         # if running in a Session with a Liaison client, send data up to now
@@ -9279,8 +9347,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=InstructionsSpaceToContinue,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -9339,9 +9407,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         thisSession.sendExperimentData()
     
     for thisPracticeLoop4 in practiceLoop4:
-        practiceLoop4.status = STARTED
-        if hasattr(thisPracticeLoop4, 'status'):
-            thisPracticeLoop4.status = STARTED
         currentLoop = practiceLoop4
         thisExp.timestampOnFlip(win, 'thisRow.t', format=globalClock.format)
         if thisSession is not None:
@@ -9398,11 +9463,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Stim" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop4, data.TrialHandler2) and thisPracticeLoop4.thisN != practiceLoop4.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Stim.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop4, 'status') and thisPracticeLoop4.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -9568,8 +9633,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Stim,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -9663,11 +9728,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Feedback" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop4, data.TrialHandler2) and thisPracticeLoop4.thisN != practiceLoop4.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Feedback.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop4, 'status') and thisPracticeLoop4.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -9754,8 +9819,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Feedback,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -9789,23 +9854,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             routineTimer.reset()
         else:
             routineTimer.addTime(-2.000000)
-        # mark thisPracticeLoop4 as finished
-        if hasattr(thisPracticeLoop4, 'status'):
-            thisPracticeLoop4.status = FINISHED
-        # if awaiting a pause, pause now
-        if practiceLoop4.status == PAUSED:
-            thisExp.status = PAUSED
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[globalClock], 
-            )
-            # once done pausing, restore running status
-            practiceLoop4.status = STARTED
         thisExp.nextEntry()
         
     # completed 1.0 repeats of 'practiceLoop4'
-    practiceLoop4.status = FINISHED
     
     if thisSession is not None:
         # if running in a Session with a Liaison client, send data up to now
@@ -9914,8 +9965,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Instructions36,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -10073,8 +10124,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=PracticeTrial5_Cue,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -10131,9 +10182,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         thisSession.sendExperimentData()
     
     for thisPracticeLoop5 in practiceLoop5:
-        practiceLoop5.status = STARTED
-        if hasattr(thisPracticeLoop5, 'status'):
-            thisPracticeLoop5.status = STARTED
         currentLoop = practiceLoop5
         thisExp.timestampOnFlip(win, 'thisRow.t', format=globalClock.format)
         if thisSession is not None:
@@ -10190,11 +10238,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Stim" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop5, data.TrialHandler2) and thisPracticeLoop5.thisN != practiceLoop5.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Stim.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop5, 'status') and thisPracticeLoop5.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -10360,8 +10408,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Stim,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -10455,11 +10503,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Feedback" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop5, data.TrialHandler2) and thisPracticeLoop5.thisN != practiceLoop5.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Feedback.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop5, 'status') and thisPracticeLoop5.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -10546,8 +10594,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Feedback,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -10581,23 +10629,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             routineTimer.reset()
         else:
             routineTimer.addTime(-2.000000)
-        # mark thisPracticeLoop5 as finished
-        if hasattr(thisPracticeLoop5, 'status'):
-            thisPracticeLoop5.status = FINISHED
-        # if awaiting a pause, pause now
-        if practiceLoop5.status == PAUSED:
-            thisExp.status = PAUSED
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[globalClock], 
-            )
-            # once done pausing, restore running status
-            practiceLoop5.status = STARTED
         thisExp.nextEntry()
         
     # completed 1.0 repeats of 'practiceLoop5'
-    practiceLoop5.status = FINISHED
     
     if thisSession is not None:
         # if running in a Session with a Liaison client, send data up to now
@@ -10607,13 +10641,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine PracticeTrial6_Cue
     PracticeTrial6_Cue = data.Routine(
         name='PracticeTrial6_Cue',
-        components=[CueFix_6, CueTarget_6, CueTargetImage_6],
+        components=[CueFix_6, CueTarget_6, CueTargetImage_6, Zero_back_3],
     )
     PracticeTrial6_Cue.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
     CueFix_6.reset()
     CueTarget_6.reset()
+    Zero_back_3.reset()
     # store start times for PracticeTrial6_Cue
     PracticeTrial6_Cue.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     PracticeTrial6_Cue.tStart = globalClock.getTime(format='float')
@@ -10746,6 +10781,40 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 CueTargetImage_6.status = FINISHED
                 CueTargetImage_6.setAutoDraw(False)
         
+        # *Zero_back_3* updates
+        
+        # if Zero_back_3 is starting this frame...
+        if Zero_back_3.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+            # keep track of start time/frame for later
+            Zero_back_3.frameNStart = frameN  # exact frame index
+            Zero_back_3.tStart = t  # local t and not account for scr refresh
+            Zero_back_3.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Zero_back_3, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'Zero_back_3.started')
+            # update status
+            Zero_back_3.status = STARTED
+            Zero_back_3.setAutoDraw(True)
+        
+        # if Zero_back_3 is active this frame...
+        if Zero_back_3.status == STARTED:
+            # update params
+            pass
+        
+        # if Zero_back_3 is stopping this frame...
+        if Zero_back_3.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Zero_back_3.tStartRefresh + 2.5-frameTolerance:
+                # keep track of stop time/frame for later
+                Zero_back_3.tStop = t  # not accounting for scr refresh
+                Zero_back_3.tStopRefresh = tThisFlipGlobal  # on global time
+                Zero_back_3.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'Zero_back_3.stopped')
+                # update status
+                Zero_back_3.status = FINISHED
+                Zero_back_3.setAutoDraw(False)
+        
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
             thisExp.status = FINISHED
@@ -10757,8 +10826,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=PracticeTrial6_Cue,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -10815,9 +10884,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         thisSession.sendExperimentData()
     
     for thisPracticeLoop6 in practiceLoop6:
-        practiceLoop6.status = STARTED
-        if hasattr(thisPracticeLoop6, 'status'):
-            thisPracticeLoop6.status = STARTED
         currentLoop = practiceLoop6
         thisExp.timestampOnFlip(win, 'thisRow.t', format=globalClock.format)
         if thisSession is not None:
@@ -10874,11 +10940,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Stim" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop6, data.TrialHandler2) and thisPracticeLoop6.thisN != practiceLoop6.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Stim.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop6, 'status') and thisPracticeLoop6.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -11044,8 +11110,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Stim,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -11139,11 +11205,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Feedback" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop6, data.TrialHandler2) and thisPracticeLoop6.thisN != practiceLoop6.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Feedback.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop6, 'status') and thisPracticeLoop6.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -11230,8 +11296,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Feedback,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -11265,23 +11331,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             routineTimer.reset()
         else:
             routineTimer.addTime(-2.000000)
-        # mark thisPracticeLoop6 as finished
-        if hasattr(thisPracticeLoop6, 'status'):
-            thisPracticeLoop6.status = FINISHED
-        # if awaiting a pause, pause now
-        if practiceLoop6.status == PAUSED:
-            thisExp.status = PAUSED
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[globalClock], 
-            )
-            # once done pausing, restore running status
-            practiceLoop6.status = STARTED
         thisExp.nextEntry()
         
     # completed 1.0 repeats of 'practiceLoop6'
-    practiceLoop6.status = FINISHED
     
     if thisSession is not None:
         # if running in a Session with a Liaison client, send data up to now
@@ -11407,8 +11459,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=PracticeTrial7_Cue,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -11465,9 +11517,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         thisSession.sendExperimentData()
     
     for thisPracticeLoop7 in practiceLoop7:
-        practiceLoop7.status = STARTED
-        if hasattr(thisPracticeLoop7, 'status'):
-            thisPracticeLoop7.status = STARTED
         currentLoop = practiceLoop7
         thisExp.timestampOnFlip(win, 'thisRow.t', format=globalClock.format)
         if thisSession is not None:
@@ -11524,11 +11573,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Stim" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop7, data.TrialHandler2) and thisPracticeLoop7.thisN != practiceLoop7.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Stim.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop7, 'status') and thisPracticeLoop7.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -11694,8 +11743,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Stim,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -11789,11 +11838,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Feedback" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop7, data.TrialHandler2) and thisPracticeLoop7.thisN != practiceLoop7.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Feedback.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop7, 'status') and thisPracticeLoop7.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -11880,8 +11929,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Feedback,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -11915,23 +11964,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             routineTimer.reset()
         else:
             routineTimer.addTime(-2.000000)
-        # mark thisPracticeLoop7 as finished
-        if hasattr(thisPracticeLoop7, 'status'):
-            thisPracticeLoop7.status = FINISHED
-        # if awaiting a pause, pause now
-        if practiceLoop7.status == PAUSED:
-            thisExp.status = PAUSED
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[globalClock], 
-            )
-            # once done pausing, restore running status
-            practiceLoop7.status = STARTED
         thisExp.nextEntry()
         
     # completed 1.0 repeats of 'practiceLoop7'
-    practiceLoop7.status = FINISHED
     
     if thisSession is not None:
         # if running in a Session with a Liaison client, send data up to now
@@ -11941,13 +11976,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine PracticeTrial8_Cue
     PracticeTrial8_Cue = data.Routine(
         name='PracticeTrial8_Cue',
-        components=[CueFix_8, CueTarget_8, CueTargetImage_8],
+        components=[CueFix_8, CueTarget_8, CueTargetImage_8, Zero_back_4],
     )
     PracticeTrial8_Cue.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
     CueFix_8.reset()
     CueTarget_8.reset()
+    Zero_back_4.reset()
     # store start times for PracticeTrial8_Cue
     PracticeTrial8_Cue.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     PracticeTrial8_Cue.tStart = globalClock.getTime(format='float')
@@ -12080,6 +12116,40 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 CueTargetImage_8.status = FINISHED
                 CueTargetImage_8.setAutoDraw(False)
         
+        # *Zero_back_4* updates
+        
+        # if Zero_back_4 is starting this frame...
+        if Zero_back_4.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+            # keep track of start time/frame for later
+            Zero_back_4.frameNStart = frameN  # exact frame index
+            Zero_back_4.tStart = t  # local t and not account for scr refresh
+            Zero_back_4.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Zero_back_4, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'Zero_back_4.started')
+            # update status
+            Zero_back_4.status = STARTED
+            Zero_back_4.setAutoDraw(True)
+        
+        # if Zero_back_4 is active this frame...
+        if Zero_back_4.status == STARTED:
+            # update params
+            pass
+        
+        # if Zero_back_4 is stopping this frame...
+        if Zero_back_4.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > Zero_back_4.tStartRefresh + 2.5-frameTolerance:
+                # keep track of stop time/frame for later
+                Zero_back_4.tStop = t  # not accounting for scr refresh
+                Zero_back_4.tStopRefresh = tThisFlipGlobal  # on global time
+                Zero_back_4.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'Zero_back_4.stopped')
+                # update status
+                Zero_back_4.status = FINISHED
+                Zero_back_4.setAutoDraw(False)
+        
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
             thisExp.status = FINISHED
@@ -12091,8 +12161,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=PracticeTrial8_Cue,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -12149,9 +12219,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         thisSession.sendExperimentData()
     
     for thisPracticeLoop8 in practiceLoop8:
-        practiceLoop8.status = STARTED
-        if hasattr(thisPracticeLoop8, 'status'):
-            thisPracticeLoop8.status = STARTED
         currentLoop = practiceLoop8
         thisExp.timestampOnFlip(win, 'thisRow.t', format=globalClock.format)
         if thisSession is not None:
@@ -12208,11 +12275,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Stim" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop8, data.TrialHandler2) and thisPracticeLoop8.thisN != practiceLoop8.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Stim.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop8, 'status') and thisPracticeLoop8.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -12378,8 +12445,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Stim,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -12473,11 +12540,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "PracticeTrial_Feedback" ---
+        # if trial has changed, end Routine now
+        if isinstance(practiceLoop8, data.TrialHandler2) and thisPracticeLoop8.thisN != practiceLoop8.thisTrial.thisN:
+            continueRoutine = False
         PracticeTrial_Feedback.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 2.0:
-            # if trial has changed, end Routine now
-            if hasattr(thisPracticeLoop8, 'status') and thisPracticeLoop8.status == STOPPING:
-                continueRoutine = False
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -12564,8 +12631,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pauseExperiment(
                     thisExp=thisExp, 
                     win=win, 
-                    timers=[routineTimer, globalClock], 
-                    currentRoutine=PracticeTrial_Feedback,
+                    timers=[routineTimer], 
+                    playbackComponents=[]
                 )
                 # skip the frame we paused on
                 continue
@@ -12599,23 +12666,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             routineTimer.reset()
         else:
             routineTimer.addTime(-2.000000)
-        # mark thisPracticeLoop8 as finished
-        if hasattr(thisPracticeLoop8, 'status'):
-            thisPracticeLoop8.status = FINISHED
-        # if awaiting a pause, pause now
-        if practiceLoop8.status == PAUSED:
-            thisExp.status = PAUSED
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[globalClock], 
-            )
-            # once done pausing, restore running status
-            practiceLoop8.status = STARTED
         thisExp.nextEntry()
         
     # completed 1.0 repeats of 'practiceLoop8'
-    practiceLoop8.status = FINISHED
     
     if thisSession is not None:
         # if running in a Session with a Liaison client, send data up to now
@@ -12728,8 +12781,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=Goodbye,
+                timers=[routineTimer], 
+                playbackComponents=[]
             )
             # skip the frame we paused on
             continue
@@ -12811,9 +12864,6 @@ def endExperiment(thisExp, win=None):
     logging.console.setLevel(logging.WARNING)
     # mark experiment handler as finished
     thisExp.status = FINISHED
-    # run any 'at exit' functions
-    for fcn in runAtExit:
-        fcn()
     logging.flush()
 
 
