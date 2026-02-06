@@ -1,0 +1,216 @@
+21.5609 	INFO 	Loaded monitor calibration from ['2025_02_25 08:51']
+21.5782 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2240, 1260]. Using actual size
+21.7701 	INFO 	Using renderer 'Apple M1' for graphics
+21.7701 	INFO 	OpenGL version supported by driver is 2..
+21.8090 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x14e631ff0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x14e632050>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x14e885840>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([4480, 2520]), stencilBits=8, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+21.8091 	EXP 	window1: backgroundImage = ''
+21.8091 	EXP 	window1: backgroundFit = 'none'
+22.1848 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+22.1848 	EXP 	window1: recordFrameIntervals = False
+22.4702 	EXP 	window1: recordFrameIntervals = True
+22.6016 	EXP 	Screen (0) actual frame rate measured at 84.64Hz
+22.6016 	EXP 	window1: recordFrameIntervals = False
+23.2048 	INFO 	keyboard.Keyboard is using ptb backend.
+23.2532 	INFO 	keyboard.Keyboard is using ptb backend.
+23.3017 	INFO 	keyboard.Keyboard is using ptb backend.
+23.3501 	INFO 	keyboard.Keyboard is using ptb backend.
+23.3977 	INFO 	keyboard.Keyboard is using ptb backend.
+23.4454 	INFO 	keyboard.Keyboard is using ptb backend.
+23.4946 	INFO 	keyboard.Keyboard is using ptb backend.
+23.5424 	INFO 	keyboard.Keyboard is using ptb backend.
+23.5908 	INFO 	keyboard.Keyboard is using ptb backend.
+23.6385 	INFO 	keyboard.Keyboard is using ptb backend.
+23.6867 	INFO 	keyboard.Keyboard is using ptb backend.
+23.7362 	INFO 	keyboard.Keyboard is using ptb backend.
+23.7844 	INFO 	keyboard.Keyboard is using ptb backend.
+23.8329 	INFO 	keyboard.Keyboard is using ptb backend.
+23.8807 	INFO 	keyboard.Keyboard is using ptb backend.
+23.9284 	INFO 	keyboard.Keyboard is using ptb backend.
+23.9767 	INFO 	keyboard.Keyboard is using ptb backend.
+24.0250 	INFO 	keyboard.Keyboard is using ptb backend.
+24.0726 	INFO 	keyboard.Keyboard is using ptb backend.
+24.1202 	INFO 	keyboard.Keyboard is using ptb backend.
+24.1679 	INFO 	keyboard.Keyboard is using ptb backend.
+24.2154 	INFO 	keyboard.Keyboard is using ptb backend.
+24.2629 	INFO 	keyboard.Keyboard is using ptb backend.
+24.3104 	INFO 	keyboard.Keyboard is using ptb backend.
+24.3578 	INFO 	keyboard.Keyboard is using ptb backend.
+24.4053 	INFO 	keyboard.Keyboard is using ptb backend.
+24.4528 	INFO 	keyboard.Keyboard is using ptb backend.
+24.5038 	INFO 	keyboard.Keyboard is using ptb backend.
+24.5529 	INFO 	keyboard.Keyboard is using ptb backend.
+24.5529 	EXP 	EmoNback_Practice: status = STARTED
+24.6950 	EXP 	Created FaceImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeNC1.bmp', interpolate=True, mask=None, maskParams=None, name='FaceImage', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+24.7125 	EXP 	Created PlaceImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/Place1.bmp', interpolate=True, mask=None, maskParams=None, name='PlaceImage', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+24.7580 	EXP 	Created TargetImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeNC1.bmp', interpolate=True, mask=None, maskParams=None, name='TargetImage', opacity=1, ori=0.0, pos=array([0.2, 0. ]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+24.8199 	EXP 	Created CueTargetImage_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeNC1.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_1', opacity=1, ori=0.0, pos=array([0.15, 0.  ]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+24.8275 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+24.8805 	EXP 	Created CueTargetImage_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/Place1.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_2', opacity=1, ori=0.0, pos=array([0.15, 0.  ]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+24.8837 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+24.9434 	EXP 	Created Example_Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+24.9677 	EXP 	Created One_Back_Example_Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+24.9709 	EXP 	Created Example_Stim_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+24.9936 	EXP 	Created Green_Border = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-0.60784314,  0.60784314, -0.60784314]), fillColorSpace='rgb', fillRGB=array([-0.60784314,  0.60784314, -0.60784314]), interpolate=True, lineColor=array([-0.60784314,  0.60784314, -0.60784314]), lineColorSpace='rgb', lineRGB=array([-0.60784314,  0.60784314, -0.60784314]), lineWidth=1.0, name='Green_Border', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.15, 0.15]), units='height', vertices=ndarray(...), win=Window(...))
+24.9959 	EXP 	Created Two_Back_Example_Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.13, 0.13]), texRes=128.0, units='height', win=Window(...))
+24.9986 	EXP 	Created One_Back_Example_Stim_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_2', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+25.0018 	EXP 	Created Example_Stim_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim_3', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.0247 	EXP 	Created Two_Back_Example_Stim_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim_2', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.13, 0.13]), texRes=128.0, units='height', win=Window(...))
+25.0265 	EXP 	Created One_Back_Example_Stim_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_3', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+25.0297 	EXP 	Created Example_Stim_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim_4', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.0635 	EXP 	Created Example_Stim_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_5', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.0862 	EXP 	Created Example_Stim_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_6', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.1099 	EXP 	Created Example_Stim_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_7', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.1323 	EXP 	Created One_Back_Example_Stim_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_4', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+25.1342 	EXP 	Created Example_Stim_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_8', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.1568 	EXP 	Created Example_Stim_9 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_9', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.1799 	EXP 	Created Two_Back_Example_Stim_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim_3', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+25.1816 	EXP 	Created One_Back_Example_Stim_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_5', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+25.1833 	EXP 	Created Example_Stim_10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_10', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.2060 	EXP 	Created Green_Border_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-0.60784314,  0.60784314, -0.60784314]), fillColorSpace='rgb', fillRGB=array([-0.60784314,  0.60784314, -0.60784314]), interpolate=True, lineColor=array([-0.60784314,  0.60784314, -0.60784314]), lineColorSpace='rgb', lineRGB=array([-0.60784314,  0.60784314, -0.60784314]), lineWidth=1.0, name='Green_Border_2', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.15, 0.15]), units='height', vertices=ndarray(...), win=Window(...))
+25.2080 	EXP 	Created Two_Back_Example_Stim_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim_4', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.13, 0.13]), texRes=128.0, units='height', win=Window(...))
+25.2098 	EXP 	Created One_Back_Example_Stim_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_6', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+25.2115 	EXP 	Created Example_Stim_11 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_11', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.2430 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.2804 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.3418 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.3862 	EXP 	Created CueTargetImage_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/Place3.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_6', opacity=1, ori=0.0, pos=array([0.15, 0.  ]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.3893 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.4451 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.4890 	EXP 	Created CueTargetImage_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeNC2.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_8', opacity=1, ori=0.0, pos=array([0.15, 0.  ]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+25.4921 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+0.0156 	EXP 	NbackTitle: autoLog = True
+0.0156 	EXP 	Instructions_1: autoLog = True
+0.0156 	EXP 	Instructions_2: autoLog = True
+0.0156 	EXP 	Instructions_3: autoLog = True
+0.0156 	EXP 	Instructions_5pt5: autoLog = True
+0.0156 	EXP 	Instructions_6: autoLog = True
+0.0156 	EXP 	Instructions_6_Target: autoLog = True
+0.0156 	EXP 	Instructions_6_Match: autoLog = True
+0.0156 	EXP 	Instructions_14: autoLog = True
+0.0156 	EXP 	Instructions_6pt2: autoLog = True
+0.0156 	EXP 	CueFix_1: autoLog = True
+0.0156 	EXP 	CueTarget_1: autoLog = True
+0.0156 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0156 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0156 	EXP 	Fix: autoLog = True
+0.0156 	EXP 	Feedback: autoLog = True
+0.0156 	EXP 	Instructions_Space: autoLog = True
+0.0156 	EXP 	CueFix_2: autoLog = True
+0.0156 	EXP 	CueTarget_2: autoLog = True
+0.0156 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0156 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0156 	EXP 	Fix: autoLog = True
+0.0156 	EXP 	Feedback: autoLog = True
+0.0156 	EXP 	Instructions_Space: autoLog = True
+0.0156 	EXP 	Instructions_8: autoLog = True
+0.0156 	EXP 	Instructions_11: autoLog = True
+0.0156 	EXP 	Instructions_9: autoLog = True
+0.0156 	EXP 	Example_LeftScreenInstruction: autoLog = True
+0.0156 	EXP 	Example_RightScreenInstruction: autoLog = True
+0.0156 	EXP 	Instructions_21: autoLog = True
+0.0156 	EXP 	Example_LeftScreenInstruction_2: autoLog = True
+0.0156 	EXP 	Example_RightScreenInstruction_2: autoLog = True
+0.0156 	EXP 	Instructions_24: autoLog = True
+0.0156 	EXP 	Example_LeftScreenInstruction_3: autoLog = True
+0.0156 	EXP 	Example_RightScreenInstruction_3: autoLog = True
+0.0156 	EXP 	Instructions_25: autoLog = True
+0.0156 	EXP 	Example_LeftScreenInstruction_4: autoLog = True
+0.0156 	EXP 	Example_RightScreenInstruction_4: autoLog = True
+0.0156 	EXP 	Instructions_15: autoLog = True
+0.0156 	EXP 	Instructions_32: autoLog = True
+0.0156 	EXP 	Example_LeftScreenInstruction_5: autoLog = True
+0.0156 	EXP 	Example_RightScreenInstruction_5: autoLog = True
+0.0156 	EXP 	Instructions_27: autoLog = True
+0.0156 	EXP 	Example_LeftScreenInstruction_6: autoLog = True
+0.0156 	EXP 	Example_RightScreenInstruction_6: autoLog = True
+0.0156 	EXP 	Instructions_33: autoLog = True
+0.0156 	EXP 	Example_LeftScreenInstruction_7: autoLog = True
+0.0156 	EXP 	Example_RightScreenInstruction_7: autoLog = True
+0.0156 	EXP 	Instructions_26: autoLog = True
+0.0156 	EXP 	Example_LeftScreenInstruction_8: autoLog = True
+0.0156 	EXP 	Example_RightScreenInstruction_8: autoLog = True
+0.0156 	EXP 	Instructions: autoLog = True
+0.0156 	EXP 	Example_LeftScreenInstruction_9: autoLog = True
+0.0156 	EXP 	Example_RightScreenInstruction_9: autoLog = True
+0.0156 	EXP 	Instructions_28: autoLog = True
+0.0156 	EXP 	Example_LeftScreenInstruction_10: autoLog = True
+0.0156 	EXP 	Example_RightScreenInstruction_10: autoLog = True
+0.0156 	EXP 	Instructions_29: autoLog = True
+0.0156 	EXP 	Example_LeftScreenInstruction_11: autoLog = True
+0.0156 	EXP 	Example_RightScreenInstruction_11: autoLog = True
+0.0156 	EXP 	Instructions_22: autoLog = True
+0.0156 	EXP 	Instructions_30: autoLog = True
+0.0156 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0156 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0156 	EXP 	Fix: autoLog = True
+0.0156 	EXP 	Feedback: autoLog = True
+0.0156 	EXP 	Instructions_Space: autoLog = True
+0.0156 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0156 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0156 	EXP 	Fix: autoLog = True
+0.0156 	EXP 	Feedback: autoLog = True
+0.0156 	EXP 	Instructions_36: autoLog = True
+0.0156 	EXP 	CueFix_5: autoLog = True
+0.0156 	EXP 	Cue_2Back: autoLog = True
+0.0156 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0156 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0156 	EXP 	Fix: autoLog = True
+0.0156 	EXP 	Feedback: autoLog = True
+0.0156 	EXP 	CueFix_6: autoLog = True
+0.0156 	EXP 	CueTarget_6: autoLog = True
+0.0156 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0156 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0156 	EXP 	Fix: autoLog = True
+0.0156 	EXP 	Feedback: autoLog = True
+0.0156 	EXP 	CueFix_7: autoLog = True
+0.0156 	EXP 	Cue_2Back_2: autoLog = True
+0.0156 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0156 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0156 	EXP 	Fix: autoLog = True
+0.0156 	EXP 	Feedback: autoLog = True
+0.0156 	EXP 	CueFix_8: autoLog = True
+0.0156 	EXP 	CueTarget_8: autoLog = True
+0.0156 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0156 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0156 	EXP 	Fix: autoLog = True
+0.0156 	EXP 	Feedback: autoLog = True
+0.0156 	EXP 	AllDone: autoLog = True
+0.0588 	INFO 	Keyboard events cleared
+0.0588 	EXP 	NbackTitle: autoDraw = True
+1.2972 	EXP 	Device response: <KeyPress from None: t=1.0276746656745672, value=escape, duration=None>
+1.2975 	EXP 	Device response: <KeyPress from None: t=1.0276746656745672, value=escape, duration=0.06800983287394047>
+1.2975 	EXP 	EmoNback_Practice: status = STOPPED
+1.3973 	DATA 	Keypress: escape
+1.4070 	EXP 	NbackTitle: autoDraw = False
+1.4070 	EXP 	EmoNback_Practice: status = STOPPED
+1.4090 	INFO 	saved data to '/Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Practice/data/5346576_1.csv'
+1.4095 	INFO 	saved data to /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Practice/data/5346576_1.psydat
+1.6186 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6187 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6188 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6188 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6188 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6188 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6188 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6188 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6188 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6188 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6188 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6188 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6188 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+1.6188 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

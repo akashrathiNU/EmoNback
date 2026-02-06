@@ -1,0 +1,193 @@
+22.1174 	INFO 	Loaded monitor calibration from ['2025_02_25 08:51']
+22.1337 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2240, 1260]. Using actual size
+22.2826 	INFO 	Using renderer 'Apple M1' for graphics
+22.2826 	INFO 	OpenGL version supported by driver is 2..
+22.3057 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x14f702320>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x14f702680>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x14f635de0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([4480, 2520]), stencilBits=8, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+22.3057 	EXP 	window1: backgroundImage = ''
+22.3057 	EXP 	window1: backgroundFit = 'none'
+22.6735 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+22.6735 	EXP 	window1: recordFrameIntervals = False
+23.0501 	EXP 	window1: recordFrameIntervals = True
+23.1260 	WARNING 	t of last frame was 24.48ms (=1/40)
+23.4008 	EXP 	Screen (0) actual frame rate measured at 93.05Hz
+23.4009 	EXP 	window1: recordFrameIntervals = False
+23.9742 	INFO 	keyboard.Keyboard is using ptb backend.
+24.0232 	INFO 	keyboard.Keyboard is using ptb backend.
+24.0764 	INFO 	keyboard.Keyboard is using ptb backend.
+24.1253 	INFO 	keyboard.Keyboard is using ptb backend.
+24.1735 	INFO 	keyboard.Keyboard is using ptb backend.
+24.2213 	INFO 	keyboard.Keyboard is using ptb backend.
+24.2690 	INFO 	keyboard.Keyboard is using ptb backend.
+24.3183 	INFO 	keyboard.Keyboard is using ptb backend.
+24.3663 	INFO 	keyboard.Keyboard is using ptb backend.
+24.4139 	INFO 	keyboard.Keyboard is using ptb backend.
+24.4618 	INFO 	keyboard.Keyboard is using ptb backend.
+24.5095 	INFO 	keyboard.Keyboard is using ptb backend.
+24.5096 	EXP 	EmoNback_Behavioral: status = STARTED
+24.6536 	EXP 	Created TargetImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='TargetImage', opacity=1, ori=0.0, pos=array([0.15, 0.  ]), size=array([0.2, 0.2]), texRes=128.0, units='height', win=Window(...))
+24.6627 	EXP 	Created Green_Border = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-0.60784314,  0.60784314, -0.60784314]), fillColorSpace='rgb', fillRGB=array([-0.60784314,  0.60784314, -0.60784314]), interpolate=True, lineColor=array([-0.60784314,  0.60784314, -0.60784314]), lineColorSpace='rgb', lineRGB=array([-0.60784314,  0.60784314, -0.60784314]), lineWidth=1.0, name='Green_Border', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.15, 0.15]), units='height', vertices=ndarray(...), win=Window(...))
+24.6651 	EXP 	Created Image_2Back = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Image_2Back', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.13, 0.13]), texRes=128.0, units='height', win=Window(...))
+24.6678 	EXP 	Created Image_1Back = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='Image_1Back', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+24.6696 	EXP 	Created Image_ToMatch = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Image_ToMatch', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), texRes=128.0, units='height', win=Window(...))
+24.7744 	EXP 	Created Cue_TargetImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Cue_TargetImage', opacity=1, ori=0.0, pos=array([0.15, 0.  ]), size=array([0.2, 0.2]), texRes=128.0, units='height', win=Window(...))
+24.7776 	EXP 	Created StimulusImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='StimulusImage', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), texRes=128.0, units='height', win=Window(...))
+24.8623 	EXP 	Created Cue_TargetImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Cue_TargetImage', opacity=1, ori=0.0, pos=array([0.15, 0.  ]), size=array([0.2, 0.2]), texRes=128.0, units='height', win=Window(...))
+24.8654 	EXP 	Created StimulusImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='StimulusImage', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), texRes=128.0, units='height', win=Window(...))
+0.0157 	EXP 	NbackTitle: autoLog = True
+0.0157 	EXP 	Instruction: autoLog = True
+0.0157 	EXP 	Instruction_2: autoLog = True
+0.0157 	EXP 	Target: autoLog = True
+0.0157 	EXP 	Instruction_3: autoLog = True
+0.0157 	EXP 	LEFTSIDESCREEN_CAPTION: autoLog = True
+0.0157 	EXP 	RIGHTSIDESCREEN_CAPTION: autoLog = True
+0.0157 	EXP 	Instruction_4: autoLog = True
+0.0157 	EXP 	Instruction_5: autoLog = True
+0.0157 	EXP 	Scanner_Instruction: autoLog = True
+0.0157 	EXP 	Cue_Fix: autoLog = True
+0.0157 	EXP 	Cue_2Back: autoLog = True
+0.0157 	EXP 	Cue_Target: autoLog = True
+0.0157 	EXP 	LeftScreenResponse: autoLog = True
+0.0157 	EXP 	RightScreenResponse: autoLog = True
+0.0157 	EXP 	End_Fix: autoLog = True
+0.0157 	EXP 	Fix_15_Sec: autoLog = True
+0.0157 	EXP 	Fix_5_Sec: autoLog = True
+0.0157 	EXP 	Instruction_6: autoLog = True
+0.0157 	EXP 	Instruction_7: autoLog = True
+0.0157 	EXP 	Scanner_Instruction: autoLog = True
+0.0157 	EXP 	Cue_Fix_2: autoLog = True
+0.0157 	EXP 	Cue_2Back: autoLog = True
+0.0157 	EXP 	Cue_Target: autoLog = True
+0.0157 	EXP 	LeftScreenResponse: autoLog = True
+0.0157 	EXP 	RightScreenResponse: autoLog = True
+0.0157 	EXP 	End_Fix: autoLog = True
+0.0157 	EXP 	All_Done: autoLog = True
+0.0605 	INFO 	Keyboard events cleared
+0.0604 	EXP 	NbackTitle: autoDraw = True
+1.1839 	EXP 	Device response: <KeyPress from None: t=1.0129787912592292, value=space, duration=None>
+1.1842 	EXP 	Device response: <KeyPress from None: t=1.0129787912592292, value=space, duration=0.07831654231995344>
+1.1899 	DATA 	Keypress: space
+1.1988 	INFO 	Keyboard events cleared
+1.1987 	EXP 	NbackTitle: autoDraw = False
+1.1987 	EXP 	Instruction: autoDraw = True
+1.6282 	EXP 	Device response: <KeyPress from None: t=1.6204135408625007, value=space, duration=None>
+1.6384 	DATA 	Keypress: space
+1.6518 	INFO 	Keyboard events cleared
+1.6517 	EXP 	Instruction: autoDraw = False
+1.6517 	EXP 	Instruction_2: autoDraw = True
+1.6517 	EXP 	Target: autoDraw = True
+1.6517 	EXP 	TargetImage: autoDraw = True
+1.7224 	EXP 	Device response: <KeyPress from None: t=1.6204135408625007, value=space, duration=0.09127624984830618>
+1.9463 	EXP 	Device response: <KeyPress from None: t=1.9357377495616674, value=space, duration=None>
+1.9541 	DATA 	Keypress: space
+1.9732 	INFO 	Keyboard events cleared
+1.9731 	EXP 	Instruction_2: autoDraw = False
+1.9731 	EXP 	Target: autoDraw = False
+1.9731 	EXP 	TargetImage: autoDraw = False
+1.9731 	EXP 	Instruction_3: autoDraw = True
+1.9731 	EXP 	Green_Border: autoDraw = True
+1.9731 	EXP 	Image_2Back: autoDraw = True
+1.9731 	EXP 	Image_1Back: autoDraw = True
+1.9731 	EXP 	Image_ToMatch: autoDraw = True
+1.9731 	EXP 	LEFTSIDESCREEN_CAPTION: autoDraw = True
+1.9731 	EXP 	RIGHTSIDESCREEN_CAPTION: autoDraw = True
+2.0240 	EXP 	Device response: <KeyPress from None: t=1.9357377495616674, value=space, duration=0.08074233401566744>
+2.1400 	EXP 	Device response: <KeyPress from None: t=2.1380296237766743, value=space, duration=None>
+2.1448 	DATA 	Keypress: space
+2.1538 	INFO 	Keyboard events cleared
+2.1537 	EXP 	Instruction_3: autoDraw = False
+2.1537 	EXP 	Green_Border: autoDraw = False
+2.1537 	EXP 	Image_2Back: autoDraw = False
+2.1537 	EXP 	Image_1Back: autoDraw = False
+2.1537 	EXP 	Image_ToMatch: autoDraw = False
+2.1537 	EXP 	LEFTSIDESCREEN_CAPTION: autoDraw = False
+2.1537 	EXP 	RIGHTSIDESCREEN_CAPTION: autoDraw = False
+2.1537 	EXP 	Instruction_4: autoDraw = True
+2.2167 	EXP 	Device response: <KeyPress from None: t=2.1380296237766743, value=space, duration=0.06733616720885038>
+2.4871 	EXP 	Device response: <KeyPress from None: t=2.4858145834878087, value=space, duration=None>
+2.4954 	DATA 	Keypress: space
+2.5045 	INFO 	Keyboard events cleared
+2.5044 	EXP 	Instruction_4: autoDraw = False
+2.5044 	EXP 	Instruction_5: autoDraw = True
+2.5993 	EXP 	Device response: <KeyPress from None: t=2.4858145834878087, value=space, duration=0.1035378323867917>
+2.8233 	EXP 	Device response: <KeyPress from None: t=2.8149446239694953, value=space, duration=None>
+2.8323 	DATA 	Keypress: space
+2.8417 	INFO 	Keyboard events cleared
+2.8415 	EXP 	Instruction_5: autoDraw = False
+2.8415 	EXP 	Scanner_Instruction: autoDraw = True
+2.9216 	EXP 	Device response: <KeyPress from None: t=2.8149446239694953, value=space, duration=0.09888279251754284>
+3.1442 	EXP 	Device response: <KeyPress from None: t=3.1384312491863966, value=space, duration=None>
+3.1488 	DATA 	Keypress: space
+3.2541 	EXP 	Device response: <KeyPress from None: t=3.1384312491863966, value=space, duration=0.11334974970668554>
+3.9005 	EXP 	Device response: <KeyPress from None: t=3.891950790770352, value=t, duration=None>
+3.9019 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+3.9100 	DATA 	Keypress: t
+3.9188 	EXP 	Scanner_Instruction: autoDraw = False
+3.9188 	EXP 	Cue_Fix: autoDraw = True
+3.9756 	EXP 	Device response: <KeyPress from None: t=3.891950790770352, value=t, duration=0.0797969177365303>
+4.4255 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block1.csv as conditions, 10 conditions, 7 params
+4.4260 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': np.int64(1), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/23M_HO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+4.4388 	EXP 	Cue_Fix: autoDraw = False
+4.4388 	EXP 	Cue_2Back: autoDraw = True
+6.9820 	INFO 	Keyboard events cleared
+6.9817 	EXP 	Cue_2Back: autoDraw = False
+6.9817 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+6.9817 	EXP 	Cue_Target: autoDraw = False
+6.9817 	EXP 	Cue_TargetImage: autoDraw = False
+6.9817 	EXP 	StimulusImage: image = 'VM Stimuli/23M_HO.bmp'
+6.9817 	EXP 	StimulusImage: autoDraw = True
+6.9817 	EXP 	LeftScreenResponse: autoDraw = True
+6.9817 	EXP 	RightScreenResponse: autoDraw = True
+8.9744 	EXP 	StimulusImage: autoDraw = False
+8.9744 	EXP 	LeftScreenResponse: autoDraw = False
+8.9744 	EXP 	RightScreenResponse: autoDraw = False
+8.9744 	EXP 	End_Fix: autoDraw = True
+9.4596 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': np.int64(2), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/12F_HO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+9.4986 	INFO 	Keyboard events cleared
+9.4984 	EXP 	End_Fix: autoDraw = False
+9.4984 	EXP 	End_Fix: autoDraw = False
+9.4984 	EXP 	Cue_2Back: autoDraw = False
+9.4984 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+9.4984 	EXP 	Cue_Target: autoDraw = False
+9.4984 	EXP 	Cue_TargetImage: autoDraw = False
+9.4984 	EXP 	StimulusImage: image = 'VM Stimuli/12F_HO.bmp'
+9.4984 	EXP 	StimulusImage: autoDraw = True
+9.4984 	EXP 	LeftScreenResponse: autoDraw = True
+9.4984 	EXP 	RightScreenResponse: autoDraw = True
+11.4978 	EXP 	StimulusImage: autoDraw = False
+11.4978 	EXP 	LeftScreenResponse: autoDraw = False
+11.4978 	EXP 	RightScreenResponse: autoDraw = False
+11.4978 	EXP 	End_Fix: autoDraw = True
+11.9829 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': np.int64(3), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/AF02_HO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+12.0373 	INFO 	Keyboard events cleared
+12.0372 	EXP 	End_Fix: autoDraw = False
+12.0372 	EXP 	End_Fix: autoDraw = False
+12.0372 	EXP 	Cue_2Back: autoDraw = False
+12.0372 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+12.0372 	EXP 	Cue_Target: autoDraw = False
+12.0372 	EXP 	Cue_TargetImage: autoDraw = False
+12.0372 	EXP 	StimulusImage: image = 'VM Stimuli/AF02_HO.bmp'
+12.0372 	EXP 	StimulusImage: autoDraw = True
+12.0372 	EXP 	LeftScreenResponse: autoDraw = True
+12.0372 	EXP 	RightScreenResponse: autoDraw = True
+13.3995 	EXP 	Device response: <KeyPress from None: t=13.388058458454907, value=escape, duration=None>
+13.4284 	DATA 	Keypress: escape
+13.4596 	EXP 	Device response: <KeyPress from None: t=13.388058458454907, value=escape, duration=0.06622137501835823>
+13.4596 	EXP 	EmoNback_Behavioral: status = STOPPED
+13.4820 	EXP 	StimulusImage: autoDraw = False
+13.4820 	EXP 	LeftScreenResponse: autoDraw = False
+13.4820 	EXP 	RightScreenResponse: autoDraw = False
+13.4820 	EXP 	EmoNback_Behavioral: status = STOPPED
+13.4874 	INFO 	saved data to '/Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/data/sub-543211_ses-2_emoback.csv'
+13.4881 	INFO 	saved data to /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/data/sub-543211_ses-2_emoback.psydat
+13.6233 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6234 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6234 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6234 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6234 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6234 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6234 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6234 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6234 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6234 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6234 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6234 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

@@ -1,0 +1,1454 @@
+27.7180 	INFO 	Loaded monitor calibration from ['2025_02_25 08:51']
+27.7321 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [2240, 1260]. Using actual size
+27.8733 	INFO 	Using renderer 'Apple M1' for graphics
+27.8733 	INFO 	OpenGL version supported by driver is 2..
+27.8903 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x14f96e620>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x14f96e680>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x14f74a260>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([4480, 2520]), stencilBits=8, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+27.8904 	EXP 	window1: backgroundImage = ''
+27.8904 	EXP 	window1: backgroundFit = 'none'
+28.2604 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+28.2604 	EXP 	window1: recordFrameIntervals = False
+28.5352 	EXP 	window1: recordFrameIntervals = True
+28.8380 	EXP 	Screen (0) actual frame rate measured at 90.63Hz
+28.8380 	EXP 	window1: recordFrameIntervals = False
+29.3490 	INFO 	keyboard.Keyboard is using ptb backend.
+29.3970 	INFO 	keyboard.Keyboard is using ptb backend.
+29.4446 	INFO 	keyboard.Keyboard is using ptb backend.
+29.4921 	INFO 	keyboard.Keyboard is using ptb backend.
+29.5395 	INFO 	keyboard.Keyboard is using ptb backend.
+29.5869 	INFO 	keyboard.Keyboard is using ptb backend.
+29.6342 	INFO 	keyboard.Keyboard is using ptb backend.
+29.6815 	INFO 	keyboard.Keyboard is using ptb backend.
+29.7289 	INFO 	keyboard.Keyboard is using ptb backend.
+29.7762 	INFO 	keyboard.Keyboard is using ptb backend.
+29.8235 	INFO 	keyboard.Keyboard is using ptb backend.
+29.8708 	INFO 	keyboard.Keyboard is using ptb backend.
+29.8708 	EXP 	EmoNback_Behavioral: status = STARTED
+30.0134 	EXP 	Created TargetImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='TargetImage', opacity=1, ori=0.0, pos=array([0.15, 0.  ]), size=array([0.2, 0.2]), texRes=128.0, units='height', win=Window(...))
+30.0225 	EXP 	Created Green_Border = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-0.60784314,  0.60784314, -0.60784314]), fillColorSpace='rgb', fillRGB=array([-0.60784314,  0.60784314, -0.60784314]), interpolate=True, lineColor=array([-0.60784314,  0.60784314, -0.60784314]), lineColorSpace='rgb', lineRGB=array([-0.60784314,  0.60784314, -0.60784314]), lineWidth=1.0, name='Green_Border', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.15, 0.15]), units='height', vertices=ndarray(...), win=Window(...))
+30.0245 	EXP 	Created Image_2Back = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Image_2Back', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.13, 0.13]), texRes=128.0, units='height', win=Window(...))
+30.0273 	EXP 	Created Image_1Back = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='Image_1Back', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+30.0291 	EXP 	Created Image_ToMatch = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Image_ToMatch', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), texRes=128.0, units='height', win=Window(...))
+30.1260 	EXP 	Created Cue_TargetImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Cue_TargetImage', opacity=1, ori=0.0, pos=array([0.15, 0.  ]), size=array([0.2, 0.2]), texRes=128.0, units='height', win=Window(...))
+30.1291 	EXP 	Created StimulusImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='StimulusImage', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), texRes=128.0, units='height', win=Window(...))
+30.2269 	EXP 	Created Cue_TargetImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='Cue_TargetImage', opacity=1, ori=0.0, pos=array([0.15, 0.  ]), size=array([0.2, 0.2]), texRes=128.0, units='height', win=Window(...))
+30.2303 	EXP 	Created StimulusImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image='default.png', interpolate=True, mask=None, maskParams=None, name='StimulusImage', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), texRes=128.0, units='height', win=Window(...))
+0.0149 	EXP 	NbackTitle: autoLog = True
+0.0149 	EXP 	Instruction: autoLog = True
+0.0149 	EXP 	Instruction_2: autoLog = True
+0.0149 	EXP 	Target: autoLog = True
+0.0149 	EXP 	Instruction_3: autoLog = True
+0.0149 	EXP 	LEFTSIDESCREEN_CAPTION: autoLog = True
+0.0149 	EXP 	RIGHTSIDESCREEN_CAPTION: autoLog = True
+0.0149 	EXP 	Instruction_4: autoLog = True
+0.0149 	EXP 	Instruction_5: autoLog = True
+0.0149 	EXP 	Scanner_Instruction: autoLog = True
+0.0149 	EXP 	Cue_Fix: autoLog = True
+0.0149 	EXP 	Cue_2Back: autoLog = True
+0.0149 	EXP 	Cue_Target: autoLog = True
+0.0149 	EXP 	LeftScreenResponse: autoLog = True
+0.0149 	EXP 	RightScreenResponse: autoLog = True
+0.0149 	EXP 	End_Fix: autoLog = True
+0.0149 	EXP 	Fix_15_Sec: autoLog = True
+0.0149 	EXP 	Fix_5_Sec: autoLog = True
+0.0149 	EXP 	Instruction_6: autoLog = True
+0.0149 	EXP 	Instruction_7: autoLog = True
+0.0149 	EXP 	Scanner_Instruction: autoLog = True
+0.0149 	EXP 	Cue_Fix_2: autoLog = True
+0.0149 	EXP 	Cue_2Back: autoLog = True
+0.0149 	EXP 	Cue_Target: autoLog = True
+0.0149 	EXP 	LeftScreenResponse: autoLog = True
+0.0149 	EXP 	RightScreenResponse: autoLog = True
+0.0149 	EXP 	End_Fix: autoLog = True
+0.0149 	EXP 	All_Done: autoLog = True
+0.0293 	INFO 	Keyboard events cleared
+0.0292 	EXP 	NbackTitle: autoDraw = True
+1.1719 	EXP 	Device response: <KeyPress from None: t=1.0001606661826372, value=space, duration=None>
+1.1722 	EXP 	Device response: <KeyPress from None: t=1.0001606661826372, value=space, duration=0.08211254142224789>
+1.1777 	DATA 	Keypress: space
+1.1867 	INFO 	Keyboard events cleared
+1.1866 	EXP 	NbackTitle: autoDraw = False
+1.1866 	EXP 	Instruction: autoDraw = True
+1.6861 	EXP 	Device response: <KeyPress from None: t=1.681346457451582, value=space, duration=None>
+1.6972 	DATA 	Keypress: space
+1.7112 	INFO 	Keyboard events cleared
+1.7111 	EXP 	Instruction: autoDraw = False
+1.7111 	EXP 	Instruction_2: autoDraw = True
+1.7111 	EXP 	Target: autoDraw = True
+1.7111 	EXP 	TargetImage: autoDraw = True
+1.7860 	EXP 	Device response: <KeyPress from None: t=1.681346457451582, value=space, duration=0.08846833370625973>
+2.2069 	EXP 	Device response: <KeyPress from None: t=2.1976278740912676, value=space, duration=None>
+2.2142 	DATA 	Keypress: space
+2.2331 	INFO 	Keyboard events cleared
+2.2330 	EXP 	Instruction_2: autoDraw = False
+2.2330 	EXP 	Target: autoDraw = False
+2.2330 	EXP 	TargetImage: autoDraw = False
+2.2330 	EXP 	Instruction_3: autoDraw = True
+2.2330 	EXP 	Green_Border: autoDraw = True
+2.2330 	EXP 	Image_2Back: autoDraw = True
+2.2330 	EXP 	Image_1Back: autoDraw = True
+2.2330 	EXP 	Image_ToMatch: autoDraw = True
+2.2330 	EXP 	LEFTSIDESCREEN_CAPTION: autoDraw = True
+2.2330 	EXP 	RIGHTSIDESCREEN_CAPTION: autoDraw = True
+2.2940 	EXP 	Device response: <KeyPress from None: t=2.1976278740912676, value=space, duration=0.08996008336544037>
+2.5105 	EXP 	Device response: <KeyPress from None: t=2.501287498511374, value=space, duration=None>
+2.5157 	DATA 	Keypress: space
+2.5234 	INFO 	Keyboard events cleared
+2.5233 	EXP 	Instruction_3: autoDraw = False
+2.5233 	EXP 	Green_Border: autoDraw = False
+2.5233 	EXP 	Image_2Back: autoDraw = False
+2.5233 	EXP 	Image_1Back: autoDraw = False
+2.5233 	EXP 	Image_ToMatch: autoDraw = False
+2.5233 	EXP 	LEFTSIDESCREEN_CAPTION: autoDraw = False
+2.5233 	EXP 	RIGHTSIDESCREEN_CAPTION: autoDraw = False
+2.5233 	EXP 	Instruction_4: autoDraw = True
+2.5857 	EXP 	Device response: <KeyPress from None: t=2.501287498511374, value=space, duration=0.07997400034219027>
+2.7956 	EXP 	Device response: <KeyPress from None: t=2.7939377911388874, value=space, duration=None>
+2.8032 	DATA 	Keypress: space
+2.8117 	INFO 	Keyboard events cleared
+2.8116 	EXP 	Instruction_4: autoDraw = False
+2.8116 	EXP 	Instruction_5: autoDraw = True
+2.9022 	EXP 	Device response: <KeyPress from None: t=2.7939377911388874, value=space, duration=0.10156945791095495>
+3.1027 	EXP 	Device response: <KeyPress from None: t=3.0967243323102593, value=space, duration=None>
+3.1112 	DATA 	Keypress: space
+3.1196 	INFO 	Keyboard events cleared
+3.1195 	EXP 	Instruction_5: autoDraw = False
+3.1195 	EXP 	Scanner_Instruction: autoDraw = True
+3.1941 	EXP 	Device response: <KeyPress from None: t=3.0967243323102593, value=space, duration=0.09051295835524797>
+3.3398 	EXP 	Device response: <KeyPress from None: t=3.3329754984006286, value=space, duration=None>
+3.3447 	DATA 	Keypress: space
+3.4339 	EXP 	Device response: <KeyPress from None: t=3.3329754984006286, value=space, duration=0.0925145847722888>
+3.5556 	EXP 	Device response: <KeyPress from None: t=3.5476225409656763, value=space, duration=None>
+3.5600 	DATA 	Keypress: space
+3.6461 	EXP 	Device response: <KeyPress from None: t=3.5476225409656763, value=space, duration=0.09033854212611914>
+3.8686 	EXP 	Device response: <KeyPress from None: t=3.862614708021283, value=rshift, duration=None>
+3.8723 	DATA 	Keypress: rshift
+3.9554 	EXP 	Device response: <KeyPress from None: t=3.862614708021283, value=rshift, duration=0.08833070751279593>
+5.9694 	EXP 	Device response: <KeyPress from None: t=5.966474708169699, value=t, duration=None>
+5.9707 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+5.9787 	DATA 	Keypress: t
+5.9875 	EXP 	Scanner_Instruction: autoDraw = False
+5.9875 	EXP 	Cue_Fix: autoDraw = True
+6.0551 	EXP 	Device response: <KeyPress from None: t=5.966474708169699, value=t, duration=0.07843916583806276>
+6.4965 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block1.csv as conditions, 10 conditions, 7 params
+6.4969 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': np.int64(1), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/23M_HO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+6.5099 	EXP 	Cue_Fix: autoDraw = False
+6.5099 	EXP 	Cue_2Back: autoDraw = True
+9.0475 	INFO 	Keyboard events cleared
+9.0474 	EXP 	Cue_2Back: autoDraw = False
+9.0474 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+9.0474 	EXP 	Cue_Target: autoDraw = False
+9.0474 	EXP 	Cue_TargetImage: autoDraw = False
+9.0474 	EXP 	StimulusImage: image = 'VM Stimuli/23M_HO.bmp'
+9.0474 	EXP 	StimulusImage: autoDraw = True
+9.0474 	EXP 	LeftScreenResponse: autoDraw = True
+9.0474 	EXP 	RightScreenResponse: autoDraw = True
+11.0501 	EXP 	StimulusImage: autoDraw = False
+11.0501 	EXP 	LeftScreenResponse: autoDraw = False
+11.0501 	EXP 	RightScreenResponse: autoDraw = False
+11.0501 	EXP 	End_Fix: autoDraw = True
+11.5331 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': np.int64(2), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/12F_HO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+11.5932 	INFO 	Keyboard events cleared
+11.5931 	EXP 	End_Fix: autoDraw = False
+11.5931 	EXP 	Cue_2Back: autoDraw = False
+11.5931 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+11.5931 	EXP 	Cue_Target: autoDraw = False
+11.5931 	EXP 	Cue_TargetImage: autoDraw = False
+11.5931 	EXP 	StimulusImage: image = 'VM Stimuli/12F_HO.bmp'
+11.5931 	EXP 	StimulusImage: autoDraw = True
+11.5931 	EXP 	LeftScreenResponse: autoDraw = True
+11.5931 	EXP 	RightScreenResponse: autoDraw = True
+13.5875 	EXP 	StimulusImage: autoDraw = False
+13.5875 	EXP 	LeftScreenResponse: autoDraw = False
+13.5875 	EXP 	RightScreenResponse: autoDraw = False
+13.5875 	EXP 	StimulusImage: autoDraw = False
+13.5875 	EXP 	LeftScreenResponse: autoDraw = False
+13.5875 	EXP 	RightScreenResponse: autoDraw = False
+13.5875 	EXP 	End_Fix: autoDraw = True
+14.0787 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': np.int64(3), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/AF02_HO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+14.1313 	INFO 	Keyboard events cleared
+14.1312 	EXP 	End_Fix: autoDraw = False
+14.1312 	EXP 	Cue_2Back: autoDraw = False
+14.1312 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+14.1312 	EXP 	Cue_Target: autoDraw = False
+14.1312 	EXP 	Cue_TargetImage: autoDraw = False
+14.1312 	EXP 	StimulusImage: image = 'VM Stimuli/AF02_HO.bmp'
+14.1312 	EXP 	StimulusImage: autoDraw = True
+14.1312 	EXP 	LeftScreenResponse: autoDraw = True
+14.1312 	EXP 	RightScreenResponse: autoDraw = True
+16.1516 	EXP 	StimulusImage: autoDraw = False
+16.1516 	EXP 	LeftScreenResponse: autoDraw = False
+16.1516 	EXP 	RightScreenResponse: autoDraw = False
+16.1516 	EXP 	End_Fix: autoDraw = True
+16.6194 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': np.int64(4), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/12F_HO.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+16.6477 	INFO 	Keyboard events cleared
+16.6475 	EXP 	End_Fix: autoDraw = False
+16.6475 	EXP 	Cue_2Back: autoDraw = False
+16.6475 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+16.6475 	EXP 	Cue_Target: autoDraw = False
+16.6475 	EXP 	Cue_TargetImage: autoDraw = False
+16.6475 	EXP 	StimulusImage: image = 'VM Stimuli/12F_HO.bmp'
+16.6475 	EXP 	StimulusImage: autoDraw = True
+16.6475 	EXP 	LeftScreenResponse: autoDraw = True
+16.6475 	EXP 	RightScreenResponse: autoDraw = True
+18.6467 	EXP 	StimulusImage: autoDraw = False
+18.6467 	EXP 	LeftScreenResponse: autoDraw = False
+18.6467 	EXP 	RightScreenResponse: autoDraw = False
+18.6467 	EXP 	End_Fix: autoDraw = True
+19.1331 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': np.int64(5), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/WM011_HO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+19.1810 	INFO 	Keyboard events cleared
+19.1809 	EXP 	End_Fix: autoDraw = False
+19.1809 	EXP 	End_Fix: autoDraw = False
+19.1809 	EXP 	Cue_2Back: autoDraw = False
+19.1809 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+19.1809 	EXP 	Cue_Target: autoDraw = False
+19.1809 	EXP 	Cue_TargetImage: autoDraw = False
+19.1809 	EXP 	StimulusImage: image = 'VM Stimuli/WM011_HO.bmp'
+19.1809 	EXP 	StimulusImage: autoDraw = True
+19.1809 	EXP 	LeftScreenResponse: autoDraw = True
+19.1809 	EXP 	RightScreenResponse: autoDraw = True
+21.1827 	EXP 	StimulusImage: autoDraw = False
+21.1827 	EXP 	LeftScreenResponse: autoDraw = False
+21.1827 	EXP 	RightScreenResponse: autoDraw = False
+21.1827 	EXP 	End_Fix: autoDraw = True
+21.6724 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'ID': np.int64(6), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/HM04_HO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+21.7157 	INFO 	Keyboard events cleared
+21.7156 	EXP 	End_Fix: autoDraw = False
+21.7156 	EXP 	Cue_2Back: autoDraw = False
+21.7156 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+21.7156 	EXP 	Cue_Target: autoDraw = False
+21.7156 	EXP 	Cue_TargetImage: autoDraw = False
+21.7156 	EXP 	StimulusImage: image = 'VM Stimuli/HM04_HO.bmp'
+21.7156 	EXP 	StimulusImage: autoDraw = True
+21.7156 	EXP 	LeftScreenResponse: autoDraw = True
+21.7156 	EXP 	RightScreenResponse: autoDraw = True
+23.7299 	EXP 	StimulusImage: autoDraw = False
+23.7299 	EXP 	LeftScreenResponse: autoDraw = False
+23.7299 	EXP 	RightScreenResponse: autoDraw = False
+23.7299 	EXP 	End_Fix: autoDraw = True
+24.2002 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'ID': np.int64(7), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/AF02_HO.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+24.2480 	INFO 	Keyboard events cleared
+24.2479 	EXP 	End_Fix: autoDraw = False
+24.2479 	EXP 	Cue_2Back: autoDraw = False
+24.2479 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+24.2479 	EXP 	Cue_Target: autoDraw = False
+24.2479 	EXP 	Cue_TargetImage: autoDraw = False
+24.2479 	EXP 	StimulusImage: image = 'VM Stimuli/AF02_HO.bmp'
+24.2479 	EXP 	StimulusImage: autoDraw = True
+24.2479 	EXP 	LeftScreenResponse: autoDraw = True
+24.2479 	EXP 	RightScreenResponse: autoDraw = True
+26.2425 	EXP 	StimulusImage: autoDraw = False
+26.2425 	EXP 	LeftScreenResponse: autoDraw = False
+26.2425 	EXP 	RightScreenResponse: autoDraw = False
+26.2425 	EXP 	End_Fix: autoDraw = True
+26.7263 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'ID': np.int64(8), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BF037_HO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+26.7765 	INFO 	Keyboard events cleared
+26.7765 	EXP 	End_Fix: autoDraw = False
+26.7765 	EXP 	End_Fix: autoDraw = False
+26.7765 	EXP 	Cue_2Back: autoDraw = False
+26.7765 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+26.7765 	EXP 	Cue_Target: autoDraw = False
+26.7765 	EXP 	Cue_TargetImage: autoDraw = False
+26.7765 	EXP 	StimulusImage: image = 'VM Stimuli/BF037_HO.bmp'
+26.7765 	EXP 	StimulusImage: autoDraw = True
+26.7765 	EXP 	LeftScreenResponse: autoDraw = True
+26.7765 	EXP 	RightScreenResponse: autoDraw = True
+28.7726 	EXP 	StimulusImage: autoDraw = False
+28.7726 	EXP 	LeftScreenResponse: autoDraw = False
+28.7726 	EXP 	RightScreenResponse: autoDraw = False
+28.7726 	EXP 	End_Fix: autoDraw = True
+29.2624 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'ID': np.int64(9), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/WM011_HO.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+29.3087 	INFO 	Keyboard events cleared
+29.3086 	EXP 	End_Fix: autoDraw = False
+29.3086 	EXP 	Cue_2Back: autoDraw = False
+29.3086 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+29.3086 	EXP 	Cue_Target: autoDraw = False
+29.3086 	EXP 	Cue_TargetImage: autoDraw = False
+29.3086 	EXP 	StimulusImage: image = 'VM Stimuli/WM011_HO.bmp'
+29.3086 	EXP 	StimulusImage: autoDraw = True
+29.3086 	EXP 	LeftScreenResponse: autoDraw = True
+29.3086 	EXP 	RightScreenResponse: autoDraw = True
+31.3050 	EXP 	StimulusImage: autoDraw = False
+31.3050 	EXP 	LeftScreenResponse: autoDraw = False
+31.3050 	EXP 	RightScreenResponse: autoDraw = False
+31.3050 	EXP 	End_Fix: autoDraw = True
+31.7887 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'ID': np.int64(10), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BF037_HO.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+31.8324 	INFO 	Keyboard events cleared
+31.8323 	EXP 	End_Fix: autoDraw = False
+31.8323 	EXP 	End_Fix: autoDraw = False
+31.8323 	EXP 	Cue_2Back: autoDraw = False
+31.8323 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+31.8323 	EXP 	Cue_Target: autoDraw = False
+31.8323 	EXP 	Cue_TargetImage: autoDraw = False
+31.8323 	EXP 	StimulusImage: image = 'VM Stimuli/BF037_HO.bmp'
+31.8323 	EXP 	StimulusImage: autoDraw = True
+31.8323 	EXP 	LeftScreenResponse: autoDraw = True
+31.8323 	EXP 	RightScreenResponse: autoDraw = True
+33.8350 	EXP 	StimulusImage: autoDraw = False
+33.8350 	EXP 	LeftScreenResponse: autoDraw = False
+33.8350 	EXP 	RightScreenResponse: autoDraw = False
+33.8350 	EXP 	End_Fix: autoDraw = True
+34.3421 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block2.csv as conditions, 10 conditions, 8 params
+34.3443 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+34.3557 	EXP 	End_Fix: autoDraw = False
+34.3557 	EXP 	Cue_Fix: autoDraw = True
+34.8533 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block2.csv as conditions, 10 conditions, 8 params
+34.8539 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': np.int64(1), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/LF206_NC.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/AF218_NC.bmp', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+34.8766 	EXP 	Cue_Fix: autoDraw = False
+34.8766 	EXP 	Cue_2Back: autoDraw = False
+34.8766 	EXP 	Cue_TargetImage: image = 'VM Stimuli/AF218_NC.bmp'
+34.8766 	EXP 	Cue_Target: autoDraw = True
+34.8766 	EXP 	Cue_TargetImage: autoDraw = True
+37.3651 	INFO 	Keyboard events cleared
+37.3650 	EXP 	Cue_Target: autoDraw = False
+37.3650 	EXP 	Cue_TargetImage: autoDraw = False
+37.3650 	EXP 	StimulusImage: image = 'VM Stimuli/LF206_NC.bmp'
+37.3650 	EXP 	StimulusImage: autoDraw = True
+37.3650 	EXP 	LeftScreenResponse: autoDraw = True
+37.3650 	EXP 	RightScreenResponse: autoDraw = True
+39.3634 	EXP 	StimulusImage: autoDraw = False
+39.3634 	EXP 	LeftScreenResponse: autoDraw = False
+39.3634 	EXP 	RightScreenResponse: autoDraw = False
+39.3634 	EXP 	StimulusImage: autoDraw = False
+39.3634 	EXP 	LeftScreenResponse: autoDraw = False
+39.3634 	EXP 	RightScreenResponse: autoDraw = False
+39.3634 	EXP 	End_Fix: autoDraw = True
+39.8559 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': np.int64(2), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/AF218_NC.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/AF218_NC.bmp', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+39.8781 	INFO 	Keyboard events cleared
+39.8780 	EXP 	End_Fix: autoDraw = False
+39.8780 	EXP 	Cue_2Back: autoDraw = False
+39.8780 	EXP 	Cue_TargetImage: image = 'VM Stimuli/AF218_NC.bmp'
+39.8780 	EXP 	Cue_Target: autoDraw = False
+39.8780 	EXP 	Cue_TargetImage: autoDraw = False
+39.8780 	EXP 	StimulusImage: image = 'VM Stimuli/AF218_NC.bmp'
+39.8780 	EXP 	StimulusImage: autoDraw = True
+39.8780 	EXP 	LeftScreenResponse: autoDraw = True
+39.8780 	EXP 	RightScreenResponse: autoDraw = True
+41.8712 	EXP 	StimulusImage: autoDraw = False
+41.8712 	EXP 	LeftScreenResponse: autoDraw = False
+41.8712 	EXP 	RightScreenResponse: autoDraw = False
+41.8712 	EXP 	End_Fix: autoDraw = True
+42.3598 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': np.int64(3), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/42M_NC.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/AF218_NC.bmp', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+42.3831 	INFO 	Keyboard events cleared
+42.3830 	EXP 	End_Fix: autoDraw = False
+42.3830 	EXP 	End_Fix: autoDraw = False
+42.3830 	EXP 	Cue_2Back: autoDraw = False
+42.3830 	EXP 	Cue_TargetImage: image = 'VM Stimuli/AF218_NC.bmp'
+42.3830 	EXP 	Cue_Target: autoDraw = False
+42.3830 	EXP 	Cue_TargetImage: autoDraw = False
+42.3830 	EXP 	StimulusImage: image = 'VM Stimuli/42M_NC.bmp'
+42.3830 	EXP 	StimulusImage: autoDraw = True
+42.3830 	EXP 	LeftScreenResponse: autoDraw = True
+42.3830 	EXP 	RightScreenResponse: autoDraw = True
+44.3853 	EXP 	StimulusImage: autoDraw = False
+44.3853 	EXP 	LeftScreenResponse: autoDraw = False
+44.3853 	EXP 	RightScreenResponse: autoDraw = False
+44.3853 	EXP 	End_Fix: autoDraw = True
+44.8681 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': np.int64(4), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BM09_NC.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/AF218_NC.bmp', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+44.8926 	INFO 	Keyboard events cleared
+44.8925 	EXP 	End_Fix: autoDraw = False
+44.8925 	EXP 	Cue_2Back: autoDraw = False
+44.8925 	EXP 	Cue_TargetImage: image = 'VM Stimuli/AF218_NC.bmp'
+44.8925 	EXP 	Cue_Target: autoDraw = False
+44.8925 	EXP 	Cue_TargetImage: autoDraw = False
+44.8925 	EXP 	StimulusImage: image = 'VM Stimuli/BM09_NC.bmp'
+44.8925 	EXP 	StimulusImage: autoDraw = True
+44.8925 	EXP 	LeftScreenResponse: autoDraw = True
+44.8925 	EXP 	RightScreenResponse: autoDraw = True
+46.8850 	EXP 	StimulusImage: autoDraw = False
+46.8850 	EXP 	LeftScreenResponse: autoDraw = False
+46.8850 	EXP 	RightScreenResponse: autoDraw = False
+46.8850 	EXP 	End_Fix: autoDraw = True
+47.3720 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': np.int64(5), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BM09_NC.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/AF218_NC.bmp', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+47.3939 	INFO 	Keyboard events cleared
+47.3938 	EXP 	End_Fix: autoDraw = False
+47.3938 	EXP 	End_Fix: autoDraw = False
+47.3938 	EXP 	Cue_2Back: autoDraw = False
+47.3938 	EXP 	Cue_TargetImage: image = 'VM Stimuli/AF218_NC.bmp'
+47.3938 	EXP 	Cue_Target: autoDraw = False
+47.3938 	EXP 	Cue_TargetImage: autoDraw = False
+47.3938 	EXP 	StimulusImage: image = 'VM Stimuli/BM09_NC.bmp'
+47.3938 	EXP 	StimulusImage: autoDraw = True
+47.3938 	EXP 	LeftScreenResponse: autoDraw = True
+47.3938 	EXP 	RightScreenResponse: autoDraw = True
+49.3934 	EXP 	StimulusImage: autoDraw = False
+49.3934 	EXP 	LeftScreenResponse: autoDraw = False
+49.3934 	EXP 	RightScreenResponse: autoDraw = False
+49.3934 	EXP 	End_Fix: autoDraw = True
+49.8845 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'ID': np.int64(6), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/AF218_NC.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/AF218_NC.bmp', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+49.9063 	INFO 	Keyboard events cleared
+49.9062 	EXP 	End_Fix: autoDraw = False
+49.9062 	EXP 	Cue_2Back: autoDraw = False
+49.9062 	EXP 	Cue_TargetImage: image = 'VM Stimuli/AF218_NC.bmp'
+49.9062 	EXP 	Cue_Target: autoDraw = False
+49.9062 	EXP 	Cue_TargetImage: autoDraw = False
+49.9062 	EXP 	StimulusImage: image = 'VM Stimuli/AF218_NC.bmp'
+49.9062 	EXP 	StimulusImage: autoDraw = True
+49.9062 	EXP 	LeftScreenResponse: autoDraw = True
+49.9062 	EXP 	RightScreenResponse: autoDraw = True
+51.9048 	EXP 	StimulusImage: autoDraw = False
+51.9048 	EXP 	LeftScreenResponse: autoDraw = False
+51.9048 	EXP 	RightScreenResponse: autoDraw = False
+51.9048 	EXP 	End_Fix: autoDraw = True
+52.3962 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'ID': np.int64(7), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/7F_NC.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/AF218_NC.bmp', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+52.4205 	INFO 	Keyboard events cleared
+52.4204 	EXP 	End_Fix: autoDraw = False
+52.4204 	EXP 	Cue_2Back: autoDraw = False
+52.4204 	EXP 	Cue_TargetImage: image = 'VM Stimuli/AF218_NC.bmp'
+52.4204 	EXP 	Cue_Target: autoDraw = False
+52.4204 	EXP 	Cue_TargetImage: autoDraw = False
+52.4204 	EXP 	StimulusImage: image = 'VM Stimuli/7F_NC.bmp'
+52.4204 	EXP 	StimulusImage: autoDraw = True
+52.4204 	EXP 	LeftScreenResponse: autoDraw = True
+52.4204 	EXP 	RightScreenResponse: autoDraw = True
+54.4160 	EXP 	StimulusImage: autoDraw = False
+54.4160 	EXP 	LeftScreenResponse: autoDraw = False
+54.4160 	EXP 	RightScreenResponse: autoDraw = False
+54.4160 	EXP 	End_Fix: autoDraw = True
+54.9011 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'ID': np.int64(8), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/7F_NC.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/AF218_NC.bmp', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+54.9225 	INFO 	Keyboard events cleared
+54.9223 	EXP 	End_Fix: autoDraw = False
+54.9223 	EXP 	Cue_2Back: autoDraw = False
+54.9223 	EXP 	Cue_TargetImage: image = 'VM Stimuli/AF218_NC.bmp'
+54.9223 	EXP 	Cue_Target: autoDraw = False
+54.9223 	EXP 	Cue_TargetImage: autoDraw = False
+54.9223 	EXP 	StimulusImage: image = 'VM Stimuli/7F_NC.bmp'
+54.9223 	EXP 	StimulusImage: autoDraw = True
+54.9223 	EXP 	LeftScreenResponse: autoDraw = True
+54.9223 	EXP 	RightScreenResponse: autoDraw = True
+56.9208 	EXP 	StimulusImage: autoDraw = False
+56.9208 	EXP 	LeftScreenResponse: autoDraw = False
+56.9208 	EXP 	RightScreenResponse: autoDraw = False
+56.9208 	EXP 	End_Fix: autoDraw = True
+57.4092 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'ID': np.int64(9), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/42M_NC.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/AF218_NC.bmp', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+57.4334 	INFO 	Keyboard events cleared
+57.4333 	EXP 	End_Fix: autoDraw = False
+57.4333 	EXP 	Cue_2Back: autoDraw = False
+57.4333 	EXP 	Cue_TargetImage: image = 'VM Stimuli/AF218_NC.bmp'
+57.4333 	EXP 	Cue_Target: autoDraw = False
+57.4333 	EXP 	Cue_TargetImage: autoDraw = False
+57.4333 	EXP 	StimulusImage: image = 'VM Stimuli/42M_NC.bmp'
+57.4333 	EXP 	StimulusImage: autoDraw = True
+57.4333 	EXP 	LeftScreenResponse: autoDraw = True
+57.4333 	EXP 	RightScreenResponse: autoDraw = True
+59.4318 	EXP 	StimulusImage: autoDraw = False
+59.4318 	EXP 	LeftScreenResponse: autoDraw = False
+59.4318 	EXP 	RightScreenResponse: autoDraw = False
+59.4318 	EXP 	End_Fix: autoDraw = True
+59.9178 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'ID': np.int64(10), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/LM207_NC.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/AF218_NC.bmp', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+59.9409 	INFO 	Keyboard events cleared
+59.9408 	EXP 	End_Fix: autoDraw = False
+59.9408 	EXP 	Cue_2Back: autoDraw = False
+59.9408 	EXP 	Cue_TargetImage: image = 'VM Stimuli/AF218_NC.bmp'
+59.9408 	EXP 	Cue_Target: autoDraw = False
+59.9408 	EXP 	Cue_TargetImage: autoDraw = False
+59.9408 	EXP 	StimulusImage: image = 'VM Stimuli/LM207_NC.bmp'
+59.9408 	EXP 	StimulusImage: autoDraw = True
+59.9408 	EXP 	LeftScreenResponse: autoDraw = True
+59.9408 	EXP 	RightScreenResponse: autoDraw = True
+61.9380 	EXP 	StimulusImage: autoDraw = False
+61.9380 	EXP 	LeftScreenResponse: autoDraw = False
+61.9380 	EXP 	RightScreenResponse: autoDraw = False
+61.9380 	EXP 	End_Fix: autoDraw = True
+62.4383 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block3.csv as conditions, 10 conditions, 7 params
+62.4389 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+62.4505 	EXP 	End_Fix: autoDraw = False
+62.4505 	EXP 	Cue_Fix: autoDraw = True
+62.9464 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block3.csv as conditions, 10 conditions, 7 params
+62.9468 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': np.int64(1), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/17F_FO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+62.9587 	EXP 	Cue_Fix: autoDraw = False
+62.9587 	EXP 	Cue_Fix: autoDraw = False
+62.9587 	EXP 	Cue_2Back: autoDraw = True
+65.4766 	INFO 	Keyboard events cleared
+65.4765 	EXP 	Cue_2Back: autoDraw = False
+65.4765 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+65.4765 	EXP 	Cue_Target: autoDraw = False
+65.4765 	EXP 	Cue_TargetImage: autoDraw = False
+65.4765 	EXP 	StimulusImage: image = 'VM Stimuli/17F_FO.bmp'
+65.4765 	EXP 	StimulusImage: autoDraw = True
+65.4765 	EXP 	LeftScreenResponse: autoDraw = True
+65.4765 	EXP 	RightScreenResponse: autoDraw = True
+67.5014 	EXP 	StimulusImage: autoDraw = False
+67.5014 	EXP 	LeftScreenResponse: autoDraw = False
+67.5014 	EXP 	RightScreenResponse: autoDraw = False
+67.5014 	EXP 	End_Fix: autoDraw = True
+67.9737 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': np.int64(2), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/HM03_FO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+68.0612 	INFO 	Keyboard events cleared
+68.0599 	EXP 	End_Fix: autoDraw = False
+68.0599 	EXP 	Cue_2Back: autoDraw = False
+68.0599 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+68.0599 	EXP 	Cue_Target: autoDraw = False
+68.0599 	EXP 	Cue_TargetImage: autoDraw = False
+68.0599 	EXP 	StimulusImage: image = 'VM Stimuli/HM03_FO.bmp'
+68.0599 	EXP 	StimulusImage: autoDraw = True
+68.0599 	EXP 	LeftScreenResponse: autoDraw = True
+68.0599 	EXP 	RightScreenResponse: autoDraw = True
+70.0562 	EXP 	StimulusImage: autoDraw = False
+70.0562 	EXP 	LeftScreenResponse: autoDraw = False
+70.0562 	EXP 	RightScreenResponse: autoDraw = False
+70.0562 	EXP 	End_Fix: autoDraw = True
+70.5490 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': np.int64(3), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BM045_FO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+70.6376 	INFO 	Keyboard events cleared
+70.6374 	EXP 	End_Fix: autoDraw = False
+70.6374 	EXP 	Cue_2Back: autoDraw = False
+70.6374 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+70.6374 	EXP 	Cue_Target: autoDraw = False
+70.6374 	EXP 	Cue_TargetImage: autoDraw = False
+70.6374 	EXP 	StimulusImage: image = 'VM Stimuli/BM045_FO.bmp'
+70.6374 	EXP 	StimulusImage: autoDraw = True
+70.6374 	EXP 	LeftScreenResponse: autoDraw = True
+70.6374 	EXP 	RightScreenResponse: autoDraw = True
+72.6379 	EXP 	StimulusImage: autoDraw = False
+72.6379 	EXP 	LeftScreenResponse: autoDraw = False
+72.6379 	EXP 	RightScreenResponse: autoDraw = False
+72.6379 	EXP 	End_Fix: autoDraw = True
+73.1257 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': np.int64(4), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/HM03_FO.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+73.1701 	INFO 	Keyboard events cleared
+73.1700 	EXP 	End_Fix: autoDraw = False
+73.1700 	EXP 	Cue_2Back: autoDraw = False
+73.1700 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+73.1700 	EXP 	Cue_Target: autoDraw = False
+73.1700 	EXP 	Cue_TargetImage: autoDraw = False
+73.1700 	EXP 	StimulusImage: image = 'VM Stimuli/HM03_FO.bmp'
+73.1700 	EXP 	StimulusImage: autoDraw = True
+73.1700 	EXP 	LeftScreenResponse: autoDraw = True
+73.1700 	EXP 	RightScreenResponse: autoDraw = True
+75.1653 	EXP 	StimulusImage: autoDraw = False
+75.1653 	EXP 	LeftScreenResponse: autoDraw = False
+75.1653 	EXP 	RightScreenResponse: autoDraw = False
+75.1653 	EXP 	End_Fix: autoDraw = True
+75.6490 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': np.int64(5), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/17F_FO.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+75.6944 	INFO 	Keyboard events cleared
+75.6943 	EXP 	End_Fix: autoDraw = False
+75.6943 	EXP 	End_Fix: autoDraw = False
+75.6943 	EXP 	Cue_2Back: autoDraw = False
+75.6943 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+75.6943 	EXP 	Cue_Target: autoDraw = False
+75.6943 	EXP 	Cue_TargetImage: autoDraw = False
+75.6943 	EXP 	StimulusImage: image = 'VM Stimuli/17F_FO.bmp'
+75.6943 	EXP 	StimulusImage: autoDraw = True
+75.6943 	EXP 	LeftScreenResponse: autoDraw = True
+75.6943 	EXP 	RightScreenResponse: autoDraw = True
+77.6986 	EXP 	StimulusImage: autoDraw = False
+77.6986 	EXP 	LeftScreenResponse: autoDraw = False
+77.6986 	EXP 	RightScreenResponse: autoDraw = False
+77.6986 	EXP 	End_Fix: autoDraw = True
+78.1843 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'ID': np.int64(6), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BM045_FO.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+78.2386 	INFO 	Keyboard events cleared
+78.2385 	EXP 	End_Fix: autoDraw = False
+78.2385 	EXP 	Cue_2Back: autoDraw = False
+78.2385 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+78.2385 	EXP 	Cue_Target: autoDraw = False
+78.2385 	EXP 	Cue_TargetImage: autoDraw = False
+78.2385 	EXP 	StimulusImage: image = 'VM Stimuli/BM045_FO.bmp'
+78.2385 	EXP 	StimulusImage: autoDraw = True
+78.2385 	EXP 	LeftScreenResponse: autoDraw = True
+78.2385 	EXP 	RightScreenResponse: autoDraw = True
+80.2405 	EXP 	StimulusImage: autoDraw = False
+80.2405 	EXP 	LeftScreenResponse: autoDraw = False
+80.2405 	EXP 	RightScreenResponse: autoDraw = False
+80.2405 	EXP 	End_Fix: autoDraw = True
+80.7344 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'ID': np.int64(7), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/9F_FO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+80.7799 	INFO 	Keyboard events cleared
+80.7797 	EXP 	End_Fix: autoDraw = False
+80.7797 	EXP 	Cue_2Back: autoDraw = False
+80.7797 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+80.7797 	EXP 	Cue_Target: autoDraw = False
+80.7797 	EXP 	Cue_TargetImage: autoDraw = False
+80.7797 	EXP 	StimulusImage: image = 'VM Stimuli/9F_FO.bmp'
+80.7797 	EXP 	StimulusImage: autoDraw = True
+80.7797 	EXP 	LeftScreenResponse: autoDraw = True
+80.7797 	EXP 	RightScreenResponse: autoDraw = True
+82.7764 	EXP 	StimulusImage: autoDraw = False
+82.7764 	EXP 	LeftScreenResponse: autoDraw = False
+82.7764 	EXP 	RightScreenResponse: autoDraw = False
+82.7764 	EXP 	End_Fix: autoDraw = True
+83.2675 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'ID': np.int64(8), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/WM004_FO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+83.3206 	INFO 	Keyboard events cleared
+83.3205 	EXP 	End_Fix: autoDraw = False
+83.3205 	EXP 	Cue_2Back: autoDraw = False
+83.3205 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+83.3205 	EXP 	Cue_Target: autoDraw = False
+83.3205 	EXP 	Cue_TargetImage: autoDraw = False
+83.3205 	EXP 	StimulusImage: image = 'VM Stimuli/WM004_FO.bmp'
+83.3205 	EXP 	StimulusImage: autoDraw = True
+83.3205 	EXP 	LeftScreenResponse: autoDraw = True
+83.3205 	EXP 	RightScreenResponse: autoDraw = True
+85.3205 	EXP 	StimulusImage: autoDraw = False
+85.3205 	EXP 	LeftScreenResponse: autoDraw = False
+85.3205 	EXP 	RightScreenResponse: autoDraw = False
+85.3205 	EXP 	End_Fix: autoDraw = True
+85.8037 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'ID': np.int64(9), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/9F_FO.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+85.8480 	INFO 	Keyboard events cleared
+85.8479 	EXP 	End_Fix: autoDraw = False
+85.8479 	EXP 	End_Fix: autoDraw = False
+85.8479 	EXP 	Cue_2Back: autoDraw = False
+85.8479 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+85.8479 	EXP 	Cue_Target: autoDraw = False
+85.8479 	EXP 	Cue_TargetImage: autoDraw = False
+85.8479 	EXP 	StimulusImage: image = 'VM Stimuli/9F_FO.bmp'
+85.8479 	EXP 	StimulusImage: autoDraw = True
+85.8479 	EXP 	LeftScreenResponse: autoDraw = True
+85.8479 	EXP 	RightScreenResponse: autoDraw = True
+87.8417 	EXP 	StimulusImage: autoDraw = False
+87.8417 	EXP 	LeftScreenResponse: autoDraw = False
+87.8417 	EXP 	RightScreenResponse: autoDraw = False
+87.8417 	EXP 	StimulusImage: autoDraw = False
+87.8417 	EXP 	LeftScreenResponse: autoDraw = False
+87.8417 	EXP 	RightScreenResponse: autoDraw = False
+87.8417 	EXP 	End_Fix: autoDraw = True
+88.3258 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'ID': np.int64(10), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BF06_FO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+88.3728 	INFO 	Keyboard events cleared
+88.3727 	EXP 	End_Fix: autoDraw = False
+88.3727 	EXP 	End_Fix: autoDraw = False
+88.3727 	EXP 	Cue_2Back: autoDraw = False
+88.3727 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+88.3727 	EXP 	Cue_Target: autoDraw = False
+88.3727 	EXP 	Cue_TargetImage: autoDraw = False
+88.3727 	EXP 	StimulusImage: image = 'VM Stimuli/BF06_FO.bmp'
+88.3727 	EXP 	StimulusImage: autoDraw = True
+88.3727 	EXP 	LeftScreenResponse: autoDraw = True
+88.3727 	EXP 	RightScreenResponse: autoDraw = True
+90.3707 	EXP 	StimulusImage: autoDraw = False
+90.3707 	EXP 	LeftScreenResponse: autoDraw = False
+90.3707 	EXP 	RightScreenResponse: autoDraw = False
+90.3707 	EXP 	End_Fix: autoDraw = True
+90.8789 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block4.csv as conditions, 10 conditions, 8 params
+90.8796 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+90.8911 	EXP 	End_Fix: autoDraw = False
+90.8911 	EXP 	Cue_Fix: autoDraw = True
+91.3838 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block4.csv as conditions, 10 conditions, 8 params
+91.3844 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': np.int64(1), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/34M_HO.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'PosFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/34M_HO.bmp', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+91.4064 	EXP 	Cue_Fix: autoDraw = False
+91.4064 	EXP 	Cue_Fix: autoDraw = False
+91.4064 	EXP 	Cue_2Back: autoDraw = False
+91.4064 	EXP 	Cue_TargetImage: image = 'VM Stimuli/34M_HO.bmp'
+91.4064 	EXP 	Cue_Target: autoDraw = True
+91.4064 	EXP 	Cue_TargetImage: autoDraw = True
+93.8891 	INFO 	Keyboard events cleared
+93.8890 	EXP 	Cue_Target: autoDraw = False
+93.8890 	EXP 	Cue_TargetImage: autoDraw = False
+93.8890 	EXP 	StimulusImage: image = 'VM Stimuli/34M_HO.bmp'
+93.8890 	EXP 	StimulusImage: autoDraw = True
+93.8890 	EXP 	LeftScreenResponse: autoDraw = True
+93.8890 	EXP 	RightScreenResponse: autoDraw = True
+95.8877 	EXP 	StimulusImage: autoDraw = False
+95.8877 	EXP 	LeftScreenResponse: autoDraw = False
+95.8877 	EXP 	RightScreenResponse: autoDraw = False
+95.8877 	EXP 	StimulusImage: autoDraw = False
+95.8877 	EXP 	LeftScreenResponse: autoDraw = False
+95.8877 	EXP 	RightScreenResponse: autoDraw = False
+95.8877 	EXP 	End_Fix: autoDraw = True
+96.3776 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': np.int64(2), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BM08_HO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/34M_HO.bmp', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+96.4018 	INFO 	Keyboard events cleared
+96.4017 	EXP 	End_Fix: autoDraw = False
+96.4017 	EXP 	End_Fix: autoDraw = False
+96.4017 	EXP 	Cue_2Back: autoDraw = False
+96.4017 	EXP 	Cue_TargetImage: image = 'VM Stimuli/34M_HO.bmp'
+96.4017 	EXP 	Cue_Target: autoDraw = False
+96.4017 	EXP 	Cue_TargetImage: autoDraw = False
+96.4017 	EXP 	StimulusImage: image = 'VM Stimuli/BM08_HO.bmp'
+96.4017 	EXP 	StimulusImage: autoDraw = True
+96.4017 	EXP 	LeftScreenResponse: autoDraw = True
+96.4017 	EXP 	RightScreenResponse: autoDraw = True
+98.3998 	EXP 	StimulusImage: autoDraw = False
+98.3998 	EXP 	LeftScreenResponse: autoDraw = False
+98.3998 	EXP 	RightScreenResponse: autoDraw = False
+98.3998 	EXP 	End_Fix: autoDraw = True
+98.8866 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': np.int64(3), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/HF04_HO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/34M_HO.bmp', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+98.9100 	INFO 	Keyboard events cleared
+98.9099 	EXP 	End_Fix: autoDraw = False
+98.9099 	EXP 	Cue_2Back: autoDraw = False
+98.9099 	EXP 	Cue_TargetImage: image = 'VM Stimuli/34M_HO.bmp'
+98.9099 	EXP 	Cue_Target: autoDraw = False
+98.9099 	EXP 	Cue_TargetImage: autoDraw = False
+98.9099 	EXP 	StimulusImage: image = 'VM Stimuli/HF04_HO.bmp'
+98.9099 	EXP 	StimulusImage: autoDraw = True
+98.9099 	EXP 	LeftScreenResponse: autoDraw = True
+98.9099 	EXP 	RightScreenResponse: autoDraw = True
+100.9042 	EXP 	StimulusImage: autoDraw = False
+100.9042 	EXP 	LeftScreenResponse: autoDraw = False
+100.9042 	EXP 	RightScreenResponse: autoDraw = False
+100.9042 	EXP 	End_Fix: autoDraw = True
+101.3920 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': np.int64(4), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BF002_HO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/34M_HO.bmp', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+101.4161 	INFO 	Keyboard events cleared
+101.4160 	EXP 	End_Fix: autoDraw = False
+101.4160 	EXP 	Cue_2Back: autoDraw = False
+101.4160 	EXP 	Cue_TargetImage: image = 'VM Stimuli/34M_HO.bmp'
+101.4160 	EXP 	Cue_Target: autoDraw = False
+101.4160 	EXP 	Cue_TargetImage: autoDraw = False
+101.4160 	EXP 	StimulusImage: image = 'VM Stimuli/BF002_HO.bmp'
+101.4160 	EXP 	StimulusImage: autoDraw = True
+101.4160 	EXP 	LeftScreenResponse: autoDraw = True
+101.4160 	EXP 	RightScreenResponse: autoDraw = True
+103.4147 	EXP 	StimulusImage: autoDraw = False
+103.4147 	EXP 	LeftScreenResponse: autoDraw = False
+103.4147 	EXP 	RightScreenResponse: autoDraw = False
+103.4147 	EXP 	End_Fix: autoDraw = True
+103.9035 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': np.int64(5), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BM08_HO.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/34M_HO.bmp', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+103.9293 	INFO 	Keyboard events cleared
+103.9292 	EXP 	End_Fix: autoDraw = False
+103.9292 	EXP 	Cue_2Back: autoDraw = False
+103.9292 	EXP 	Cue_TargetImage: image = 'VM Stimuli/34M_HO.bmp'
+103.9292 	EXP 	Cue_Target: autoDraw = False
+103.9292 	EXP 	Cue_TargetImage: autoDraw = False
+103.9292 	EXP 	StimulusImage: image = 'VM Stimuli/BM08_HO.bmp'
+103.9292 	EXP 	StimulusImage: autoDraw = True
+103.9292 	EXP 	LeftScreenResponse: autoDraw = True
+103.9292 	EXP 	RightScreenResponse: autoDraw = True
+105.9321 	EXP 	StimulusImage: autoDraw = False
+105.9321 	EXP 	LeftScreenResponse: autoDraw = False
+105.9321 	EXP 	RightScreenResponse: autoDraw = False
+105.9321 	EXP 	End_Fix: autoDraw = True
+106.4170 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'ID': np.int64(6), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/45M_HO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/34M_HO.bmp', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+106.4402 	INFO 	Keyboard events cleared
+106.4400 	EXP 	End_Fix: autoDraw = False
+106.4400 	EXP 	Cue_2Back: autoDraw = False
+106.4400 	EXP 	Cue_TargetImage: image = 'VM Stimuli/34M_HO.bmp'
+106.4400 	EXP 	Cue_Target: autoDraw = False
+106.4400 	EXP 	Cue_TargetImage: autoDraw = False
+106.4400 	EXP 	StimulusImage: image = 'VM Stimuli/45M_HO.bmp'
+106.4400 	EXP 	StimulusImage: autoDraw = True
+106.4400 	EXP 	LeftScreenResponse: autoDraw = True
+106.4400 	EXP 	RightScreenResponse: autoDraw = True
+108.4415 	EXP 	StimulusImage: autoDraw = False
+108.4415 	EXP 	LeftScreenResponse: autoDraw = False
+108.4415 	EXP 	RightScreenResponse: autoDraw = False
+108.4415 	EXP 	End_Fix: autoDraw = True
+108.9274 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'ID': np.int64(7), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/45M_HO.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/34M_HO.bmp', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+108.9490 	INFO 	Keyboard events cleared
+108.9489 	EXP 	End_Fix: autoDraw = False
+108.9489 	EXP 	Cue_2Back: autoDraw = False
+108.9489 	EXP 	Cue_TargetImage: image = 'VM Stimuli/34M_HO.bmp'
+108.9489 	EXP 	Cue_Target: autoDraw = False
+108.9489 	EXP 	Cue_TargetImage: autoDraw = False
+108.9489 	EXP 	StimulusImage: image = 'VM Stimuli/45M_HO.bmp'
+108.9489 	EXP 	StimulusImage: autoDraw = True
+108.9489 	EXP 	LeftScreenResponse: autoDraw = True
+108.9489 	EXP 	RightScreenResponse: autoDraw = True
+110.9483 	EXP 	StimulusImage: autoDraw = False
+110.9483 	EXP 	LeftScreenResponse: autoDraw = False
+110.9483 	EXP 	RightScreenResponse: autoDraw = False
+110.9483 	EXP 	End_Fix: autoDraw = True
+111.4320 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'ID': np.int64(8), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BF002_HO.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/34M_HO.bmp', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+111.4556 	INFO 	Keyboard events cleared
+111.4555 	EXP 	End_Fix: autoDraw = False
+111.4555 	EXP 	Cue_2Back: autoDraw = False
+111.4555 	EXP 	Cue_TargetImage: image = 'VM Stimuli/34M_HO.bmp'
+111.4555 	EXP 	Cue_Target: autoDraw = False
+111.4555 	EXP 	Cue_TargetImage: autoDraw = False
+111.4555 	EXP 	StimulusImage: image = 'VM Stimuli/BF002_HO.bmp'
+111.4555 	EXP 	StimulusImage: autoDraw = True
+111.4555 	EXP 	LeftScreenResponse: autoDraw = True
+111.4555 	EXP 	RightScreenResponse: autoDraw = True
+113.4489 	EXP 	StimulusImage: autoDraw = False
+113.4489 	EXP 	LeftScreenResponse: autoDraw = False
+113.4489 	EXP 	RightScreenResponse: autoDraw = False
+113.4489 	EXP 	End_Fix: autoDraw = True
+113.9367 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'ID': np.int64(9), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/34M_HO.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'PosFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/34M_HO.bmp', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+113.9585 	INFO 	Keyboard events cleared
+113.9584 	EXP 	End_Fix: autoDraw = False
+113.9584 	EXP 	Cue_2Back: autoDraw = False
+113.9584 	EXP 	Cue_TargetImage: image = 'VM Stimuli/34M_HO.bmp'
+113.9584 	EXP 	Cue_Target: autoDraw = False
+113.9584 	EXP 	Cue_TargetImage: autoDraw = False
+113.9584 	EXP 	StimulusImage: image = 'VM Stimuli/34M_HO.bmp'
+113.9584 	EXP 	StimulusImage: autoDraw = True
+113.9584 	EXP 	LeftScreenResponse: autoDraw = True
+113.9584 	EXP 	RightScreenResponse: autoDraw = True
+115.9539 	EXP 	StimulusImage: autoDraw = False
+115.9539 	EXP 	LeftScreenResponse: autoDraw = False
+115.9539 	EXP 	RightScreenResponse: autoDraw = False
+115.9539 	EXP 	End_Fix: autoDraw = True
+116.4379 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'ID': np.int64(10), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/WF07_HO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'PosFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/34M_HO.bmp', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+116.4615 	INFO 	Keyboard events cleared
+116.4614 	EXP 	End_Fix: autoDraw = False
+116.4614 	EXP 	End_Fix: autoDraw = False
+116.4614 	EXP 	Cue_2Back: autoDraw = False
+116.4614 	EXP 	Cue_TargetImage: image = 'VM Stimuli/34M_HO.bmp'
+116.4614 	EXP 	Cue_Target: autoDraw = False
+116.4614 	EXP 	Cue_TargetImage: autoDraw = False
+116.4614 	EXP 	StimulusImage: image = 'VM Stimuli/WF07_HO.bmp'
+116.4614 	EXP 	StimulusImage: autoDraw = True
+116.4614 	EXP 	LeftScreenResponse: autoDraw = True
+116.4614 	EXP 	RightScreenResponse: autoDraw = True
+118.4531 	EXP 	StimulusImage: autoDraw = False
+118.4531 	EXP 	LeftScreenResponse: autoDraw = False
+118.4531 	EXP 	RightScreenResponse: autoDraw = False
+118.4531 	EXP 	End_Fix: autoDraw = True
+118.9584 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block5.csv as conditions, 10 conditions, 8 params
+118.9590 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+118.9703 	EXP 	End_Fix: autoDraw = False
+118.9703 	EXP 	Cue_Fix: autoDraw = True
+119.4699 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block5.csv as conditions, 10 conditions, 8 params
+119.4705 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': np.int64(1), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_003_92016.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/PL_001_92012.bmp', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+119.4887 	EXP 	Cue_Fix: autoDraw = False
+119.4887 	EXP 	Cue_2Back: autoDraw = False
+119.4887 	EXP 	Cue_TargetImage: image = 'VM Stimuli/PL_001_92012.bmp'
+119.4887 	EXP 	Cue_Target: autoDraw = True
+119.4887 	EXP 	Cue_TargetImage: autoDraw = True
+121.9817 	INFO 	Keyboard events cleared
+121.9816 	EXP 	Cue_Target: autoDraw = False
+121.9816 	EXP 	Cue_TargetImage: autoDraw = False
+121.9816 	EXP 	StimulusImage: image = 'VM Stimuli/PL_003_92016.bmp'
+121.9816 	EXP 	StimulusImage: autoDraw = True
+121.9816 	EXP 	LeftScreenResponse: autoDraw = True
+121.9816 	EXP 	RightScreenResponse: autoDraw = True
+123.9812 	EXP 	StimulusImage: autoDraw = False
+123.9812 	EXP 	LeftScreenResponse: autoDraw = False
+123.9812 	EXP 	RightScreenResponse: autoDraw = False
+123.9812 	EXP 	StimulusImage: autoDraw = False
+123.9812 	EXP 	LeftScreenResponse: autoDraw = False
+123.9812 	EXP 	RightScreenResponse: autoDraw = False
+123.9812 	EXP 	End_Fix: autoDraw = True
+124.4710 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': np.int64(2), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_003_92016.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/PL_001_92012.bmp', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+124.4932 	INFO 	Keyboard events cleared
+124.4931 	EXP 	End_Fix: autoDraw = False
+124.4931 	EXP 	End_Fix: autoDraw = False
+124.4931 	EXP 	Cue_2Back: autoDraw = False
+124.4931 	EXP 	Cue_TargetImage: image = 'VM Stimuli/PL_001_92012.bmp'
+124.4931 	EXP 	Cue_Target: autoDraw = False
+124.4931 	EXP 	Cue_TargetImage: autoDraw = False
+124.4931 	EXP 	StimulusImage: image = 'VM Stimuli/PL_003_92016.bmp'
+124.4931 	EXP 	StimulusImage: autoDraw = True
+124.4931 	EXP 	LeftScreenResponse: autoDraw = True
+124.4931 	EXP 	RightScreenResponse: autoDraw = True
+126.4998 	EXP 	StimulusImage: autoDraw = False
+126.4998 	EXP 	LeftScreenResponse: autoDraw = False
+126.4998 	EXP 	RightScreenResponse: autoDraw = False
+126.4998 	EXP 	End_Fix: autoDraw = True
+126.9781 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': np.int64(3), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_006_92025.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/PL_001_92012.bmp', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+127.0030 	INFO 	Keyboard events cleared
+127.0029 	EXP 	End_Fix: autoDraw = False
+127.0029 	EXP 	Cue_2Back: autoDraw = False
+127.0029 	EXP 	Cue_TargetImage: image = 'VM Stimuli/PL_001_92012.bmp'
+127.0029 	EXP 	Cue_Target: autoDraw = False
+127.0029 	EXP 	Cue_TargetImage: autoDraw = False
+127.0029 	EXP 	StimulusImage: image = 'VM Stimuli/PL_006_92025.bmp'
+127.0029 	EXP 	StimulusImage: autoDraw = True
+127.0029 	EXP 	LeftScreenResponse: autoDraw = True
+127.0029 	EXP 	RightScreenResponse: autoDraw = True
+128.9986 	EXP 	StimulusImage: autoDraw = False
+128.9986 	EXP 	LeftScreenResponse: autoDraw = False
+128.9986 	EXP 	RightScreenResponse: autoDraw = False
+128.9986 	EXP 	End_Fix: autoDraw = True
+129.4818 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': np.int64(4), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_001_92012.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/PL_001_92012.bmp', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+129.5090 	INFO 	Keyboard events cleared
+129.5088 	EXP 	End_Fix: autoDraw = False
+129.5088 	EXP 	End_Fix: autoDraw = False
+129.5088 	EXP 	Cue_2Back: autoDraw = False
+129.5088 	EXP 	Cue_TargetImage: image = 'VM Stimuli/PL_001_92012.bmp'
+129.5088 	EXP 	Cue_Target: autoDraw = False
+129.5088 	EXP 	Cue_TargetImage: autoDraw = False
+129.5088 	EXP 	StimulusImage: image = 'VM Stimuli/PL_001_92012.bmp'
+129.5088 	EXP 	StimulusImage: autoDraw = True
+129.5088 	EXP 	LeftScreenResponse: autoDraw = True
+129.5088 	EXP 	RightScreenResponse: autoDraw = True
+131.5036 	EXP 	StimulusImage: autoDraw = False
+131.5036 	EXP 	LeftScreenResponse: autoDraw = False
+131.5036 	EXP 	RightScreenResponse: autoDraw = False
+131.5036 	EXP 	End_Fix: autoDraw = True
+131.9937 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': np.int64(5), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_004_92023.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/PL_001_92012.bmp', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+132.0195 	INFO 	Keyboard events cleared
+132.0194 	EXP 	End_Fix: autoDraw = False
+132.0194 	EXP 	Cue_2Back: autoDraw = False
+132.0194 	EXP 	Cue_TargetImage: image = 'VM Stimuli/PL_001_92012.bmp'
+132.0194 	EXP 	Cue_Target: autoDraw = False
+132.0194 	EXP 	Cue_TargetImage: autoDraw = False
+132.0194 	EXP 	StimulusImage: image = 'VM Stimuli/PL_004_92023.bmp'
+132.0194 	EXP 	StimulusImage: autoDraw = True
+132.0194 	EXP 	LeftScreenResponse: autoDraw = True
+132.0194 	EXP 	RightScreenResponse: autoDraw = True
+134.0141 	EXP 	StimulusImage: autoDraw = False
+134.0141 	EXP 	LeftScreenResponse: autoDraw = False
+134.0141 	EXP 	RightScreenResponse: autoDraw = False
+134.0141 	EXP 	End_Fix: autoDraw = True
+134.5001 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'ID': np.int64(6), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_005_92024.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/PL_001_92012.bmp', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+134.5242 	INFO 	Keyboard events cleared
+134.5240 	EXP 	End_Fix: autoDraw = False
+134.5240 	EXP 	Cue_2Back: autoDraw = False
+134.5240 	EXP 	Cue_TargetImage: image = 'VM Stimuli/PL_001_92012.bmp'
+134.5240 	EXP 	Cue_Target: autoDraw = False
+134.5240 	EXP 	Cue_TargetImage: autoDraw = False
+134.5240 	EXP 	StimulusImage: image = 'VM Stimuli/PL_005_92024.bmp'
+134.5240 	EXP 	StimulusImage: autoDraw = True
+134.5240 	EXP 	LeftScreenResponse: autoDraw = True
+134.5240 	EXP 	RightScreenResponse: autoDraw = True
+136.5161 	EXP 	StimulusImage: autoDraw = False
+136.5161 	EXP 	LeftScreenResponse: autoDraw = False
+136.5161 	EXP 	RightScreenResponse: autoDraw = False
+136.5161 	EXP 	End_Fix: autoDraw = True
+137.0029 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'ID': np.int64(7), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_001_92012.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/PL_001_92012.bmp', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+137.0249 	INFO 	Keyboard events cleared
+137.0248 	EXP 	End_Fix: autoDraw = False
+137.0248 	EXP 	End_Fix: autoDraw = False
+137.0248 	EXP 	Cue_2Back: autoDraw = False
+137.0248 	EXP 	Cue_TargetImage: image = 'VM Stimuli/PL_001_92012.bmp'
+137.0248 	EXP 	Cue_Target: autoDraw = False
+137.0248 	EXP 	Cue_TargetImage: autoDraw = False
+137.0248 	EXP 	StimulusImage: image = 'VM Stimuli/PL_001_92012.bmp'
+137.0248 	EXP 	StimulusImage: autoDraw = True
+137.0248 	EXP 	LeftScreenResponse: autoDraw = True
+137.0248 	EXP 	RightScreenResponse: autoDraw = True
+139.0213 	EXP 	StimulusImage: autoDraw = False
+139.0213 	EXP 	LeftScreenResponse: autoDraw = False
+139.0213 	EXP 	RightScreenResponse: autoDraw = False
+139.0213 	EXP 	End_Fix: autoDraw = True
+139.5059 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'ID': np.int64(8), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_002_92014.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/PL_001_92012.bmp', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+139.5325 	INFO 	Keyboard events cleared
+139.5324 	EXP 	End_Fix: autoDraw = False
+139.5324 	EXP 	End_Fix: autoDraw = False
+139.5324 	EXP 	Cue_2Back: autoDraw = False
+139.5324 	EXP 	Cue_TargetImage: image = 'VM Stimuli/PL_001_92012.bmp'
+139.5324 	EXP 	Cue_Target: autoDraw = False
+139.5324 	EXP 	Cue_TargetImage: autoDraw = False
+139.5324 	EXP 	StimulusImage: image = 'VM Stimuli/PL_002_92014.bmp'
+139.5324 	EXP 	StimulusImage: autoDraw = True
+139.5324 	EXP 	LeftScreenResponse: autoDraw = True
+139.5324 	EXP 	RightScreenResponse: autoDraw = True
+141.5261 	EXP 	StimulusImage: autoDraw = False
+141.5261 	EXP 	LeftScreenResponse: autoDraw = False
+141.5261 	EXP 	RightScreenResponse: autoDraw = False
+141.5261 	EXP 	End_Fix: autoDraw = True
+142.0164 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'ID': np.int64(9), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_004_92023.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/PL_001_92012.bmp', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+142.0386 	INFO 	Keyboard events cleared
+142.0385 	EXP 	End_Fix: autoDraw = False
+142.0385 	EXP 	Cue_2Back: autoDraw = False
+142.0385 	EXP 	Cue_TargetImage: image = 'VM Stimuli/PL_001_92012.bmp'
+142.0385 	EXP 	Cue_Target: autoDraw = False
+142.0385 	EXP 	Cue_TargetImage: autoDraw = False
+142.0385 	EXP 	StimulusImage: image = 'VM Stimuli/PL_004_92023.bmp'
+142.0385 	EXP 	StimulusImage: autoDraw = True
+142.0385 	EXP 	LeftScreenResponse: autoDraw = True
+142.0385 	EXP 	RightScreenResponse: autoDraw = True
+144.0372 	EXP 	StimulusImage: autoDraw = False
+144.0372 	EXP 	LeftScreenResponse: autoDraw = False
+144.0372 	EXP 	RightScreenResponse: autoDraw = False
+144.0372 	EXP 	End_Fix: autoDraw = True
+144.5261 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'ID': np.int64(10), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_006_92025.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/PL_001_92012.bmp', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+144.5435 	INFO 	Keyboard events cleared
+144.5433 	EXP 	End_Fix: autoDraw = False
+144.5433 	EXP 	Cue_2Back: autoDraw = False
+144.5433 	EXP 	Cue_TargetImage: image = 'VM Stimuli/PL_001_92012.bmp'
+144.5433 	EXP 	Cue_Target: autoDraw = False
+144.5433 	EXP 	Cue_TargetImage: autoDraw = False
+144.5433 	EXP 	StimulusImage: image = 'VM Stimuli/PL_006_92025.bmp'
+144.5433 	EXP 	StimulusImage: autoDraw = True
+144.5433 	EXP 	LeftScreenResponse: autoDraw = True
+144.5433 	EXP 	RightScreenResponse: autoDraw = True
+146.5381 	EXP 	StimulusImage: autoDraw = False
+146.5381 	EXP 	LeftScreenResponse: autoDraw = False
+146.5381 	EXP 	RightScreenResponse: autoDraw = False
+146.5381 	EXP 	StimulusImage: autoDraw = False
+146.5381 	EXP 	LeftScreenResponse: autoDraw = False
+146.5381 	EXP 	RightScreenResponse: autoDraw = False
+146.5381 	EXP 	End_Fix: autoDraw = True
+147.0433 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block6.csv as conditions, 10 conditions, 7 params
+147.0440 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+147.0558 	EXP 	End_Fix: autoDraw = False
+147.0558 	EXP 	Cue_Fix: autoDraw = True
+147.5534 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block6.csv as conditions, 10 conditions, 7 params
+147.5539 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': np.int64(1), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/AM228_NC.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '2-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+147.5662 	EXP 	Cue_Fix: autoDraw = False
+147.5662 	EXP 	Cue_2Back: autoDraw = True
+150.1036 	INFO 	Keyboard events cleared
+150.1035 	EXP 	Cue_2Back: autoDraw = False
+150.1035 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+150.1035 	EXP 	Cue_Target: autoDraw = False
+150.1035 	EXP 	Cue_TargetImage: autoDraw = False
+150.1035 	EXP 	StimulusImage: image = 'VM Stimuli/AM228_NC.bmp'
+150.1035 	EXP 	StimulusImage: autoDraw = True
+150.1035 	EXP 	LeftScreenResponse: autoDraw = True
+150.1035 	EXP 	RightScreenResponse: autoDraw = True
+152.0972 	EXP 	StimulusImage: autoDraw = False
+152.0972 	EXP 	LeftScreenResponse: autoDraw = False
+152.0972 	EXP 	RightScreenResponse: autoDraw = False
+152.0972 	EXP 	StimulusImage: autoDraw = False
+152.0972 	EXP 	LeftScreenResponse: autoDraw = False
+152.0972 	EXP 	RightScreenResponse: autoDraw = False
+152.0972 	EXP 	End_Fix: autoDraw = True
+152.5835 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': np.int64(2), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/26M_NC.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '2-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+152.6474 	INFO 	Keyboard events cleared
+152.6472 	EXP 	End_Fix: autoDraw = False
+152.6472 	EXP 	End_Fix: autoDraw = False
+152.6472 	EXP 	Cue_2Back: autoDraw = False
+152.6472 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+152.6472 	EXP 	Cue_Target: autoDraw = False
+152.6472 	EXP 	Cue_TargetImage: autoDraw = False
+152.6472 	EXP 	StimulusImage: image = 'VM Stimuli/26M_NC.bmp'
+152.6472 	EXP 	StimulusImage: autoDraw = True
+152.6472 	EXP 	LeftScreenResponse: autoDraw = True
+152.6472 	EXP 	RightScreenResponse: autoDraw = True
+154.6475 	EXP 	StimulusImage: autoDraw = False
+154.6475 	EXP 	LeftScreenResponse: autoDraw = False
+154.6475 	EXP 	RightScreenResponse: autoDraw = False
+154.6475 	EXP 	End_Fix: autoDraw = True
+155.1338 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': np.int64(3), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/AM228_NC.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NeutFace', 'BlockType': '2-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+155.1847 	INFO 	Keyboard events cleared
+155.1846 	EXP 	End_Fix: autoDraw = False
+155.1846 	EXP 	Cue_2Back: autoDraw = False
+155.1846 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+155.1846 	EXP 	Cue_Target: autoDraw = False
+155.1846 	EXP 	Cue_TargetImage: autoDraw = False
+155.1846 	EXP 	StimulusImage: image = 'VM Stimuli/AM228_NC.bmp'
+155.1846 	EXP 	StimulusImage: autoDraw = True
+155.1846 	EXP 	LeftScreenResponse: autoDraw = True
+155.1846 	EXP 	RightScreenResponse: autoDraw = True
+157.1866 	EXP 	StimulusImage: autoDraw = False
+157.1866 	EXP 	LeftScreenResponse: autoDraw = False
+157.1866 	EXP 	RightScreenResponse: autoDraw = False
+157.1866 	EXP 	End_Fix: autoDraw = True
+157.6744 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': np.int64(4), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/LF227_NC.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '2-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+157.7215 	INFO 	Keyboard events cleared
+157.7214 	EXP 	End_Fix: autoDraw = False
+157.7214 	EXP 	Cue_2Back: autoDraw = False
+157.7214 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+157.7214 	EXP 	Cue_Target: autoDraw = False
+157.7214 	EXP 	Cue_TargetImage: autoDraw = False
+157.7214 	EXP 	StimulusImage: image = 'VM Stimuli/LF227_NC.bmp'
+157.7214 	EXP 	StimulusImage: autoDraw = True
+157.7214 	EXP 	LeftScreenResponse: autoDraw = True
+157.7214 	EXP 	RightScreenResponse: autoDraw = True
+159.7214 	EXP 	StimulusImage: autoDraw = False
+159.7214 	EXP 	LeftScreenResponse: autoDraw = False
+159.7214 	EXP 	RightScreenResponse: autoDraw = False
+159.7214 	EXP 	End_Fix: autoDraw = True
+160.2163 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': np.int64(5), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/26M_NC.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '2-Back', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+160.2661 	INFO 	Keyboard events cleared
+160.2660 	EXP 	End_Fix: autoDraw = False
+160.2660 	EXP 	Cue_2Back: autoDraw = False
+160.2660 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+160.2660 	EXP 	Cue_Target: autoDraw = False
+160.2660 	EXP 	Cue_TargetImage: autoDraw = False
+160.2660 	EXP 	StimulusImage: image = 'VM Stimuli/26M_NC.bmp'
+160.2660 	EXP 	StimulusImage: autoDraw = True
+160.2660 	EXP 	LeftScreenResponse: autoDraw = True
+160.2660 	EXP 	RightScreenResponse: autoDraw = True
+162.2642 	EXP 	StimulusImage: autoDraw = False
+162.2642 	EXP 	LeftScreenResponse: autoDraw = False
+162.2642 	EXP 	RightScreenResponse: autoDraw = False
+162.2642 	EXP 	End_Fix: autoDraw = True
+162.7495 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'ID': np.int64(6), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/LF227_NC.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NeutFace', 'BlockType': '2-Back', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+162.7922 	INFO 	Keyboard events cleared
+162.7921 	EXP 	End_Fix: autoDraw = False
+162.7921 	EXP 	End_Fix: autoDraw = False
+162.7921 	EXP 	Cue_2Back: autoDraw = False
+162.7921 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+162.7921 	EXP 	Cue_Target: autoDraw = False
+162.7921 	EXP 	Cue_TargetImage: autoDraw = False
+162.7921 	EXP 	StimulusImage: image = 'VM Stimuli/LF227_NC.bmp'
+162.7921 	EXP 	StimulusImage: autoDraw = True
+162.7921 	EXP 	LeftScreenResponse: autoDraw = True
+162.7921 	EXP 	RightScreenResponse: autoDraw = True
+164.7911 	EXP 	StimulusImage: autoDraw = False
+164.7911 	EXP 	LeftScreenResponse: autoDraw = False
+164.7911 	EXP 	RightScreenResponse: autoDraw = False
+164.7911 	EXP 	End_Fix: autoDraw = True
+165.2810 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'ID': np.int64(7), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/AF206_NC.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '2-Back', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+165.3265 	INFO 	Keyboard events cleared
+165.3264 	EXP 	End_Fix: autoDraw = False
+165.3264 	EXP 	Cue_2Back: autoDraw = False
+165.3264 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+165.3264 	EXP 	Cue_Target: autoDraw = False
+165.3264 	EXP 	Cue_TargetImage: autoDraw = False
+165.3264 	EXP 	StimulusImage: image = 'VM Stimuli/AF206_NC.bmp'
+165.3264 	EXP 	StimulusImage: autoDraw = True
+165.3264 	EXP 	LeftScreenResponse: autoDraw = True
+165.3264 	EXP 	RightScreenResponse: autoDraw = True
+167.3308 	EXP 	StimulusImage: autoDraw = False
+167.3308 	EXP 	LeftScreenResponse: autoDraw = False
+167.3308 	EXP 	RightScreenResponse: autoDraw = False
+167.3308 	EXP 	End_Fix: autoDraw = True
+167.8161 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'ID': np.int64(8), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/AF206_NC.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '2-Back', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+167.8590 	INFO 	Keyboard events cleared
+167.8589 	EXP 	End_Fix: autoDraw = False
+167.8589 	EXP 	Cue_2Back: autoDraw = False
+167.8589 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+167.8589 	EXP 	Cue_Target: autoDraw = False
+167.8589 	EXP 	Cue_TargetImage: autoDraw = False
+167.8589 	EXP 	StimulusImage: image = 'VM Stimuli/AF206_NC.bmp'
+167.8589 	EXP 	StimulusImage: autoDraw = True
+167.8589 	EXP 	LeftScreenResponse: autoDraw = True
+167.8589 	EXP 	RightScreenResponse: autoDraw = True
+169.8601 	EXP 	StimulusImage: autoDraw = False
+169.8601 	EXP 	LeftScreenResponse: autoDraw = False
+169.8601 	EXP 	RightScreenResponse: autoDraw = False
+169.8601 	EXP 	End_Fix: autoDraw = True
+170.3477 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'ID': np.int64(9), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BM03_NC.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '2-Back', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+170.3783 	INFO 	Keyboard events cleared
+170.3781 	EXP 	End_Fix: autoDraw = False
+170.3781 	EXP 	Cue_2Back: autoDraw = False
+170.3781 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+170.3781 	EXP 	Cue_Target: autoDraw = False
+170.3781 	EXP 	Cue_TargetImage: autoDraw = False
+170.3781 	EXP 	StimulusImage: image = 'VM Stimuli/BM03_NC.bmp'
+170.3781 	EXP 	StimulusImage: autoDraw = True
+170.3781 	EXP 	LeftScreenResponse: autoDraw = True
+170.3781 	EXP 	RightScreenResponse: autoDraw = True
+172.3826 	EXP 	StimulusImage: autoDraw = False
+172.3826 	EXP 	LeftScreenResponse: autoDraw = False
+172.3826 	EXP 	RightScreenResponse: autoDraw = False
+172.3826 	EXP 	End_Fix: autoDraw = True
+172.8702 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'ID': np.int64(10), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/WF012_NC.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NeutFace', 'BlockType': '2-Back', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+172.9150 	INFO 	Keyboard events cleared
+172.9149 	EXP 	End_Fix: autoDraw = False
+172.9149 	EXP 	Cue_2Back: autoDraw = False
+172.9149 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+172.9149 	EXP 	Cue_Target: autoDraw = False
+172.9149 	EXP 	Cue_TargetImage: autoDraw = False
+172.9149 	EXP 	StimulusImage: image = 'VM Stimuli/WF012_NC.bmp'
+172.9149 	EXP 	StimulusImage: autoDraw = True
+172.9149 	EXP 	LeftScreenResponse: autoDraw = True
+172.9149 	EXP 	RightScreenResponse: autoDraw = True
+174.9140 	EXP 	StimulusImage: autoDraw = False
+174.9140 	EXP 	LeftScreenResponse: autoDraw = False
+174.9140 	EXP 	RightScreenResponse: autoDraw = False
+174.9140 	EXP 	End_Fix: autoDraw = True
+175.4140 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block7.csv as conditions, 10 conditions, 8 params
+175.4147 	EXP 	New trial (rep=6, index=0): <Trial 6 (0 in rep 6) data={'thisN': 6, 'thisTrialN': 0, 'thisRepN': 6}>
+175.4265 	EXP 	End_Fix: autoDraw = False
+175.4265 	EXP 	Cue_Fix: autoDraw = True
+175.9227 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block7.csv as conditions, 10 conditions, 8 params
+175.9233 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': np.int64(1), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BF003_FO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/39M_FO.bmp', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+175.9450 	EXP 	Cue_Fix: autoDraw = False
+175.9450 	EXP 	Cue_Fix: autoDraw = False
+175.9450 	EXP 	Cue_2Back: autoDraw = False
+175.9450 	EXP 	Cue_TargetImage: image = 'VM Stimuli/39M_FO.bmp'
+175.9450 	EXP 	Cue_Target: autoDraw = True
+175.9450 	EXP 	Cue_TargetImage: autoDraw = True
+178.4318 	INFO 	Keyboard events cleared
+178.4316 	EXP 	Cue_Target: autoDraw = False
+178.4316 	EXP 	Cue_TargetImage: autoDraw = False
+178.4316 	EXP 	StimulusImage: image = 'VM Stimuli/BF003_FO.bmp'
+178.4316 	EXP 	StimulusImage: autoDraw = True
+178.4316 	EXP 	LeftScreenResponse: autoDraw = True
+178.4316 	EXP 	RightScreenResponse: autoDraw = True
+180.4361 	EXP 	StimulusImage: autoDraw = False
+180.4361 	EXP 	LeftScreenResponse: autoDraw = False
+180.4361 	EXP 	RightScreenResponse: autoDraw = False
+180.4361 	EXP 	End_Fix: autoDraw = True
+180.9262 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': np.int64(2), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/HM05_FO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/39M_FO.bmp', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+180.9509 	INFO 	Keyboard events cleared
+180.9508 	EXP 	End_Fix: autoDraw = False
+180.9508 	EXP 	Cue_2Back: autoDraw = False
+180.9508 	EXP 	Cue_TargetImage: image = 'VM Stimuli/39M_FO.bmp'
+180.9508 	EXP 	Cue_Target: autoDraw = False
+180.9508 	EXP 	Cue_TargetImage: autoDraw = False
+180.9508 	EXP 	StimulusImage: image = 'VM Stimuli/HM05_FO.bmp'
+180.9508 	EXP 	StimulusImage: autoDraw = True
+180.9508 	EXP 	LeftScreenResponse: autoDraw = True
+180.9508 	EXP 	RightScreenResponse: autoDraw = True
+182.9411 	EXP 	StimulusImage: autoDraw = False
+182.9411 	EXP 	LeftScreenResponse: autoDraw = False
+182.9411 	EXP 	RightScreenResponse: autoDraw = False
+182.9411 	EXP 	End_Fix: autoDraw = True
+183.4324 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': np.int64(3), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/HM05_FO.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/39M_FO.bmp', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+183.4529 	INFO 	Keyboard events cleared
+183.4528 	EXP 	End_Fix: autoDraw = False
+183.4528 	EXP 	Cue_2Back: autoDraw = False
+183.4528 	EXP 	Cue_TargetImage: image = 'VM Stimuli/39M_FO.bmp'
+183.4528 	EXP 	Cue_Target: autoDraw = False
+183.4528 	EXP 	Cue_TargetImage: autoDraw = False
+183.4528 	EXP 	StimulusImage: image = 'VM Stimuli/HM05_FO.bmp'
+183.4528 	EXP 	StimulusImage: autoDraw = True
+183.4528 	EXP 	LeftScreenResponse: autoDraw = True
+183.4528 	EXP 	RightScreenResponse: autoDraw = True
+185.4658 	EXP 	StimulusImage: autoDraw = False
+185.4658 	EXP 	LeftScreenResponse: autoDraw = False
+185.4658 	EXP 	RightScreenResponse: autoDraw = False
+185.4658 	EXP 	End_Fix: autoDraw = True
+185.9406 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': np.int64(4), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/10F_FO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/39M_FO.bmp', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+185.9649 	INFO 	Keyboard events cleared
+185.9648 	EXP 	End_Fix: autoDraw = False
+185.9648 	EXP 	Cue_2Back: autoDraw = False
+185.9648 	EXP 	Cue_TargetImage: image = 'VM Stimuli/39M_FO.bmp'
+185.9648 	EXP 	Cue_Target: autoDraw = False
+185.9648 	EXP 	Cue_TargetImage: autoDraw = False
+185.9648 	EXP 	StimulusImage: image = 'VM Stimuli/10F_FO.bmp'
+185.9648 	EXP 	StimulusImage: autoDraw = True
+185.9648 	EXP 	LeftScreenResponse: autoDraw = True
+185.9648 	EXP 	RightScreenResponse: autoDraw = True
+187.9656 	EXP 	StimulusImage: autoDraw = False
+187.9656 	EXP 	LeftScreenResponse: autoDraw = False
+187.9656 	EXP 	RightScreenResponse: autoDraw = False
+187.9656 	EXP 	End_Fix: autoDraw = True
+188.4492 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': np.int64(5), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BF09_FO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/39M_FO.bmp', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+188.4716 	INFO 	Keyboard events cleared
+188.4714 	EXP 	End_Fix: autoDraw = False
+188.4714 	EXP 	Cue_2Back: autoDraw = False
+188.4714 	EXP 	Cue_TargetImage: image = 'VM Stimuli/39M_FO.bmp'
+188.4714 	EXP 	Cue_Target: autoDraw = False
+188.4714 	EXP 	Cue_TargetImage: autoDraw = False
+188.4714 	EXP 	StimulusImage: image = 'VM Stimuli/BF09_FO.bmp'
+188.4714 	EXP 	StimulusImage: autoDraw = True
+188.4714 	EXP 	LeftScreenResponse: autoDraw = True
+188.4714 	EXP 	RightScreenResponse: autoDraw = True
+190.4692 	EXP 	StimulusImage: autoDraw = False
+190.4692 	EXP 	LeftScreenResponse: autoDraw = False
+190.4692 	EXP 	RightScreenResponse: autoDraw = False
+190.4692 	EXP 	End_Fix: autoDraw = True
+190.9657 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'ID': np.int64(6), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/28M_FO.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/39M_FO.bmp', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+190.9901 	INFO 	Keyboard events cleared
+190.9900 	EXP 	End_Fix: autoDraw = False
+190.9900 	EXP 	Cue_2Back: autoDraw = False
+190.9900 	EXP 	Cue_TargetImage: image = 'VM Stimuli/39M_FO.bmp'
+190.9900 	EXP 	Cue_Target: autoDraw = False
+190.9900 	EXP 	Cue_TargetImage: autoDraw = False
+190.9900 	EXP 	StimulusImage: image = 'VM Stimuli/28M_FO.bmp'
+190.9900 	EXP 	StimulusImage: autoDraw = True
+190.9900 	EXP 	LeftScreenResponse: autoDraw = True
+190.9900 	EXP 	RightScreenResponse: autoDraw = True
+192.9913 	EXP 	StimulusImage: autoDraw = False
+192.9913 	EXP 	LeftScreenResponse: autoDraw = False
+192.9913 	EXP 	RightScreenResponse: autoDraw = False
+192.9913 	EXP 	End_Fix: autoDraw = True
+193.4836 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'ID': np.int64(7), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/BF003_FO.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/39M_FO.bmp', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+193.5079 	INFO 	Keyboard events cleared
+193.5078 	EXP 	End_Fix: autoDraw = False
+193.5078 	EXP 	Cue_2Back: autoDraw = False
+193.5078 	EXP 	Cue_TargetImage: image = 'VM Stimuli/39M_FO.bmp'
+193.5078 	EXP 	Cue_Target: autoDraw = False
+193.5078 	EXP 	Cue_TargetImage: autoDraw = False
+193.5078 	EXP 	StimulusImage: image = 'VM Stimuli/BF003_FO.bmp'
+193.5078 	EXP 	StimulusImage: autoDraw = True
+193.5078 	EXP 	LeftScreenResponse: autoDraw = True
+193.5078 	EXP 	RightScreenResponse: autoDraw = True
+195.5026 	EXP 	StimulusImage: autoDraw = False
+195.5026 	EXP 	LeftScreenResponse: autoDraw = False
+195.5026 	EXP 	RightScreenResponse: autoDraw = False
+195.5026 	EXP 	End_Fix: autoDraw = True
+195.9904 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'ID': np.int64(8), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/39M_FO.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NegFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/39M_FO.bmp', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+196.0127 	INFO 	Keyboard events cleared
+196.0126 	EXP 	End_Fix: autoDraw = False
+196.0126 	EXP 	Cue_2Back: autoDraw = False
+196.0126 	EXP 	Cue_TargetImage: image = 'VM Stimuli/39M_FO.bmp'
+196.0126 	EXP 	Cue_Target: autoDraw = False
+196.0126 	EXP 	Cue_TargetImage: autoDraw = False
+196.0126 	EXP 	StimulusImage: image = 'VM Stimuli/39M_FO.bmp'
+196.0126 	EXP 	StimulusImage: autoDraw = True
+196.0126 	EXP 	LeftScreenResponse: autoDraw = True
+196.0126 	EXP 	RightScreenResponse: autoDraw = True
+198.0138 	EXP 	StimulusImage: autoDraw = False
+198.0138 	EXP 	LeftScreenResponse: autoDraw = False
+198.0138 	EXP 	RightScreenResponse: autoDraw = False
+198.0138 	EXP 	End_Fix: autoDraw = True
+198.4975 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'ID': np.int64(9), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/10F_FO.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'NegFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/39M_FO.bmp', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+198.5206 	INFO 	Keyboard events cleared
+198.5205 	EXP 	End_Fix: autoDraw = False
+198.5205 	EXP 	Cue_2Back: autoDraw = False
+198.5205 	EXP 	Cue_TargetImage: image = 'VM Stimuli/39M_FO.bmp'
+198.5205 	EXP 	Cue_Target: autoDraw = False
+198.5205 	EXP 	Cue_TargetImage: autoDraw = False
+198.5205 	EXP 	StimulusImage: image = 'VM Stimuli/10F_FO.bmp'
+198.5205 	EXP 	StimulusImage: autoDraw = True
+198.5205 	EXP 	LeftScreenResponse: autoDraw = True
+198.5205 	EXP 	RightScreenResponse: autoDraw = True
+200.5199 	EXP 	StimulusImage: autoDraw = False
+200.5199 	EXP 	LeftScreenResponse: autoDraw = False
+200.5199 	EXP 	RightScreenResponse: autoDraw = False
+200.5199 	EXP 	End_Fix: autoDraw = True
+201.0091 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'ID': np.int64(10), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/39M_FO.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NegFace', 'BlockType': '0-Back', 'TargetStimulus': 'VM Stimuli/39M_FO.bmp', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+201.0303 	INFO 	Keyboard events cleared
+201.0302 	EXP 	End_Fix: autoDraw = False
+201.0302 	EXP 	Cue_2Back: autoDraw = False
+201.0302 	EXP 	Cue_TargetImage: image = 'VM Stimuli/39M_FO.bmp'
+201.0302 	EXP 	Cue_Target: autoDraw = False
+201.0302 	EXP 	Cue_TargetImage: autoDraw = False
+201.0302 	EXP 	StimulusImage: image = 'VM Stimuli/39M_FO.bmp'
+201.0302 	EXP 	StimulusImage: autoDraw = True
+201.0302 	EXP 	LeftScreenResponse: autoDraw = True
+201.0302 	EXP 	RightScreenResponse: autoDraw = True
+203.0241 	EXP 	StimulusImage: autoDraw = False
+203.0241 	EXP 	LeftScreenResponse: autoDraw = False
+203.0241 	EXP 	RightScreenResponse: autoDraw = False
+203.0241 	EXP 	End_Fix: autoDraw = True
+203.5499 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block8.csv as conditions, 10 conditions, 7 params
+203.5504 	EXP 	New trial (rep=7, index=0): <Trial 7 (0 in rep 7) data={'thisN': 7, 'thisTrialN': 0, 'thisRepN': 7}>
+203.5620 	EXP 	End_Fix: autoDraw = False
+203.5620 	EXP 	Cue_Fix: autoDraw = True
+204.0577 	EXP 	Imported /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/NBackProcLists/v1/run1/block8.csv as conditions, 10 conditions, 7 params
+204.0583 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': np.int64(1), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_007_92026.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+204.0700 	EXP 	Cue_Fix: autoDraw = False
+204.0700 	EXP 	Cue_Fix: autoDraw = False
+204.0700 	EXP 	Cue_2Back: autoDraw = True
+206.5972 	INFO 	Keyboard events cleared
+206.5971 	EXP 	Cue_2Back: autoDraw = False
+206.5971 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+206.5971 	EXP 	Cue_Target: autoDraw = False
+206.5971 	EXP 	Cue_TargetImage: autoDraw = False
+206.5971 	EXP 	StimulusImage: image = 'VM Stimuli/PL_007_92026.bmp'
+206.5971 	EXP 	StimulusImage: autoDraw = True
+206.5971 	EXP 	LeftScreenResponse: autoDraw = True
+206.5971 	EXP 	RightScreenResponse: autoDraw = True
+208.5933 	EXP 	StimulusImage: autoDraw = False
+208.5933 	EXP 	LeftScreenResponse: autoDraw = False
+208.5933 	EXP 	RightScreenResponse: autoDraw = False
+208.5933 	EXP 	End_Fix: autoDraw = True
+209.0777 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': np.int64(2), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_007_92026.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+209.1105 	INFO 	Keyboard events cleared
+209.1103 	EXP 	End_Fix: autoDraw = False
+209.1103 	EXP 	End_Fix: autoDraw = False
+209.1103 	EXP 	Cue_2Back: autoDraw = False
+209.1103 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+209.1103 	EXP 	Cue_Target: autoDraw = False
+209.1103 	EXP 	Cue_TargetImage: autoDraw = False
+209.1103 	EXP 	StimulusImage: image = 'VM Stimuli/PL_007_92026.bmp'
+209.1103 	EXP 	StimulusImage: autoDraw = True
+209.1103 	EXP 	LeftScreenResponse: autoDraw = True
+209.1103 	EXP 	RightScreenResponse: autoDraw = True
+211.1073 	EXP 	StimulusImage: autoDraw = False
+211.1073 	EXP 	LeftScreenResponse: autoDraw = False
+211.1073 	EXP 	RightScreenResponse: autoDraw = False
+211.1073 	EXP 	End_Fix: autoDraw = True
+211.5988 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': np.int64(3), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_010_92038.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+211.6594 	INFO 	Keyboard events cleared
+211.6593 	EXP 	End_Fix: autoDraw = False
+211.6593 	EXP 	Cue_2Back: autoDraw = False
+211.6593 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+211.6593 	EXP 	Cue_Target: autoDraw = False
+211.6593 	EXP 	Cue_TargetImage: autoDraw = False
+211.6593 	EXP 	StimulusImage: image = 'VM Stimuli/PL_010_92038.bmp'
+211.6593 	EXP 	StimulusImage: autoDraw = True
+211.6593 	EXP 	LeftScreenResponse: autoDraw = True
+211.6593 	EXP 	RightScreenResponse: autoDraw = True
+213.6531 	EXP 	StimulusImage: autoDraw = False
+213.6531 	EXP 	LeftScreenResponse: autoDraw = False
+213.6531 	EXP 	RightScreenResponse: autoDraw = False
+213.6531 	EXP 	StimulusImage: autoDraw = False
+213.6531 	EXP 	LeftScreenResponse: autoDraw = False
+213.6531 	EXP 	RightScreenResponse: autoDraw = False
+213.6531 	EXP 	End_Fix: autoDraw = True
+214.1424 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': np.int64(4), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_009_92037.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+214.1931 	INFO 	Keyboard events cleared
+214.1930 	EXP 	End_Fix: autoDraw = False
+214.1930 	EXP 	End_Fix: autoDraw = False
+214.1930 	EXP 	Cue_2Back: autoDraw = False
+214.1930 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+214.1930 	EXP 	Cue_Target: autoDraw = False
+214.1930 	EXP 	Cue_TargetImage: autoDraw = False
+214.1930 	EXP 	StimulusImage: image = 'VM Stimuli/PL_009_92037.bmp'
+214.1930 	EXP 	StimulusImage: autoDraw = True
+214.1930 	EXP 	LeftScreenResponse: autoDraw = True
+214.1930 	EXP 	RightScreenResponse: autoDraw = True
+216.1960 	EXP 	StimulusImage: autoDraw = False
+216.1960 	EXP 	LeftScreenResponse: autoDraw = False
+216.1960 	EXP 	RightScreenResponse: autoDraw = False
+216.1960 	EXP 	End_Fix: autoDraw = True
+216.6861 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': np.int64(5), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_010_92038.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+216.7289 	INFO 	Keyboard events cleared
+216.7288 	EXP 	End_Fix: autoDraw = False
+216.7288 	EXP 	Cue_2Back: autoDraw = False
+216.7288 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+216.7288 	EXP 	Cue_Target: autoDraw = False
+216.7288 	EXP 	Cue_TargetImage: autoDraw = False
+216.7288 	EXP 	StimulusImage: image = 'VM Stimuli/PL_010_92038.bmp'
+216.7288 	EXP 	StimulusImage: autoDraw = True
+216.7288 	EXP 	LeftScreenResponse: autoDraw = True
+216.7288 	EXP 	RightScreenResponse: autoDraw = True
+218.7295 	EXP 	StimulusImage: autoDraw = False
+218.7295 	EXP 	LeftScreenResponse: autoDraw = False
+218.7295 	EXP 	RightScreenResponse: autoDraw = False
+218.7295 	EXP 	End_Fix: autoDraw = True
+219.2143 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'ID': np.int64(6), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_009_92037.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+219.2611 	INFO 	Keyboard events cleared
+219.2610 	EXP 	End_Fix: autoDraw = False
+219.2610 	EXP 	Cue_2Back: autoDraw = False
+219.2610 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+219.2610 	EXP 	Cue_Target: autoDraw = False
+219.2610 	EXP 	Cue_TargetImage: autoDraw = False
+219.2610 	EXP 	StimulusImage: image = 'VM Stimuli/PL_009_92037.bmp'
+219.2610 	EXP 	StimulusImage: autoDraw = True
+219.2610 	EXP 	LeftScreenResponse: autoDraw = True
+219.2610 	EXP 	RightScreenResponse: autoDraw = True
+221.2599 	EXP 	StimulusImage: autoDraw = False
+221.2599 	EXP 	LeftScreenResponse: autoDraw = False
+221.2599 	EXP 	RightScreenResponse: autoDraw = False
+221.2599 	EXP 	End_Fix: autoDraw = True
+221.7525 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'ID': np.int64(7), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_008_92033.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+221.7973 	INFO 	Keyboard events cleared
+221.7972 	EXP 	End_Fix: autoDraw = False
+221.7972 	EXP 	Cue_2Back: autoDraw = False
+221.7972 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+221.7972 	EXP 	Cue_Target: autoDraw = False
+221.7972 	EXP 	Cue_TargetImage: autoDraw = False
+221.7972 	EXP 	StimulusImage: image = 'VM Stimuli/PL_008_92033.bmp'
+221.7972 	EXP 	StimulusImage: autoDraw = True
+221.7972 	EXP 	LeftScreenResponse: autoDraw = True
+221.7972 	EXP 	RightScreenResponse: autoDraw = True
+223.7963 	EXP 	StimulusImage: autoDraw = False
+223.7963 	EXP 	LeftScreenResponse: autoDraw = False
+223.7963 	EXP 	RightScreenResponse: autoDraw = False
+223.7963 	EXP 	End_Fix: autoDraw = True
+224.2814 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'ID': np.int64(8), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_012_92047.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+224.3289 	INFO 	Keyboard events cleared
+224.3288 	EXP 	End_Fix: autoDraw = False
+224.3288 	EXP 	Cue_2Back: autoDraw = False
+224.3288 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+224.3288 	EXP 	Cue_Target: autoDraw = False
+224.3288 	EXP 	Cue_TargetImage: autoDraw = False
+224.3288 	EXP 	StimulusImage: image = 'VM Stimuli/PL_012_92047.bmp'
+224.3288 	EXP 	StimulusImage: autoDraw = True
+224.3288 	EXP 	LeftScreenResponse: autoDraw = True
+224.3288 	EXP 	RightScreenResponse: autoDraw = True
+226.3254 	EXP 	StimulusImage: autoDraw = False
+226.3254 	EXP 	LeftScreenResponse: autoDraw = False
+226.3254 	EXP 	RightScreenResponse: autoDraw = False
+226.3254 	EXP 	End_Fix: autoDraw = True
+226.8151 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'ID': np.int64(9), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_012_92047.bmp', 'TargetType': 'lure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+226.8585 	INFO 	Keyboard events cleared
+226.8584 	EXP 	End_Fix: autoDraw = False
+226.8584 	EXP 	Cue_2Back: autoDraw = False
+226.8584 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+226.8584 	EXP 	Cue_Target: autoDraw = False
+226.8584 	EXP 	Cue_TargetImage: autoDraw = False
+226.8584 	EXP 	StimulusImage: image = 'VM Stimuli/PL_012_92047.bmp'
+226.8584 	EXP 	StimulusImage: autoDraw = True
+226.8584 	EXP 	LeftScreenResponse: autoDraw = True
+226.8584 	EXP 	RightScreenResponse: autoDraw = True
+228.8570 	EXP 	StimulusImage: autoDraw = False
+228.8570 	EXP 	LeftScreenResponse: autoDraw = False
+228.8570 	EXP 	RightScreenResponse: autoDraw = False
+228.8570 	EXP 	End_Fix: autoDraw = True
+229.3483 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'ID': np.int64(10), 'Weight': np.int64(1), 'Stimulus': 'VM Stimuli/PL_011_92044.bmp', 'TargetType': 'nonlure', 'CorrectResponse': 'nontarget', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+229.3931 	INFO 	Keyboard events cleared
+229.3930 	EXP 	End_Fix: autoDraw = False
+229.3930 	EXP 	Cue_2Back: autoDraw = False
+229.3930 	EXP 	Cue_TargetImage: image = 'blackbg.png'
+229.3930 	EXP 	Cue_Target: autoDraw = False
+229.3930 	EXP 	Cue_TargetImage: autoDraw = False
+229.3930 	EXP 	StimulusImage: image = 'VM Stimuli/PL_011_92044.bmp'
+229.3930 	EXP 	StimulusImage: autoDraw = True
+229.3930 	EXP 	LeftScreenResponse: autoDraw = True
+229.3930 	EXP 	RightScreenResponse: autoDraw = True
+231.3965 	EXP 	StimulusImage: autoDraw = False
+231.3965 	EXP 	LeftScreenResponse: autoDraw = False
+231.3965 	EXP 	RightScreenResponse: autoDraw = False
+231.3965 	EXP 	End_Fix: autoDraw = True
+231.8996 	EXP 	End_Fix: autoDraw = False
+231.8996 	EXP 	Fix_15_Sec: autoDraw = True
+246.9011 	EXP 	Fix_15_Sec: autoDraw = False
+246.9011 	EXP 	Fix_15_Sec: autoDraw = False
+246.9011 	EXP 	Fix_5_Sec: autoDraw = True
+251.9029 	INFO 	Keyboard events cleared
+251.9027 	EXP 	Fix_5_Sec: autoDraw = False
+251.9027 	EXP 	Fix_5_Sec: autoDraw = False
+251.9027 	EXP 	Instruction_6: autoDraw = True
+637.2750 	EXP 	Device response: <KeyPress from None: t=637.2633384987712, value=escape, duration=None>
+637.3131 	DATA 	Keypress: escape
+637.3265 	EXP 	Device response: <KeyPress from None: t=637.2633384987712, value=escape, duration=0.0602722093462944>
+637.3271 	EXP 	EmoNback_Behavioral: status = STOPPED
+637.3385 	EXP 	Instruction_6: autoDraw = False
+637.3388 	EXP 	EmoNback_Behavioral: status = STOPPED
+637.3808 	INFO 	saved data to '/Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/data/sub-543211_ses-1_emoback_1.csv'
+637.3829 	INFO 	saved data to /Users/akashrathi/Documents/GitHub/EmoNback/EmoNback_Behavioral/data/sub-543211_ses-1_emoback_1.psydat
+637.5759 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+637.5760 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+637.5760 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+637.5760 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+637.5760 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+637.5760 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+637.5760 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+637.5760 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+637.5760 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+637.5760 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+637.5760 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+637.5760 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
