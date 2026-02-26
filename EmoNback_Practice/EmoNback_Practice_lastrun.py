@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on Fri Jan 30 14:16:44 2026
+    on Thu Feb 26 14:22:01 2026
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -126,7 +126,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/akashrathi/Documents/Github/EmoNback/EmoNback_Practice/EmoNback_Practice_lastrun.py',
+        originPath='/Users/akashrathi/Documents/EmoNback/EmoNback_Practice/EmoNback_Practice_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -6989,7 +6989,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(NextPage_17.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(NextPage_17.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if NextPage_17.status == STARTED and not waitOnFlip:
-            theseKeys = NextPage_17.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = NextPage_17.getKeys(keyList=['space','left','right'], ignoreKeys=["escape"], waitRelease=False)
             _NextPage_17_allKeys.extend(theseKeys)
             if len(_NextPage_17_allKeys):
                 NextPage_17.keys = _NextPage_17_allKeys[-1].name  # just the last key pressed
@@ -7401,7 +7401,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(NextPage_19.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(NextPage_19.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if NextPage_19.status == STARTED and not waitOnFlip:
-            theseKeys = NextPage_19.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = NextPage_19.getKeys(keyList=['space','left','right'], ignoreKeys=["escape"], waitRelease=False)
             _NextPage_19_allKeys.extend(theseKeys)
             if len(_NextPage_19_allKeys):
                 NextPage_19.keys = _NextPage_19_allKeys[-1].name  # just the last key pressed
@@ -7833,7 +7833,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(NextPage_21.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(NextPage_21.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if NextPage_21.status == STARTED and not waitOnFlip:
-            theseKeys = NextPage_21.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = NextPage_21.getKeys(keyList=['space','left','right'], ignoreKeys=["escape"], waitRelease=False)
             _NextPage_21_allKeys.extend(theseKeys)
             if len(_NextPage_21_allKeys):
                 NextPage_21.keys = _NextPage_21_allKeys[-1].name  # just the last key pressed

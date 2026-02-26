@@ -2658,7 +2658,7 @@
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
       <KeyboardComponent name="NextPage_17" plugin="None">
-        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="'space','left','right'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="" valType="str" updates="None" name="deviceLabel"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -3044,7 +3044,7 @@
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
       <KeyboardComponent name="NextPage_19" plugin="None">
-        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="'space','left','right'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="" valType="str" updates="None" name="deviceLabel"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -3459,7 +3459,7 @@
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
       <KeyboardComponent name="NextPage_21" plugin="None">
-        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="'space','left','right'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="" valType="str" updates="None" name="deviceLabel"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
