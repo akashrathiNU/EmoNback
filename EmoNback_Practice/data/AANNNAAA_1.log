@@ -1,0 +1,2485 @@
+11.5539 	INFO 	Loaded monitor calibration from ['2026_03_11 12:45']
+11.7037 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x1764c4160>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x1764c41c0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x1761249a0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([3456, 2234]), stencilBits=8, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.7038 	EXP 	window1: backgroundImage = ''
+11.7038 	EXP 	window1: backgroundFit = 'none'
+11.7443 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+11.7443 	EXP 	window1: recordFrameIntervals = False
+11.9208 	EXP 	window1: recordFrameIntervals = True
+12.7520 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+13.4207 	INFO 	keyboard.Keyboard is using ptb backend.
+13.6290 	INFO 	keyboard.Keyboard is using ptb backend.
+13.8307 	INFO 	keyboard.Keyboard is using ptb backend.
+14.0324 	INFO 	keyboard.Keyboard is using ptb backend.
+14.2345 	INFO 	keyboard.Keyboard is using ptb backend.
+14.4331 	INFO 	keyboard.Keyboard is using ptb backend.
+14.6401 	INFO 	keyboard.Keyboard is using ptb backend.
+14.8393 	INFO 	keyboard.Keyboard is using ptb backend.
+15.0381 	INFO 	keyboard.Keyboard is using ptb backend.
+15.2374 	INFO 	keyboard.Keyboard is using ptb backend.
+15.4415 	INFO 	keyboard.Keyboard is using ptb backend.
+15.6464 	INFO 	keyboard.Keyboard is using ptb backend.
+15.8487 	INFO 	keyboard.Keyboard is using ptb backend.
+16.0486 	INFO 	keyboard.Keyboard is using ptb backend.
+16.2436 	INFO 	keyboard.Keyboard is using ptb backend.
+16.4433 	INFO 	keyboard.Keyboard is using ptb backend.
+16.6339 	INFO 	keyboard.Keyboard is using ptb backend.
+16.8263 	INFO 	keyboard.Keyboard is using ptb backend.
+17.0177 	INFO 	keyboard.Keyboard is using ptb backend.
+17.2070 	INFO 	keyboard.Keyboard is using ptb backend.
+17.3937 	INFO 	keyboard.Keyboard is using ptb backend.
+17.5822 	INFO 	keyboard.Keyboard is using ptb backend.
+17.7673 	INFO 	keyboard.Keyboard is using ptb backend.
+17.9638 	INFO 	keyboard.Keyboard is using ptb backend.
+18.1504 	INFO 	keyboard.Keyboard is using ptb backend.
+18.3375 	INFO 	keyboard.Keyboard is using ptb backend.
+18.5238 	INFO 	keyboard.Keyboard is using ptb backend.
+18.7092 	INFO 	keyboard.Keyboard is using ptb backend.
+18.8943 	INFO 	keyboard.Keyboard is using ptb backend.
+18.8943 	EXP 	EmoNback_Practice: status = STARTED
+18.9778 	EXP 	Created FaceImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeNC1.bmp', interpolate=True, mask=None, maskParams=None, name='FaceImage', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+18.9883 	EXP 	Created PlaceImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/Place1.bmp', interpolate=True, mask=None, maskParams=None, name='PlaceImage', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.0226 	EXP 	Created TargetImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeNC1.bmp', interpolate=True, mask=None, maskParams=None, name='TargetImage', opacity=1, ori=0.0, pos=array([0.2, 0. ]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+19.1190 	EXP 	Created CueTargetImage_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeNC1.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_1', opacity=1, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.1331 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.1879 	EXP 	Created CueTargetImage_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/Place1.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_2', opacity=1, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.1952 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.2406 	EXP 	Created Example_Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+19.2580 	EXP 	Created One_Back_Example_Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+19.2602 	EXP 	Created Example_Stim_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+19.2765 	EXP 	Created Green_Border = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-0.60784314,  0.60784314, -0.60784314]), fillColorSpace='rgb', fillRGB=array([-0.60784314,  0.60784314, -0.60784314]), interpolate=True, lineColor=array([-0.60784314,  0.60784314, -0.60784314]), lineColorSpace='rgb', lineRGB=array([-0.60784314,  0.60784314, -0.60784314]), lineWidth=1.0, name='Green_Border', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.15, 0.15]), units='height', vertices=ndarray(...), win=Window(...))
+19.2776 	EXP 	Created Two_Back_Example_Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.13, 0.13]), texRes=128.0, units='height', win=Window(...))
+19.2796 	EXP 	Created One_Back_Example_Stim_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_2', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+19.2820 	EXP 	Created Example_Stim_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim_3', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+19.2992 	EXP 	Created Two_Back_Example_Stim_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim_2', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.13, 0.13]), texRes=128.0, units='height', win=Window(...))
+19.3003 	EXP 	Created One_Back_Example_Stim_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_3', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+19.3026 	EXP 	Created Example_Stim_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim_4', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+19.3278 	EXP 	Created Example_Stim_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_5', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.3444 	EXP 	Created Example_Stim_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_6', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.3618 	EXP 	Created Example_Stim_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_7', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.3789 	EXP 	Created One_Back_Example_Stim_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_4', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+19.3799 	EXP 	Created Example_Stim_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_8', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.3963 	EXP 	Created Example_Stim_9 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_9', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.4132 	EXP 	Created Two_Back_Example_Stim_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim_3', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+19.4143 	EXP 	Created One_Back_Example_Stim_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_5', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+19.4164 	EXP 	Created Example_Stim_10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_10', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.4336 	EXP 	Created Green_Border_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-0.60784314,  0.60784314, -0.60784314]), fillColorSpace='rgb', fillRGB=array([-0.60784314,  0.60784314, -0.60784314]), interpolate=True, lineColor=array([-0.60784314,  0.60784314, -0.60784314]), lineColorSpace='rgb', lineRGB=array([-0.60784314,  0.60784314, -0.60784314]), lineWidth=1.0, name='Green_Border_2', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.15, 0.15]), units='height', vertices=ndarray(...), win=Window(...))
+19.4351 	EXP 	Created Two_Back_Example_Stim_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim_4', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.13, 0.13]), texRes=128.0, units='height', win=Window(...))
+19.4362 	EXP 	Created One_Back_Example_Stim_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_6', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+19.4372 	EXP 	Created Example_Stim_11 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_11', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.4606 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.4889 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.5336 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.5661 	EXP 	Created CueTargetImage_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/Place3.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_6', opacity=1, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.5735 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.6061 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.6388 	EXP 	Created CueTargetImage_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeNC2.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_8', opacity=1, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.6464 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+0.1095 	EXP 	NbackTitle: autoLog = True
+0.1095 	EXP 	Instructions_1: autoLog = True
+0.1095 	EXP 	Instructions_2: autoLog = True
+0.1095 	EXP 	Instructions_3: autoLog = True
+0.1095 	EXP 	Instructions_5pt5: autoLog = True
+0.1095 	EXP 	Instructions_6: autoLog = True
+0.1095 	EXP 	Instructions_6_Target: autoLog = True
+0.1095 	EXP 	Instructions_6_Match: autoLog = True
+0.1095 	EXP 	Instructions_14: autoLog = True
+0.1095 	EXP 	Instructions_6pt2: autoLog = True
+0.1095 	EXP 	CueFix_1: autoLog = True
+0.1095 	EXP 	CueTarget_1: autoLog = True
+0.1095 	EXP 	Zero_back: autoLog = True
+0.1095 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.1095 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.1095 	EXP 	Fix: autoLog = True
+0.1095 	EXP 	Feedback: autoLog = True
+0.1095 	EXP 	Instructions_Space: autoLog = True
+0.1095 	EXP 	CueFix_2: autoLog = True
+0.1095 	EXP 	CueTarget_2: autoLog = True
+0.1095 	EXP 	Zero_back_2: autoLog = True
+0.1095 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.1095 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.1095 	EXP 	Fix: autoLog = True
+0.1095 	EXP 	Feedback: autoLog = True
+0.1095 	EXP 	Instructions_Space: autoLog = True
+0.1095 	EXP 	Instructions_8: autoLog = True
+0.1095 	EXP 	Instructions_11: autoLog = True
+0.1095 	EXP 	Instructions_9: autoLog = True
+0.1095 	EXP 	Example_LeftScreenInstruction: autoLog = True
+0.1095 	EXP 	Example_RightScreenInstruction: autoLog = True
+0.1095 	EXP 	Instructions_21: autoLog = True
+0.1095 	EXP 	Example_LeftScreenInstruction_2: autoLog = True
+0.1095 	EXP 	Example_RightScreenInstruction_2: autoLog = True
+0.1095 	EXP 	Instructions_24: autoLog = True
+0.1095 	EXP 	Example_LeftScreenInstruction_3: autoLog = True
+0.1095 	EXP 	Example_RightScreenInstruction_3: autoLog = True
+0.1095 	EXP 	Instructions_25: autoLog = True
+0.1095 	EXP 	Example_LeftScreenInstruction_4: autoLog = True
+0.1095 	EXP 	Example_RightScreenInstruction_4: autoLog = True
+0.1095 	EXP 	Instructions_15: autoLog = True
+0.1095 	EXP 	Instructions_32: autoLog = True
+0.1095 	EXP 	Example_LeftScreenInstruction_5: autoLog = True
+0.1095 	EXP 	Example_RightScreenInstruction_5: autoLog = True
+0.1095 	EXP 	Instructions_27: autoLog = True
+0.1095 	EXP 	Example_LeftScreenInstruction_6: autoLog = True
+0.1095 	EXP 	Example_RightScreenInstruction_6: autoLog = True
+0.1095 	EXP 	Instructions_33: autoLog = True
+0.1095 	EXP 	Example_LeftScreenInstruction_7: autoLog = True
+0.1095 	EXP 	Example_RightScreenInstruction_7: autoLog = True
+0.1095 	EXP 	Instructions_26: autoLog = True
+0.1095 	EXP 	Example_LeftScreenInstruction_8: autoLog = True
+0.1095 	EXP 	Example_RightScreenInstruction_8: autoLog = True
+0.1095 	EXP 	Instructions: autoLog = True
+0.1095 	EXP 	Example_LeftScreenInstruction_9: autoLog = True
+0.1095 	EXP 	Example_RightScreenInstruction_9: autoLog = True
+0.1095 	EXP 	Instructions_28: autoLog = True
+0.1095 	EXP 	Example_LeftScreenInstruction_10: autoLog = True
+0.1095 	EXP 	Example_RightScreenInstruction_10: autoLog = True
+0.1095 	EXP 	Instructions_29: autoLog = True
+0.1095 	EXP 	Example_LeftScreenInstruction_11: autoLog = True
+0.1095 	EXP 	Example_RightScreenInstruction_11: autoLog = True
+0.1095 	EXP 	Instructions_22: autoLog = True
+0.1095 	EXP 	Instructions_30: autoLog = True
+0.1095 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.1095 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.1095 	EXP 	Fix: autoLog = True
+0.1095 	EXP 	Feedback: autoLog = True
+0.1095 	EXP 	Instructions_Space: autoLog = True
+0.1095 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.1095 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.1095 	EXP 	Fix: autoLog = True
+0.1095 	EXP 	Feedback: autoLog = True
+0.1095 	EXP 	Instructions_36: autoLog = True
+0.1095 	EXP 	CueFix_5: autoLog = True
+0.1095 	EXP 	Cue_2Back: autoLog = True
+0.1095 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.1095 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.1095 	EXP 	Fix: autoLog = True
+0.1095 	EXP 	Feedback: autoLog = True
+0.1095 	EXP 	CueFix_6: autoLog = True
+0.1095 	EXP 	CueTarget_6: autoLog = True
+0.1095 	EXP 	Zero_back_3: autoLog = True
+0.1095 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.1095 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.1095 	EXP 	Fix: autoLog = True
+0.1095 	EXP 	Feedback: autoLog = True
+0.1095 	EXP 	CueFix_7: autoLog = True
+0.1095 	EXP 	Cue_2Back_2: autoLog = True
+0.1095 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.1095 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.1095 	EXP 	Fix: autoLog = True
+0.1095 	EXP 	Feedback: autoLog = True
+0.1095 	EXP 	CueFix_8: autoLog = True
+0.1095 	EXP 	CueTarget_8: autoLog = True
+0.1095 	EXP 	Zero_back_4: autoLog = True
+0.1095 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.1095 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.1095 	EXP 	Fix: autoLog = True
+0.1095 	EXP 	Feedback: autoLog = True
+0.1095 	EXP 	AllDone: autoLog = True
+0.1975 	INFO 	Keyboard events cleared
+0.1974 	WARNING 	t of last frame was 87.93ms (=1/11)
+0.1974 	EXP 	NbackTitle: autoDraw = True
+1.1505 	DATA 	Keypress: space
+1.1552 	INFO 	Keyboard events cleared
+1.1551 	WARNING 	t of last frame was 94.76ms (=1/10)
+1.1551 	EXP 	NbackTitle: autoDraw = False
+1.1551 	EXP 	Instructions_1: autoDraw = True
+3.2958 	DATA 	Keypress: space
+3.2998 	INFO 	Keyboard events cleared
+3.2997 	EXP 	Instructions_1: autoDraw = False
+3.2997 	EXP 	Instructions_2: autoDraw = True
+3.2997 	EXP 	FaceImage: autoDraw = True
+3.8220 	DATA 	Keypress: space
+3.8249 	INFO 	Keyboard events cleared
+3.8248 	EXP 	Instructions_2: autoDraw = False
+3.8248 	EXP 	FaceImage: autoDraw = False
+3.8248 	EXP 	Instructions_3: autoDraw = True
+3.8248 	EXP 	PlaceImage: autoDraw = True
+4.0523 	DATA 	Keypress: space
+4.0561 	INFO 	Keyboard events cleared
+4.0560 	EXP 	Instructions_3: autoDraw = False
+4.0560 	EXP 	PlaceImage: autoDraw = False
+4.0560 	EXP 	Instructions_5pt5: autoDraw = True
+4.2662 	DATA 	Keypress: space
+4.2701 	INFO 	Keyboard events cleared
+4.2701 	EXP 	Instructions_5pt5: autoDraw = False
+4.2701 	EXP 	Instructions_6: autoDraw = True
+4.2701 	EXP 	Instructions_6_Target: autoDraw = True
+4.2701 	EXP 	TargetImage: autoDraw = True
+4.2701 	EXP 	Instructions_6_Match: autoDraw = True
+4.9547 	DATA 	Keypress: space
+5.6916 	DATA 	Keypress: left
+5.6954 	INFO 	Keyboard events cleared
+5.6954 	WARNING 	t of last frame was 27.54ms (=1/36)
+5.6954 	EXP 	Instructions_6: autoDraw = False
+5.6954 	EXP 	Instructions_6_Target: autoDraw = False
+5.6954 	EXP 	TargetImage: autoDraw = False
+5.6954 	EXP 	Instructions_6_Match: autoDraw = False
+5.6954 	EXP 	Instructions_14: autoDraw = True
+6.4244 	DATA 	Keypress: right
+6.4280 	INFO 	Keyboard events cleared
+6.4279 	EXP 	Instructions_14: autoDraw = False
+6.4279 	EXP 	Instructions_6pt2: autoDraw = True
+7.1523 	DATA 	Keypress: space
+7.1568 	EXP 	Instructions_6pt2: autoDraw = False
+7.1568 	EXP 	CueFix_1: autoDraw = True
+7.6471 	EXP 	CueTarget_1: autoDraw = True
+7.6471 	EXP 	CueTargetImage_1: autoDraw = True
+7.6471 	EXP 	Zero_back: autoDraw = True
+7.6524 	EXP 	CueFix_1: autoDraw = False
+10.1458 	EXP 	Imported PracticeTrials/PracticeTrials1.xlsx as conditions, 5 conditions, 9 params
+10.1466 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': 2, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC2.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+10.1788 	INFO 	Keyboard events cleared
+10.1787 	WARNING 	t of last frame was 44.74ms (=1/22)
+10.1787 	EXP 	CueTarget_1: autoDraw = False
+10.1787 	EXP 	CueTargetImage_1: autoDraw = False
+10.1787 	EXP 	Zero_back: autoDraw = False
+10.1787 	EXP 	CueFix_1: autoDraw = False
+10.1787 	EXP 	CueTarget_1: autoDraw = False
+10.1787 	EXP 	CueTargetImage_1: autoDraw = False
+10.1787 	EXP 	Zero_back: autoDraw = False
+10.1787 	EXP 	Stim: image = 'VM Stimuli/PracticeNC2.bmp'
+10.1787 	EXP 	Stim: autoDraw = True
+10.1787 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+10.1787 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+12.1584 	EXP 	Stim: autoDraw = False
+12.1584 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+12.1584 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+12.1584 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+12.1584 	EXP 	Fix: autoDraw = True
+12.6386 	EXP 	Feedback: autoDraw = True
+12.6559 	EXP 	Fix: autoDraw = False
+14.1263 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': 3, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC1.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+14.1333 	EXP 	Feedback: autoDraw = False
+14.1333 	EXP 	Fix: autoDraw = False
+14.1333 	EXP 	Feedback: autoDraw = False
+14.1333 	EXP 	Stim: image = 'VM Stimuli/PracticeNC1.bmp'
+14.1408 	INFO 	Keyboard events cleared
+14.1407 	EXP 	Stim: autoDraw = True
+14.1407 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+14.1407 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+16.1388 	EXP 	Stim: autoDraw = False
+16.1388 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+16.1388 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+16.1388 	EXP 	Stim: autoDraw = False
+16.1388 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+16.1388 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+16.1388 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+16.1388 	EXP 	Fix: autoDraw = True
+16.6350 	EXP 	Fix: autoDraw = False
+16.6428 	EXP 	Feedback: autoDraw = True
+18.1347 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': 4, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC3.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+18.1483 	INFO 	Keyboard events cleared
+18.1483 	EXP 	Feedback: autoDraw = False
+18.1483 	EXP 	Fix: autoDraw = False
+18.1483 	EXP 	Feedback: autoDraw = False
+18.1483 	EXP 	Stim: image = 'VM Stimuli/PracticeNC3.bmp'
+18.1483 	EXP 	Stim: autoDraw = True
+18.1483 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+18.1483 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+20.1427 	EXP 	Stim: autoDraw = False
+20.1427 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+20.1427 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+20.1427 	EXP 	Stim: autoDraw = False
+20.1427 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+20.1427 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+20.1427 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+20.1427 	EXP 	Fix: autoDraw = True
+20.6393 	EXP 	Fix: autoDraw = False
+20.6393 	EXP 	Feedback: autoDraw = True
+22.1220 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': 5, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC2.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+22.1330 	EXP 	Feedback: autoDraw = False
+22.1330 	EXP 	Fix: autoDraw = False
+22.1330 	EXP 	Feedback: autoDraw = False
+22.1330 	EXP 	Stim: image = 'VM Stimuli/PracticeNC2.bmp'
+22.1397 	INFO 	Keyboard events cleared
+22.1397 	EXP 	Stim: autoDraw = True
+22.1397 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+22.1397 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+24.1391 	EXP 	Stim: autoDraw = False
+24.1391 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+24.1391 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+24.1391 	EXP 	Stim: autoDraw = False
+24.1391 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+24.1391 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+24.1391 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+24.1391 	EXP 	Fix: autoDraw = True
+24.6409 	EXP 	Fix: autoDraw = False
+24.6409 	EXP 	Feedback: autoDraw = True
+26.1269 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': 6, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC1.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+26.1331 	EXP 	Feedback: autoDraw = False
+26.1331 	EXP 	Fix: autoDraw = False
+26.1331 	EXP 	Feedback: autoDraw = False
+26.1331 	EXP 	Stim: image = 'VM Stimuli/PracticeNC1.bmp'
+26.1397 	INFO 	Keyboard events cleared
+26.1396 	EXP 	Stim: autoDraw = True
+26.1396 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+26.1396 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+28.1390 	EXP 	Stim: autoDraw = False
+28.1390 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+28.1390 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+28.1390 	EXP 	Stim: autoDraw = False
+28.1390 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+28.1390 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+28.1390 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+28.1390 	EXP 	Fix: autoDraw = True
+28.6299 	EXP 	Fix: autoDraw = False
+28.6446 	EXP 	Feedback: autoDraw = True
+30.1385 	INFO 	Keyboard events cleared
+30.1385 	EXP 	Feedback: autoDraw = False
+30.1385 	EXP 	Fix: autoDraw = False
+30.1385 	EXP 	Feedback: autoDraw = False
+30.1385 	EXP 	Instructions_Space: autoDraw = True
+39.1512 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+40.2454 	DATA 	Keypress: space
+40.2496 	EXP 	Instructions_Space: autoDraw = False
+40.2496 	EXP 	CueFix_2: autoDraw = True
+40.7414 	EXP 	CueTarget_2: autoDraw = True
+40.7414 	EXP 	CueTargetImage_2: autoDraw = True
+40.7414 	EXP 	Zero_back_2: autoDraw = True
+40.7474 	EXP 	CueFix_2: autoDraw = False
+43.2379 	EXP 	Imported PracticeTrials/PracticeTrials2.xlsx as conditions, 5 conditions, 9 params
+43.2382 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': 2, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place1.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+43.2477 	INFO 	Keyboard events cleared
+43.2476 	EXP 	CueTarget_2: autoDraw = False
+43.2476 	EXP 	CueTargetImage_2: autoDraw = False
+43.2476 	EXP 	Zero_back_2: autoDraw = False
+43.2476 	EXP 	CueFix_2: autoDraw = False
+43.2476 	EXP 	CueTarget_2: autoDraw = False
+43.2476 	EXP 	CueTargetImage_2: autoDraw = False
+43.2476 	EXP 	Zero_back_2: autoDraw = False
+43.2476 	EXP 	Stim: image = 'VM Stimuli/Place1.bmp'
+43.2476 	EXP 	Stim: autoDraw = True
+43.2476 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+43.2476 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+45.2431 	EXP 	Stim: autoDraw = False
+45.2431 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+45.2431 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+45.2431 	EXP 	Stim: autoDraw = False
+45.2431 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+45.2431 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+45.2431 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+45.2431 	EXP 	Fix: autoDraw = True
+45.7385 	EXP 	Fix: autoDraw = False
+45.7385 	EXP 	Feedback: autoDraw = True
+47.2243 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': 3, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place3.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+47.2401 	INFO 	Keyboard events cleared
+47.2400 	EXP 	Feedback: autoDraw = False
+47.2400 	EXP 	Fix: autoDraw = False
+47.2400 	EXP 	Feedback: autoDraw = False
+47.2400 	EXP 	Stim: image = 'VM Stimuli/Place3.bmp'
+47.2400 	EXP 	Stim: autoDraw = True
+47.2400 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+47.2400 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+49.2351 	EXP 	Stim: autoDraw = False
+49.2351 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+49.2351 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+49.2351 	EXP 	Stim: autoDraw = False
+49.2351 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+49.2351 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+49.2351 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+49.2351 	EXP 	Fix: autoDraw = True
+49.7287 	EXP 	Fix: autoDraw = False
+49.7287 	EXP 	Feedback: autoDraw = True
+51.2150 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': 4, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place5.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+51.2234 	EXP 	Feedback: autoDraw = False
+51.2234 	EXP 	Fix: autoDraw = False
+51.2234 	EXP 	Feedback: autoDraw = False
+51.2234 	EXP 	Stim: image = 'VM Stimuli/Place5.bmp'
+51.2310 	INFO 	Keyboard events cleared
+51.2310 	EXP 	Stim: autoDraw = True
+51.2310 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+51.2310 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+53.2291 	EXP 	Stim: autoDraw = False
+53.2291 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+53.2291 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+53.2291 	EXP 	Stim: autoDraw = False
+53.2291 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+53.2291 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+53.2291 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+53.2343 	EXP 	Fix: autoDraw = True
+53.7315 	EXP 	Fix: autoDraw = False
+53.7396 	EXP 	Feedback: autoDraw = True
+55.2306 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': 5, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place1.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+55.2412 	INFO 	Keyboard events cleared
+55.2411 	EXP 	Feedback: autoDraw = False
+55.2411 	EXP 	Fix: autoDraw = False
+55.2411 	EXP 	Feedback: autoDraw = False
+55.2411 	EXP 	Stim: image = 'VM Stimuli/Place1.bmp'
+55.2411 	EXP 	Stim: autoDraw = True
+55.2411 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+55.2411 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+57.2381 	EXP 	Stim: autoDraw = False
+57.2381 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+57.2381 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+57.2381 	EXP 	Stim: autoDraw = False
+57.2381 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+57.2381 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+57.2381 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+57.2381 	EXP 	Fix: autoDraw = True
+57.7273 	EXP 	Fix: autoDraw = False
+57.7273 	EXP 	Feedback: autoDraw = True
+59.2113 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': 6, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place3.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+59.2197 	EXP 	Feedback: autoDraw = False
+59.2197 	EXP 	Fix: autoDraw = False
+59.2197 	EXP 	Feedback: autoDraw = False
+59.2197 	EXP 	Stim: image = 'VM Stimuli/Place3.bmp'
+59.2356 	INFO 	Keyboard events cleared
+59.2355 	EXP 	Stim: autoDraw = True
+59.2355 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+59.2355 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+61.2291 	EXP 	Stim: autoDraw = False
+61.2291 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+61.2291 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+61.2291 	EXP 	Stim: autoDraw = False
+61.2291 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+61.2291 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+61.2291 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+61.2291 	EXP 	Fix: autoDraw = True
+61.7313 	EXP 	Fix: autoDraw = False
+61.7313 	EXP 	Feedback: autoDraw = True
+63.2324 	INFO 	Keyboard events cleared
+63.2324 	EXP 	Feedback: autoDraw = False
+63.2324 	EXP 	Fix: autoDraw = False
+63.2324 	EXP 	Feedback: autoDraw = False
+63.2324 	EXP 	Instructions_Space: autoDraw = True
+64.4919 	DATA 	Keypress: space
+64.4968 	INFO 	Keyboard events cleared
+64.4967 	EXP 	Instructions_Space: autoDraw = False
+64.4967 	EXP 	Instructions_8: autoDraw = True
+66.3837 	DATA 	Keypress: space
+66.3876 	INFO 	Keyboard events cleared
+66.3875 	EXP 	Instructions_8: autoDraw = False
+66.3875 	EXP 	Instructions_11: autoDraw = True
+67.2759 	DATA 	Keypress: space
+67.2805 	INFO 	Keyboard events cleared
+67.2804 	EXP 	Instructions_11: autoDraw = False
+67.2804 	EXP 	Example_Stim: image = 'VM Stimuli/PracticeFO1.bmp'
+67.2804 	EXP 	Instructions_9: autoDraw = True
+67.2804 	EXP 	Example_Stim: autoDraw = True
+67.2804 	EXP 	Example_LeftScreenInstruction: autoDraw = True
+67.2804 	EXP 	Example_RightScreenInstruction: autoDraw = True
+67.9916 	DATA 	Keypress: space
+67.9952 	INFO 	Keyboard events cleared
+67.9952 	EXP 	Instructions_9: autoDraw = False
+67.9952 	EXP 	Example_Stim: autoDraw = False
+67.9952 	EXP 	Example_LeftScreenInstruction: autoDraw = False
+67.9952 	EXP 	Example_RightScreenInstruction: autoDraw = False
+67.9952 	EXP 	Example_Stim_2: image = 'VM Stimuli/PracticeFO2.bmp'
+67.9952 	EXP 	Instructions_21: autoDraw = True
+67.9952 	EXP 	One_Back_Example_Stim: autoDraw = True
+67.9952 	EXP 	Example_Stim_2: autoDraw = True
+67.9952 	EXP 	Example_LeftScreenInstruction_2: autoDraw = True
+67.9952 	EXP 	Example_RightScreenInstruction_2: autoDraw = True
+68.5260 	DATA 	Keypress: space
+68.5374 	INFO 	Keyboard events cleared
+68.5374 	EXP 	Instructions_21: autoDraw = False
+68.5374 	EXP 	One_Back_Example_Stim: autoDraw = False
+68.5374 	EXP 	Example_Stim_2: autoDraw = False
+68.5374 	EXP 	Example_LeftScreenInstruction_2: autoDraw = False
+68.5374 	EXP 	Example_RightScreenInstruction_2: autoDraw = False
+68.5374 	EXP 	Example_Stim_3: image = 'VM Stimuli/PracticeFO1.bmp'
+68.5374 	EXP 	Instructions_24: autoDraw = True
+68.5374 	EXP 	Green_Border: autoDraw = True
+68.5374 	EXP 	Two_Back_Example_Stim: autoDraw = True
+68.5374 	EXP 	One_Back_Example_Stim_2: autoDraw = True
+68.5374 	EXP 	Example_Stim_3: autoDraw = True
+68.5374 	EXP 	Example_LeftScreenInstruction_3: autoDraw = True
+68.5374 	EXP 	Example_RightScreenInstruction_3: autoDraw = True
+69.0649 	DATA 	Keypress: space
+69.0690 	INFO 	Keyboard events cleared
+69.0690 	EXP 	Instructions_24: autoDraw = False
+69.0690 	EXP 	Green_Border: autoDraw = False
+69.0690 	EXP 	Two_Back_Example_Stim: autoDraw = False
+69.0690 	EXP 	One_Back_Example_Stim_2: autoDraw = False
+69.0690 	EXP 	Example_Stim_3: autoDraw = False
+69.0690 	EXP 	Example_LeftScreenInstruction_3: autoDraw = False
+69.0690 	EXP 	Example_RightScreenInstruction_3: autoDraw = False
+69.0690 	EXP 	Example_Stim_4: image = 'VM Stimuli/PracticeFO3.bmp'
+69.0690 	EXP 	Instructions_25: autoDraw = True
+69.0690 	EXP 	Two_Back_Example_Stim_2: autoDraw = True
+69.0690 	EXP 	One_Back_Example_Stim_3: autoDraw = True
+69.0690 	EXP 	Example_Stim_4: autoDraw = True
+69.0690 	EXP 	Example_LeftScreenInstruction_4: autoDraw = True
+69.0690 	EXP 	Example_RightScreenInstruction_4: autoDraw = True
+69.9251 	DATA 	Keypress: space
+69.9279 	INFO 	Keyboard events cleared
+69.9279 	EXP 	Instructions_25: autoDraw = False
+69.9279 	EXP 	Two_Back_Example_Stim_2: autoDraw = False
+69.9279 	EXP 	One_Back_Example_Stim_3: autoDraw = False
+69.9279 	EXP 	Example_Stim_4: autoDraw = False
+69.9279 	EXP 	Example_LeftScreenInstruction_4: autoDraw = False
+69.9279 	EXP 	Example_RightScreenInstruction_4: autoDraw = False
+69.9279 	EXP 	Instructions_15: autoDraw = True
+70.8573 	DATA 	Keypress: space
+70.8613 	INFO 	Keyboard events cleared
+70.8612 	EXP 	Instructions_15: autoDraw = False
+70.8612 	EXP 	Instructions_32: autoDraw = True
+70.8612 	EXP 	Example_Stim_5: autoDraw = True
+70.8612 	EXP 	Example_LeftScreenInstruction_5: autoDraw = True
+70.8612 	EXP 	Example_RightScreenInstruction_5: autoDraw = True
+72.6551 	DATA 	Keypress: space
+72.6589 	INFO 	Keyboard events cleared
+72.6588 	EXP 	Instructions_32: autoDraw = False
+72.6588 	EXP 	Example_Stim_5: autoDraw = False
+72.6588 	EXP 	Example_LeftScreenInstruction_5: autoDraw = False
+72.6588 	EXP 	Example_RightScreenInstruction_5: autoDraw = False
+72.6588 	EXP 	Instructions_27: autoDraw = True
+72.6588 	EXP 	Example_Stim_6: autoDraw = True
+72.6588 	EXP 	Example_LeftScreenInstruction_6: autoDraw = True
+72.6588 	EXP 	Example_RightScreenInstruction_6: autoDraw = True
+74.5100 	DATA 	Keypress: space
+74.5132 	INFO 	Keyboard events cleared
+74.5131 	EXP 	Instructions_27: autoDraw = False
+74.5131 	EXP 	Example_Stim_6: autoDraw = False
+74.5131 	EXP 	Example_LeftScreenInstruction_6: autoDraw = False
+74.5131 	EXP 	Example_RightScreenInstruction_6: autoDraw = False
+74.5131 	EXP 	Instructions_33: autoDraw = True
+74.5131 	EXP 	Example_Stim_7: autoDraw = True
+74.5131 	EXP 	Example_LeftScreenInstruction_7: autoDraw = True
+74.5131 	EXP 	Example_RightScreenInstruction_7: autoDraw = True
+75.8273 	DATA 	Keypress: space
+75.8311 	INFO 	Keyboard events cleared
+75.8311 	EXP 	Instructions_33: autoDraw = False
+75.8311 	EXP 	Example_Stim_7: autoDraw = False
+75.8311 	EXP 	Example_LeftScreenInstruction_7: autoDraw = False
+75.8311 	EXP 	Example_RightScreenInstruction_7: autoDraw = False
+75.8311 	EXP 	Instructions_26: autoDraw = True
+75.8311 	EXP 	One_Back_Example_Stim_4: autoDraw = True
+75.8311 	EXP 	Example_Stim_8: autoDraw = True
+75.8311 	EXP 	Example_LeftScreenInstruction_8: autoDraw = True
+75.8311 	EXP 	Example_RightScreenInstruction_8: autoDraw = True
+77.0393 	DATA 	Keypress: space
+77.0433 	INFO 	Keyboard events cleared
+77.0433 	EXP 	Instructions_26: autoDraw = False
+77.0433 	EXP 	One_Back_Example_Stim_4: autoDraw = False
+77.0433 	EXP 	Example_Stim_8: autoDraw = False
+77.0433 	EXP 	Example_LeftScreenInstruction_8: autoDraw = False
+77.0433 	EXP 	Example_RightScreenInstruction_8: autoDraw = False
+77.0433 	EXP 	Instructions: autoDraw = True
+77.0433 	EXP 	Example_Stim_9: autoDraw = True
+77.0433 	EXP 	Example_LeftScreenInstruction_9: autoDraw = True
+77.0433 	EXP 	Example_RightScreenInstruction_9: autoDraw = True
+78.4804 	DATA 	Keypress: space
+78.4845 	INFO 	Keyboard events cleared
+78.4844 	EXP 	Instructions: autoDraw = False
+78.4844 	EXP 	Example_Stim_9: autoDraw = False
+78.4844 	EXP 	Example_LeftScreenInstruction_9: autoDraw = False
+78.4844 	EXP 	Example_RightScreenInstruction_9: autoDraw = False
+78.4844 	EXP 	Instructions_28: autoDraw = True
+78.4844 	EXP 	Two_Back_Example_Stim_3: autoDraw = True
+78.4844 	EXP 	One_Back_Example_Stim_5: autoDraw = True
+78.4844 	EXP 	Example_Stim_10: autoDraw = True
+78.4844 	EXP 	Example_LeftScreenInstruction_10: autoDraw = True
+78.4844 	EXP 	Example_RightScreenInstruction_10: autoDraw = True
+80.2043 	DATA 	Keypress: space
+80.2229 	INFO 	Keyboard events cleared
+80.2229 	EXP 	Instructions_28: autoDraw = False
+80.2229 	EXP 	Two_Back_Example_Stim_3: autoDraw = False
+80.2229 	EXP 	One_Back_Example_Stim_5: autoDraw = False
+80.2229 	EXP 	Example_Stim_10: autoDraw = False
+80.2229 	EXP 	Example_LeftScreenInstruction_10: autoDraw = False
+80.2229 	EXP 	Example_RightScreenInstruction_10: autoDraw = False
+80.2229 	EXP 	Instructions_29: autoDraw = True
+80.2229 	EXP 	Green_Border_2: autoDraw = True
+80.2229 	EXP 	Two_Back_Example_Stim_4: autoDraw = True
+80.2229 	EXP 	One_Back_Example_Stim_6: autoDraw = True
+80.2229 	EXP 	Example_Stim_11: autoDraw = True
+80.2229 	EXP 	Example_LeftScreenInstruction_11: autoDraw = True
+80.2229 	EXP 	Example_RightScreenInstruction_11: autoDraw = True
+82.2264 	DATA 	Keypress: space
+82.2299 	INFO 	Keyboard events cleared
+82.2299 	EXP 	Instructions_29: autoDraw = False
+82.2299 	EXP 	Green_Border_2: autoDraw = False
+82.2299 	EXP 	Two_Back_Example_Stim_4: autoDraw = False
+82.2299 	EXP 	One_Back_Example_Stim_6: autoDraw = False
+82.2299 	EXP 	Example_Stim_11: autoDraw = False
+82.2299 	EXP 	Example_LeftScreenInstruction_11: autoDraw = False
+82.2299 	EXP 	Example_RightScreenInstruction_11: autoDraw = False
+82.2299 	EXP 	Instructions_22: autoDraw = True
+83.0044 	DATA 	Keypress: space
+83.0082 	INFO 	Keyboard events cleared
+83.0082 	EXP 	Instructions_22: autoDraw = False
+83.0082 	EXP 	Instructions_30: autoDraw = True
+83.7299 	EXP 	Imported PracticeTrials/PracticeTrials3.xlsx as conditions, 5 conditions, 9 params
+83.7302 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': 1, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeFO2.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+83.7396 	DATA 	Keypress: space
+83.7441 	INFO 	Keyboard events cleared
+83.7440 	EXP 	Instructions_30: autoDraw = False
+83.7440 	EXP 	Stim: image = 'VM Stimuli/PracticeFO2.bmp'
+83.7440 	EXP 	Stim: autoDraw = True
+83.7440 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+83.7440 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+85.2595 	DATA 	Keypress: space
+85.7299 	EXP 	Stim: autoDraw = False
+85.7299 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+85.7299 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+85.7299 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+85.7299 	EXP 	Fix: autoDraw = True
+86.2144 	EXP 	Feedback: autoDraw = True
+86.2190 	EXP 	Fix: autoDraw = False
+87.7062 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': 2, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeFO4.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+87.7201 	INFO 	Keyboard events cleared
+87.7199 	EXP 	Feedback: autoDraw = False
+87.7199 	EXP 	Fix: autoDraw = False
+87.7199 	EXP 	Feedback: autoDraw = False
+87.7199 	EXP 	Stim: image = 'VM Stimuli/PracticeFO4.bmp'
+87.7199 	EXP 	Stim: autoDraw = True
+87.7199 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+87.7199 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+89.7194 	EXP 	Stim: autoDraw = False
+89.7194 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+89.7194 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+89.7194 	EXP 	Stim: autoDraw = False
+89.7194 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+89.7194 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+89.7194 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+89.7194 	EXP 	Fix: autoDraw = True
+90.0574 	DATA 	Keypress: escape
+90.1566 	EXP 	EmoNback_Practice: status = STOPPED
+90.1592 	EXP 	Fix: autoDraw = False
+90.1592 	EXP 	EmoNback_Practice: status = STOPPED
+90.1781 	INFO 	saved data to '/Users/akashrathi/Documents/EDC_Tasks/EmoNback/EmoNback_Practice/data/AANNNAAA_1.csv'
+90.1790 	INFO 	saved data to /Users/akashrathi/Documents/EDC_Tasks/EmoNback/EmoNback_Practice/data/AANNNAAA_1.psydat
+90.2237 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2238 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2238 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2238 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2238 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2238 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2239 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2240 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2240 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2240 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2240 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+90.2240 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+12.0866 	INFO 	Loaded monitor calibration from ['2026_03_11 12:45']
+12.2404 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x173f30400>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x173f30460>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x173a78790>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([3456, 2234]), stencilBits=8, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.2404 	EXP 	window1: backgroundImage = ''
+12.2404 	EXP 	window1: backgroundFit = 'none'
+12.2812 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+12.2812 	EXP 	window1: recordFrameIntervals = False
+12.4356 	EXP 	window1: recordFrameIntervals = True
+13.2712 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+13.9118 	INFO 	keyboard.Keyboard is using ptb backend.
+14.0835 	INFO 	keyboard.Keyboard is using ptb backend.
+14.2505 	INFO 	keyboard.Keyboard is using ptb backend.
+14.4201 	INFO 	keyboard.Keyboard is using ptb backend.
+14.5867 	INFO 	keyboard.Keyboard is using ptb backend.
+14.7529 	INFO 	keyboard.Keyboard is using ptb backend.
+14.9196 	INFO 	keyboard.Keyboard is using ptb backend.
+15.0877 	INFO 	keyboard.Keyboard is using ptb backend.
+15.2541 	INFO 	keyboard.Keyboard is using ptb backend.
+15.4201 	INFO 	keyboard.Keyboard is using ptb backend.
+15.5858 	INFO 	keyboard.Keyboard is using ptb backend.
+15.7565 	INFO 	keyboard.Keyboard is using ptb backend.
+15.9230 	INFO 	keyboard.Keyboard is using ptb backend.
+16.0893 	INFO 	keyboard.Keyboard is using ptb backend.
+16.2549 	INFO 	keyboard.Keyboard is using ptb backend.
+16.4207 	INFO 	keyboard.Keyboard is using ptb backend.
+16.5867 	INFO 	keyboard.Keyboard is using ptb backend.
+16.7522 	INFO 	keyboard.Keyboard is using ptb backend.
+16.9178 	INFO 	keyboard.Keyboard is using ptb backend.
+17.0833 	INFO 	keyboard.Keyboard is using ptb backend.
+17.2488 	INFO 	keyboard.Keyboard is using ptb backend.
+17.4145 	INFO 	keyboard.Keyboard is using ptb backend.
+17.5802 	INFO 	keyboard.Keyboard is using ptb backend.
+17.7476 	INFO 	keyboard.Keyboard is using ptb backend.
+17.9131 	INFO 	keyboard.Keyboard is using ptb backend.
+18.0787 	INFO 	keyboard.Keyboard is using ptb backend.
+18.2443 	INFO 	keyboard.Keyboard is using ptb backend.
+18.4098 	INFO 	keyboard.Keyboard is using ptb backend.
+18.5763 	INFO 	keyboard.Keyboard is using ptb backend.
+18.5763 	EXP 	EmoNback_Practice: status = STARTED
+18.6612 	EXP 	Created FaceImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeNC1.bmp', interpolate=True, mask=None, maskParams=None, name='FaceImage', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+18.6717 	EXP 	Created PlaceImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/Place1.bmp', interpolate=True, mask=None, maskParams=None, name='PlaceImage', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+18.7066 	EXP 	Created TargetImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeNC1.bmp', interpolate=True, mask=None, maskParams=None, name='TargetImage', opacity=1, ori=0.0, pos=array([0.2, 0. ]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+18.8044 	EXP 	Created CueTargetImage_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeNC1.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_1', opacity=1, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.8197 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.8750 	EXP 	Created CueTargetImage_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/Place1.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_2', opacity=1, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.8825 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.9280 	EXP 	Created Example_Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+18.9472 	EXP 	Created One_Back_Example_Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+18.9495 	EXP 	Created Example_Stim_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+18.9656 	EXP 	Created Green_Border = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-0.60784314,  0.60784314, -0.60784314]), fillColorSpace='rgb', fillRGB=array([-0.60784314,  0.60784314, -0.60784314]), interpolate=True, lineColor=array([-0.60784314,  0.60784314, -0.60784314]), lineColorSpace='rgb', lineRGB=array([-0.60784314,  0.60784314, -0.60784314]), lineWidth=1.0, name='Green_Border', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.15, 0.15]), units='height', vertices=ndarray(...), win=Window(...))
+18.9667 	EXP 	Created Two_Back_Example_Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.13, 0.13]), texRes=128.0, units='height', win=Window(...))
+18.9685 	EXP 	Created One_Back_Example_Stim_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_2', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+18.9707 	EXP 	Created Example_Stim_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim_3', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+18.9874 	EXP 	Created Two_Back_Example_Stim_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim_2', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.13, 0.13]), texRes=128.0, units='height', win=Window(...))
+18.9885 	EXP 	Created One_Back_Example_Stim_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_3', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+18.9907 	EXP 	Created Example_Stim_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim_4', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+19.0156 	EXP 	Created Example_Stim_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_5', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.0322 	EXP 	Created Example_Stim_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_6', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.0503 	EXP 	Created Example_Stim_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_7', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.0671 	EXP 	Created One_Back_Example_Stim_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_4', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+19.0682 	EXP 	Created Example_Stim_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_8', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.0845 	EXP 	Created Example_Stim_9 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_9', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.1015 	EXP 	Created Two_Back_Example_Stim_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim_3', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+19.1026 	EXP 	Created One_Back_Example_Stim_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_5', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+19.1035 	EXP 	Created Example_Stim_10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_10', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.1198 	EXP 	Created Green_Border_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-0.60784314,  0.60784314, -0.60784314]), fillColorSpace='rgb', fillRGB=array([-0.60784314,  0.60784314, -0.60784314]), interpolate=True, lineColor=array([-0.60784314,  0.60784314, -0.60784314]), lineColorSpace='rgb', lineRGB=array([-0.60784314,  0.60784314, -0.60784314]), lineWidth=1.0, name='Green_Border_2', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.15, 0.15]), units='height', vertices=ndarray(...), win=Window(...))
+19.1209 	EXP 	Created Two_Back_Example_Stim_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim_4', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.13, 0.13]), texRes=128.0, units='height', win=Window(...))
+19.1219 	EXP 	Created One_Back_Example_Stim_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_6', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+19.1230 	EXP 	Created Example_Stim_11 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_11', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+19.1463 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.1741 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.2187 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.2521 	EXP 	Created CueTargetImage_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/Place3.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_6', opacity=1, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.2595 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.2920 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.3252 	EXP 	Created CueTargetImage_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeNC2.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_8', opacity=1, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+19.3324 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+0.0185 	EXP 	NbackTitle: autoLog = True
+0.0185 	EXP 	Instructions_1: autoLog = True
+0.0185 	EXP 	Instructions_2: autoLog = True
+0.0185 	EXP 	Instructions_3: autoLog = True
+0.0185 	EXP 	Instructions_5pt5: autoLog = True
+0.0185 	EXP 	Instructions_6: autoLog = True
+0.0185 	EXP 	Instructions_6_Target: autoLog = True
+0.0185 	EXP 	Instructions_6_Match: autoLog = True
+0.0185 	EXP 	Instructions_14: autoLog = True
+0.0185 	EXP 	Instructions_6pt2: autoLog = True
+0.0185 	EXP 	CueFix_1: autoLog = True
+0.0185 	EXP 	CueTarget_1: autoLog = True
+0.0185 	EXP 	Zero_back: autoLog = True
+0.0185 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0185 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0185 	EXP 	Fix: autoLog = True
+0.0185 	EXP 	Feedback: autoLog = True
+0.0185 	EXP 	Instructions_Space: autoLog = True
+0.0185 	EXP 	CueFix_2: autoLog = True
+0.0185 	EXP 	CueTarget_2: autoLog = True
+0.0185 	EXP 	Zero_back_2: autoLog = True
+0.0185 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0185 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0185 	EXP 	Fix: autoLog = True
+0.0185 	EXP 	Feedback: autoLog = True
+0.0185 	EXP 	Instructions_Space: autoLog = True
+0.0185 	EXP 	Instructions_8: autoLog = True
+0.0185 	EXP 	Instructions_11: autoLog = True
+0.0185 	EXP 	Instructions_9: autoLog = True
+0.0185 	EXP 	Example_LeftScreenInstruction: autoLog = True
+0.0185 	EXP 	Example_RightScreenInstruction: autoLog = True
+0.0185 	EXP 	Instructions_21: autoLog = True
+0.0185 	EXP 	Example_LeftScreenInstruction_2: autoLog = True
+0.0185 	EXP 	Example_RightScreenInstruction_2: autoLog = True
+0.0185 	EXP 	Instructions_24: autoLog = True
+0.0185 	EXP 	Example_LeftScreenInstruction_3: autoLog = True
+0.0185 	EXP 	Example_RightScreenInstruction_3: autoLog = True
+0.0185 	EXP 	Instructions_25: autoLog = True
+0.0185 	EXP 	Example_LeftScreenInstruction_4: autoLog = True
+0.0185 	EXP 	Example_RightScreenInstruction_4: autoLog = True
+0.0185 	EXP 	Instructions_15: autoLog = True
+0.0185 	EXP 	Instructions_32: autoLog = True
+0.0185 	EXP 	Example_LeftScreenInstruction_5: autoLog = True
+0.0185 	EXP 	Example_RightScreenInstruction_5: autoLog = True
+0.0185 	EXP 	Instructions_27: autoLog = True
+0.0185 	EXP 	Example_LeftScreenInstruction_6: autoLog = True
+0.0185 	EXP 	Example_RightScreenInstruction_6: autoLog = True
+0.0185 	EXP 	Instructions_33: autoLog = True
+0.0185 	EXP 	Example_LeftScreenInstruction_7: autoLog = True
+0.0185 	EXP 	Example_RightScreenInstruction_7: autoLog = True
+0.0185 	EXP 	Instructions_26: autoLog = True
+0.0185 	EXP 	Example_LeftScreenInstruction_8: autoLog = True
+0.0185 	EXP 	Example_RightScreenInstruction_8: autoLog = True
+0.0185 	EXP 	Instructions: autoLog = True
+0.0185 	EXP 	Example_LeftScreenInstruction_9: autoLog = True
+0.0185 	EXP 	Example_RightScreenInstruction_9: autoLog = True
+0.0185 	EXP 	Instructions_28: autoLog = True
+0.0185 	EXP 	Example_LeftScreenInstruction_10: autoLog = True
+0.0185 	EXP 	Example_RightScreenInstruction_10: autoLog = True
+0.0185 	EXP 	Instructions_29: autoLog = True
+0.0185 	EXP 	Example_LeftScreenInstruction_11: autoLog = True
+0.0185 	EXP 	Example_RightScreenInstruction_11: autoLog = True
+0.0185 	EXP 	Instructions_22: autoLog = True
+0.0185 	EXP 	Instructions_30: autoLog = True
+0.0185 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0185 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0185 	EXP 	Fix: autoLog = True
+0.0185 	EXP 	Feedback: autoLog = True
+0.0185 	EXP 	Instructions_Space: autoLog = True
+0.0185 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0185 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0185 	EXP 	Fix: autoLog = True
+0.0185 	EXP 	Feedback: autoLog = True
+0.0185 	EXP 	Instructions_36: autoLog = True
+0.0185 	EXP 	CueFix_5: autoLog = True
+0.0185 	EXP 	Cue_2Back: autoLog = True
+0.0185 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0185 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0185 	EXP 	Fix: autoLog = True
+0.0185 	EXP 	Feedback: autoLog = True
+0.0185 	EXP 	CueFix_6: autoLog = True
+0.0185 	EXP 	CueTarget_6: autoLog = True
+0.0185 	EXP 	Zero_back_3: autoLog = True
+0.0185 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0185 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0185 	EXP 	Fix: autoLog = True
+0.0185 	EXP 	Feedback: autoLog = True
+0.0185 	EXP 	CueFix_7: autoLog = True
+0.0185 	EXP 	Cue_2Back_2: autoLog = True
+0.0185 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0185 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0185 	EXP 	Fix: autoLog = True
+0.0185 	EXP 	Feedback: autoLog = True
+0.0185 	EXP 	CueFix_8: autoLog = True
+0.0185 	EXP 	CueTarget_8: autoLog = True
+0.0185 	EXP 	Zero_back_4: autoLog = True
+0.0185 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0185 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0185 	EXP 	Fix: autoLog = True
+0.0185 	EXP 	Feedback: autoLog = True
+0.0185 	EXP 	AllDone: autoLog = True
+0.0406 	INFO 	Keyboard events cleared
+0.0406 	WARNING 	t of last frame was 22.07ms (=1/45)
+0.0406 	EXP 	NbackTitle: autoDraw = True
+4.4338 	DATA 	Keypress: space
+4.4384 	INFO 	Keyboard events cleared
+4.4384 	WARNING 	t of last frame was 95.29ms (=1/10)
+4.4384 	EXP 	NbackTitle: autoDraw = False
+4.4384 	EXP 	Instructions_1: autoDraw = True
+5.0940 	DATA 	Keypress: space
+5.0978 	INFO 	Keyboard events cleared
+5.0977 	EXP 	Instructions_1: autoDraw = False
+5.0977 	EXP 	Instructions_2: autoDraw = True
+5.0977 	EXP 	FaceImage: autoDraw = True
+5.7394 	INFO 	Keyboard events cleared
+5.7394 	EXP 	Instructions_2: autoDraw = False
+5.7394 	EXP 	FaceImage: autoDraw = False
+5.7394 	EXP 	Instructions_3: autoDraw = True
+5.7394 	EXP 	PlaceImage: autoDraw = True
+5.7426 	DATA 	Keypress: space
+6.5490 	DATA 	Keypress: space
+6.5527 	INFO 	Keyboard events cleared
+6.5526 	EXP 	Instructions_3: autoDraw = False
+6.5526 	EXP 	PlaceImage: autoDraw = False
+6.5526 	EXP 	Instructions_5pt5: autoDraw = True
+6.8830 	DATA 	Keypress: space
+6.8872 	INFO 	Keyboard events cleared
+6.8872 	EXP 	Instructions_5pt5: autoDraw = False
+6.8872 	EXP 	Instructions_6: autoDraw = True
+6.8872 	EXP 	Instructions_6_Target: autoDraw = True
+6.8872 	EXP 	TargetImage: autoDraw = True
+6.8872 	EXP 	Instructions_6_Match: autoDraw = True
+7.0946 	DATA 	Keypress: space
+7.3053 	DATA 	Keypress: space
+8.1337 	DATA 	Keypress: left
+8.1376 	INFO 	Keyboard events cleared
+8.1375 	WARNING 	t of last frame was 21.42ms (=1/46)
+8.1375 	EXP 	Instructions_6: autoDraw = False
+8.1375 	EXP 	Instructions_6_Target: autoDraw = False
+8.1375 	EXP 	TargetImage: autoDraw = False
+8.1375 	EXP 	Instructions_6_Match: autoDraw = False
+8.1375 	EXP 	Instructions_14: autoDraw = True
+8.5033 	DATA 	Keypress: right
+8.5064 	INFO 	Keyboard events cleared
+8.5064 	EXP 	Instructions_14: autoDraw = False
+8.5064 	EXP 	Instructions_6pt2: autoDraw = True
+9.4057 	DATA 	Keypress: space
+9.4099 	EXP 	Instructions_6pt2: autoDraw = False
+9.4099 	EXP 	CueFix_1: autoDraw = True
+9.8939 	EXP 	CueTarget_1: autoDraw = True
+9.8939 	EXP 	CueTargetImage_1: autoDraw = True
+9.8939 	EXP 	Zero_back: autoDraw = True
+9.8998 	EXP 	CueFix_1: autoDraw = False
+12.3955 	EXP 	Imported PracticeTrials/PracticeTrials1.xlsx as conditions, 5 conditions, 9 params
+12.3963 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': 2, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC2.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+12.4287 	INFO 	Keyboard events cleared
+12.4286 	WARNING 	t of last frame was 45.14ms (=1/22)
+12.4286 	EXP 	CueTarget_1: autoDraw = False
+12.4286 	EXP 	CueTargetImage_1: autoDraw = False
+12.4286 	EXP 	Zero_back: autoDraw = False
+12.4286 	EXP 	CueFix_1: autoDraw = False
+12.4286 	EXP 	CueTarget_1: autoDraw = False
+12.4286 	EXP 	CueTargetImage_1: autoDraw = False
+12.4286 	EXP 	Zero_back: autoDraw = False
+12.4286 	EXP 	Stim: image = 'VM Stimuli/PracticeNC2.bmp'
+12.4286 	EXP 	Stim: autoDraw = True
+12.4286 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+12.4286 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+14.4101 	EXP 	Stim: autoDraw = False
+14.4101 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+14.4101 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+14.4101 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+14.4101 	EXP 	Fix: autoDraw = True
+14.8901 	EXP 	Feedback: autoDraw = True
+14.9005 	EXP 	Fix: autoDraw = False
+16.3728 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': 3, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC1.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+16.3820 	EXP 	Feedback: autoDraw = False
+16.3820 	EXP 	Fix: autoDraw = False
+16.3820 	EXP 	Feedback: autoDraw = False
+16.3820 	EXP 	Stim: image = 'VM Stimuli/PracticeNC1.bmp'
+16.3899 	INFO 	Keyboard events cleared
+16.3898 	EXP 	Stim: autoDraw = True
+16.3898 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+16.3898 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+18.3837 	EXP 	Stim: autoDraw = False
+18.3837 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+18.3837 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+18.3837 	EXP 	Stim: autoDraw = False
+18.3837 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+18.3837 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+18.3837 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+18.3973 	EXP 	Fix: autoDraw = True
+18.8968 	EXP 	Fix: autoDraw = False
+18.8968 	EXP 	Feedback: autoDraw = True
+20.3880 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': 4, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC3.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+20.4013 	INFO 	Keyboard events cleared
+20.4013 	EXP 	Feedback: autoDraw = False
+20.4013 	EXP 	Fix: autoDraw = False
+20.4013 	EXP 	Feedback: autoDraw = False
+20.4013 	EXP 	Stim: image = 'VM Stimuli/PracticeNC3.bmp'
+20.4013 	EXP 	Stim: autoDraw = True
+20.4013 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+20.4013 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+22.3948 	EXP 	Stim: autoDraw = False
+22.3948 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+22.3948 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+22.3948 	EXP 	Stim: autoDraw = False
+22.3948 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+22.3948 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+22.3948 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+22.3948 	EXP 	Fix: autoDraw = True
+22.8864 	EXP 	Fix: autoDraw = False
+22.8927 	EXP 	Feedback: autoDraw = True
+24.3755 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': 5, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC2.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+24.3884 	EXP 	Feedback: autoDraw = False
+24.3884 	EXP 	Fix: autoDraw = False
+24.3884 	EXP 	Feedback: autoDraw = False
+24.3884 	EXP 	Stim: image = 'VM Stimuli/PracticeNC2.bmp'
+24.3961 	INFO 	Keyboard events cleared
+24.3960 	EXP 	Stim: autoDraw = True
+24.3960 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+24.3960 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+26.3925 	EXP 	Stim: autoDraw = False
+26.3925 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+26.3925 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+26.3925 	EXP 	Stim: autoDraw = False
+26.3925 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+26.3925 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+26.3925 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+26.3925 	EXP 	Fix: autoDraw = True
+26.8841 	EXP 	Fix: autoDraw = False
+26.8956 	EXP 	Feedback: autoDraw = True
+28.3811 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': 6, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC1.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+28.3921 	INFO 	Keyboard events cleared
+28.3921 	EXP 	Feedback: autoDraw = False
+28.3921 	EXP 	Fix: autoDraw = False
+28.3921 	EXP 	Feedback: autoDraw = False
+28.3921 	EXP 	Stim: image = 'VM Stimuli/PracticeNC1.bmp'
+28.3921 	EXP 	Stim: autoDraw = True
+28.3921 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+28.3921 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+30.3891 	EXP 	Stim: autoDraw = False
+30.3891 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+30.3891 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+30.3891 	EXP 	Stim: autoDraw = False
+30.3891 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+30.3891 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+30.3891 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+30.3941 	EXP 	Fix: autoDraw = True
+30.8847 	EXP 	Fix: autoDraw = False
+30.8960 	EXP 	Feedback: autoDraw = True
+32.3832 	EXP 	Feedback: autoDraw = False
+32.3832 	EXP 	Fix: autoDraw = False
+32.3832 	EXP 	Feedback: autoDraw = False
+32.3973 	INFO 	Keyboard events cleared
+32.3973 	EXP 	Instructions_Space: autoDraw = True
+33.4034 	DATA 	Keypress: space
+33.4073 	EXP 	Instructions_Space: autoDraw = False
+33.4073 	EXP 	CueFix_2: autoDraw = True
+33.8929 	EXP 	CueTarget_2: autoDraw = True
+33.8929 	EXP 	CueTargetImage_2: autoDraw = True
+33.8929 	EXP 	Zero_back_2: autoDraw = True
+33.9019 	EXP 	CueFix_2: autoDraw = False
+36.4672 	EXP 	Imported PracticeTrials/PracticeTrials2.xlsx as conditions, 5 conditions, 9 params
+36.4675 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': 2, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place1.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+36.4781 	INFO 	Keyboard events cleared
+36.4782 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+36.4781 	EXP 	CueTarget_2: autoDraw = False
+36.4781 	EXP 	CueTargetImage_2: autoDraw = False
+36.4781 	EXP 	Zero_back_2: autoDraw = False
+36.4781 	EXP 	CueFix_2: autoDraw = False
+36.4781 	EXP 	CueTarget_2: autoDraw = False
+36.4781 	EXP 	CueTargetImage_2: autoDraw = False
+36.4781 	EXP 	Zero_back_2: autoDraw = False
+36.4781 	EXP 	Stim: image = 'VM Stimuli/Place1.bmp'
+36.4781 	EXP 	Stim: autoDraw = True
+36.4781 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+36.4781 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+38.4113 	EXP 	Stim: autoDraw = False
+38.4113 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+38.4113 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+38.4113 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+38.4113 	EXP 	Fix: autoDraw = True
+38.8959 	EXP 	Feedback: autoDraw = True
+38.9006 	EXP 	Fix: autoDraw = False
+40.3803 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': 3, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place3.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+40.3934 	INFO 	Keyboard events cleared
+40.3933 	EXP 	Feedback: autoDraw = False
+40.3933 	EXP 	Fix: autoDraw = False
+40.3933 	EXP 	Feedback: autoDraw = False
+40.3933 	EXP 	Stim: image = 'VM Stimuli/Place3.bmp'
+40.3933 	EXP 	Stim: autoDraw = True
+40.3933 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+40.3933 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+42.3853 	EXP 	Stim: autoDraw = False
+42.3853 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+42.3853 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+42.3853 	EXP 	Stim: autoDraw = False
+42.3853 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+42.3853 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+42.3853 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+42.3853 	EXP 	Fix: autoDraw = True
+42.8840 	EXP 	Fix: autoDraw = False
+42.8840 	EXP 	Feedback: autoDraw = True
+44.3699 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': 4, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place5.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+44.3773 	EXP 	Feedback: autoDraw = False
+44.3773 	EXP 	Fix: autoDraw = False
+44.3773 	EXP 	Feedback: autoDraw = False
+44.3773 	EXP 	Stim: image = 'VM Stimuli/Place5.bmp'
+44.3937 	INFO 	Keyboard events cleared
+44.3937 	EXP 	Stim: autoDraw = True
+44.3937 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+44.3937 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+46.3930 	EXP 	Stim: autoDraw = False
+46.3930 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+46.3930 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+46.3930 	EXP 	Stim: autoDraw = False
+46.3930 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+46.3930 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+46.3930 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+46.3930 	EXP 	Fix: autoDraw = True
+46.8880 	EXP 	Fix: autoDraw = False
+46.8928 	EXP 	Feedback: autoDraw = True
+48.3757 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': 5, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place1.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+48.3877 	EXP 	Feedback: autoDraw = False
+48.3877 	EXP 	Fix: autoDraw = False
+48.3877 	EXP 	Feedback: autoDraw = False
+48.3877 	EXP 	Stim: image = 'VM Stimuli/Place1.bmp'
+48.3958 	INFO 	Keyboard events cleared
+48.3958 	EXP 	Stim: autoDraw = True
+48.3958 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+48.3958 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+50.3867 	EXP 	Stim: autoDraw = False
+50.3867 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+50.3867 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+50.3867 	EXP 	Stim: autoDraw = False
+50.3867 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+50.3867 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+50.3867 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+50.3867 	EXP 	Fix: autoDraw = True
+50.8846 	EXP 	Fix: autoDraw = False
+50.8963 	EXP 	Feedback: autoDraw = True
+52.3864 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': 6, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place3.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+52.3977 	INFO 	Keyboard events cleared
+52.3977 	EXP 	Feedback: autoDraw = False
+52.3977 	EXP 	Fix: autoDraw = False
+52.3977 	EXP 	Feedback: autoDraw = False
+52.3977 	EXP 	Stim: image = 'VM Stimuli/Place3.bmp'
+52.3977 	EXP 	Stim: autoDraw = True
+52.3977 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+52.3977 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+54.3937 	EXP 	Stim: autoDraw = False
+54.3937 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+54.3937 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+54.3937 	EXP 	Stim: autoDraw = False
+54.3937 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+54.3937 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+54.3937 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+54.3937 	EXP 	Fix: autoDraw = True
+54.8946 	EXP 	Fix: autoDraw = False
+54.8946 	EXP 	Feedback: autoDraw = True
+56.3944 	INFO 	Keyboard events cleared
+56.3944 	EXP 	Feedback: autoDraw = False
+56.3944 	EXP 	Fix: autoDraw = False
+56.3944 	EXP 	Feedback: autoDraw = False
+56.3944 	EXP 	Instructions_Space: autoDraw = True
+57.1531 	DATA 	Keypress: space
+57.1571 	INFO 	Keyboard events cleared
+57.1571 	EXP 	Instructions_Space: autoDraw = False
+57.1571 	EXP 	Instructions_8: autoDraw = True
+59.2438 	DATA 	Keypress: space
+59.2476 	INFO 	Keyboard events cleared
+59.2476 	EXP 	Instructions_8: autoDraw = False
+59.2476 	EXP 	Instructions_11: autoDraw = True
+60.3050 	DATA 	Keypress: space
+60.3094 	INFO 	Keyboard events cleared
+60.3094 	EXP 	Instructions_11: autoDraw = False
+60.3094 	EXP 	Example_Stim: image = 'VM Stimuli/PracticeFO1.bmp'
+60.3094 	EXP 	Instructions_9: autoDraw = True
+60.3094 	EXP 	Example_Stim: autoDraw = True
+60.3094 	EXP 	Example_LeftScreenInstruction: autoDraw = True
+60.3094 	EXP 	Example_RightScreenInstruction: autoDraw = True
+62.0835 	DATA 	Keypress: space
+62.0873 	INFO 	Keyboard events cleared
+62.0873 	EXP 	Instructions_9: autoDraw = False
+62.0873 	EXP 	Example_Stim: autoDraw = False
+62.0873 	EXP 	Example_LeftScreenInstruction: autoDraw = False
+62.0873 	EXP 	Example_RightScreenInstruction: autoDraw = False
+62.0873 	EXP 	Example_Stim_2: image = 'VM Stimuli/PracticeFO2.bmp'
+62.0873 	EXP 	Instructions_21: autoDraw = True
+62.0873 	EXP 	One_Back_Example_Stim: autoDraw = True
+62.0873 	EXP 	Example_Stim_2: autoDraw = True
+62.0873 	EXP 	Example_LeftScreenInstruction_2: autoDraw = True
+62.0873 	EXP 	Example_RightScreenInstruction_2: autoDraw = True
+63.2025 	DATA 	Keypress: space
+63.2195 	INFO 	Keyboard events cleared
+63.2195 	EXP 	Instructions_21: autoDraw = False
+63.2195 	EXP 	One_Back_Example_Stim: autoDraw = False
+63.2195 	EXP 	Example_Stim_2: autoDraw = False
+63.2195 	EXP 	Example_LeftScreenInstruction_2: autoDraw = False
+63.2195 	EXP 	Example_RightScreenInstruction_2: autoDraw = False
+63.2195 	EXP 	Example_Stim_3: image = 'VM Stimuli/PracticeFO1.bmp'
+63.2195 	EXP 	Instructions_24: autoDraw = True
+63.2195 	EXP 	Green_Border: autoDraw = True
+63.2195 	EXP 	Two_Back_Example_Stim: autoDraw = True
+63.2195 	EXP 	One_Back_Example_Stim_2: autoDraw = True
+63.2195 	EXP 	Example_Stim_3: autoDraw = True
+63.2195 	EXP 	Example_LeftScreenInstruction_3: autoDraw = True
+63.2195 	EXP 	Example_RightScreenInstruction_3: autoDraw = True
+64.1408 	DATA 	Keypress: space
+64.1448 	INFO 	Keyboard events cleared
+64.1448 	EXP 	Instructions_24: autoDraw = False
+64.1448 	EXP 	Green_Border: autoDraw = False
+64.1448 	EXP 	Two_Back_Example_Stim: autoDraw = False
+64.1448 	EXP 	One_Back_Example_Stim_2: autoDraw = False
+64.1448 	EXP 	Example_Stim_3: autoDraw = False
+64.1448 	EXP 	Example_LeftScreenInstruction_3: autoDraw = False
+64.1448 	EXP 	Example_RightScreenInstruction_3: autoDraw = False
+64.1448 	EXP 	Example_Stim_4: image = 'VM Stimuli/PracticeFO3.bmp'
+64.1448 	EXP 	Instructions_25: autoDraw = True
+64.1448 	EXP 	Two_Back_Example_Stim_2: autoDraw = True
+64.1448 	EXP 	One_Back_Example_Stim_3: autoDraw = True
+64.1448 	EXP 	Example_Stim_4: autoDraw = True
+64.1448 	EXP 	Example_LeftScreenInstruction_4: autoDraw = True
+64.1448 	EXP 	Example_RightScreenInstruction_4: autoDraw = True
+66.1491 	DATA 	Keypress: space
+66.1521 	INFO 	Keyboard events cleared
+66.1520 	EXP 	Instructions_25: autoDraw = False
+66.1520 	EXP 	Two_Back_Example_Stim_2: autoDraw = False
+66.1520 	EXP 	One_Back_Example_Stim_3: autoDraw = False
+66.1520 	EXP 	Example_Stim_4: autoDraw = False
+66.1520 	EXP 	Example_LeftScreenInstruction_4: autoDraw = False
+66.1520 	EXP 	Example_RightScreenInstruction_4: autoDraw = False
+66.1520 	EXP 	Instructions_15: autoDraw = True
+67.1488 	DATA 	Keypress: space
+67.1528 	INFO 	Keyboard events cleared
+67.1527 	EXP 	Instructions_15: autoDraw = False
+67.1527 	EXP 	Instructions_32: autoDraw = True
+67.1527 	EXP 	Example_Stim_5: autoDraw = True
+67.1527 	EXP 	Example_LeftScreenInstruction_5: autoDraw = True
+67.1527 	EXP 	Example_RightScreenInstruction_5: autoDraw = True
+71.4029 	DATA 	Keypress: space
+71.4064 	INFO 	Keyboard events cleared
+71.4064 	EXP 	Instructions_32: autoDraw = False
+71.4064 	EXP 	Example_Stim_5: autoDraw = False
+71.4064 	EXP 	Example_LeftScreenInstruction_5: autoDraw = False
+71.4064 	EXP 	Example_RightScreenInstruction_5: autoDraw = False
+71.4064 	EXP 	Instructions_27: autoDraw = True
+71.4064 	EXP 	Example_Stim_6: autoDraw = True
+71.4064 	EXP 	Example_LeftScreenInstruction_6: autoDraw = True
+71.4064 	EXP 	Example_RightScreenInstruction_6: autoDraw = True
+83.4626 	DATA 	Keypress: space
+83.4649 	INFO 	Keyboard events cleared
+83.4649 	EXP 	Instructions_27: autoDraw = False
+83.4649 	EXP 	Example_Stim_6: autoDraw = False
+83.4649 	EXP 	Example_LeftScreenInstruction_6: autoDraw = False
+83.4649 	EXP 	Example_RightScreenInstruction_6: autoDraw = False
+83.4649 	EXP 	Instructions_33: autoDraw = True
+83.4649 	EXP 	Example_Stim_7: autoDraw = True
+83.4649 	EXP 	Example_LeftScreenInstruction_7: autoDraw = True
+83.4649 	EXP 	Example_RightScreenInstruction_7: autoDraw = True
+100.0224 	DATA 	Keypress: space
+100.0267 	INFO 	Keyboard events cleared
+100.0267 	EXP 	Instructions_33: autoDraw = False
+100.0267 	EXP 	Example_Stim_7: autoDraw = False
+100.0267 	EXP 	Example_LeftScreenInstruction_7: autoDraw = False
+100.0267 	EXP 	Example_RightScreenInstruction_7: autoDraw = False
+100.0267 	EXP 	Instructions_26: autoDraw = True
+100.0267 	EXP 	One_Back_Example_Stim_4: autoDraw = True
+100.0267 	EXP 	Example_Stim_8: autoDraw = True
+100.0267 	EXP 	Example_LeftScreenInstruction_8: autoDraw = True
+100.0267 	EXP 	Example_RightScreenInstruction_8: autoDraw = True
+107.0051 	DATA 	Keypress: space
+107.0089 	INFO 	Keyboard events cleared
+107.0088 	EXP 	Instructions_26: autoDraw = False
+107.0088 	EXP 	One_Back_Example_Stim_4: autoDraw = False
+107.0088 	EXP 	Example_Stim_8: autoDraw = False
+107.0088 	EXP 	Example_LeftScreenInstruction_8: autoDraw = False
+107.0088 	EXP 	Example_RightScreenInstruction_8: autoDraw = False
+107.0088 	EXP 	Instructions: autoDraw = True
+107.0088 	EXP 	Example_Stim_9: autoDraw = True
+107.0088 	EXP 	Example_LeftScreenInstruction_9: autoDraw = True
+107.0088 	EXP 	Example_RightScreenInstruction_9: autoDraw = True
+114.3018 	DATA 	Keypress: space
+114.3060 	INFO 	Keyboard events cleared
+114.3060 	EXP 	Instructions: autoDraw = False
+114.3060 	EXP 	Example_Stim_9: autoDraw = False
+114.3060 	EXP 	Example_LeftScreenInstruction_9: autoDraw = False
+114.3060 	EXP 	Example_RightScreenInstruction_9: autoDraw = False
+114.3060 	EXP 	Instructions_28: autoDraw = True
+114.3060 	EXP 	Two_Back_Example_Stim_3: autoDraw = True
+114.3060 	EXP 	One_Back_Example_Stim_5: autoDraw = True
+114.3060 	EXP 	Example_Stim_10: autoDraw = True
+114.3060 	EXP 	Example_LeftScreenInstruction_10: autoDraw = True
+114.3060 	EXP 	Example_RightScreenInstruction_10: autoDraw = True
+115.7373 	DATA 	Keypress: space
+115.7570 	INFO 	Keyboard events cleared
+115.7569 	EXP 	Instructions_28: autoDraw = False
+115.7569 	EXP 	Two_Back_Example_Stim_3: autoDraw = False
+115.7569 	EXP 	One_Back_Example_Stim_5: autoDraw = False
+115.7569 	EXP 	Example_Stim_10: autoDraw = False
+115.7569 	EXP 	Example_LeftScreenInstruction_10: autoDraw = False
+115.7569 	EXP 	Example_RightScreenInstruction_10: autoDraw = False
+115.7569 	EXP 	Instructions_29: autoDraw = True
+115.7569 	EXP 	Green_Border_2: autoDraw = True
+115.7569 	EXP 	Two_Back_Example_Stim_4: autoDraw = True
+115.7569 	EXP 	One_Back_Example_Stim_6: autoDraw = True
+115.7569 	EXP 	Example_Stim_11: autoDraw = True
+115.7569 	EXP 	Example_LeftScreenInstruction_11: autoDraw = True
+115.7569 	EXP 	Example_RightScreenInstruction_11: autoDraw = True
+117.6695 	DATA 	Keypress: space
+117.6733 	INFO 	Keyboard events cleared
+117.6733 	EXP 	Instructions_29: autoDraw = False
+117.6733 	EXP 	Green_Border_2: autoDraw = False
+117.6733 	EXP 	Two_Back_Example_Stim_4: autoDraw = False
+117.6733 	EXP 	One_Back_Example_Stim_6: autoDraw = False
+117.6733 	EXP 	Example_Stim_11: autoDraw = False
+117.6733 	EXP 	Example_LeftScreenInstruction_11: autoDraw = False
+117.6733 	EXP 	Example_RightScreenInstruction_11: autoDraw = False
+117.6733 	EXP 	Instructions_22: autoDraw = True
+118.9385 	DATA 	Keypress: escape
+119.0040 	EXP 	EmoNback_Practice: status = STOPPED
+119.0124 	EXP 	Instructions_22: autoDraw = False
+119.0125 	EXP 	EmoNback_Practice: status = STOPPED
+119.0332 	INFO 	saved data to '/Users/akashrathi/Documents/EDC_Tasks/EmoNback/EmoNback_Practice/data/AANNNAAA_1_1.csv'
+119.0343 	INFO 	saved data to /Users/akashrathi/Documents/EDC_Tasks/EmoNback/EmoNback_Practice/data/AANNNAAA_1_1.psydat
+119.0894 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0896 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0897 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0897 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0897 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0897 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0897 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0897 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0897 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0897 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0897 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0897 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0897 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0897 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+119.0897 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+11.6370 	INFO 	Loaded monitor calibration from ['2026_03_11 12:45']
+11.7944 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x1742d4220>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x1742d4280>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x173fb48e0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([3456, 2234]), stencilBits=8, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.7944 	EXP 	window1: backgroundImage = ''
+11.7944 	EXP 	window1: backgroundFit = 'none'
+11.8349 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+11.8349 	EXP 	window1: recordFrameIntervals = False
+12.0126 	EXP 	window1: recordFrameIntervals = True
+12.8473 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+13.4734 	INFO 	keyboard.Keyboard is using ptb backend.
+13.6380 	INFO 	keyboard.Keyboard is using ptb backend.
+13.8023 	INFO 	keyboard.Keyboard is using ptb backend.
+13.9670 	INFO 	keyboard.Keyboard is using ptb backend.
+14.1321 	INFO 	keyboard.Keyboard is using ptb backend.
+14.2960 	INFO 	keyboard.Keyboard is using ptb backend.
+14.4599 	INFO 	keyboard.Keyboard is using ptb backend.
+14.6235 	INFO 	keyboard.Keyboard is using ptb backend.
+14.7875 	INFO 	keyboard.Keyboard is using ptb backend.
+14.9513 	INFO 	keyboard.Keyboard is using ptb backend.
+15.1154 	INFO 	keyboard.Keyboard is using ptb backend.
+15.2797 	INFO 	keyboard.Keyboard is using ptb backend.
+15.4443 	INFO 	keyboard.Keyboard is using ptb backend.
+15.6090 	INFO 	keyboard.Keyboard is using ptb backend.
+15.7725 	INFO 	keyboard.Keyboard is using ptb backend.
+15.9365 	INFO 	keyboard.Keyboard is using ptb backend.
+16.1010 	INFO 	keyboard.Keyboard is using ptb backend.
+16.2654 	INFO 	keyboard.Keyboard is using ptb backend.
+16.4304 	INFO 	keyboard.Keyboard is using ptb backend.
+16.5957 	INFO 	keyboard.Keyboard is using ptb backend.
+16.7619 	INFO 	keyboard.Keyboard is using ptb backend.
+16.9290 	INFO 	keyboard.Keyboard is using ptb backend.
+17.1169 	INFO 	keyboard.Keyboard is using ptb backend.
+17.3082 	INFO 	keyboard.Keyboard is using ptb backend.
+17.4826 	INFO 	keyboard.Keyboard is using ptb backend.
+17.6467 	INFO 	keyboard.Keyboard is using ptb backend.
+17.8129 	INFO 	keyboard.Keyboard is using ptb backend.
+17.9785 	INFO 	keyboard.Keyboard is using ptb backend.
+18.1432 	INFO 	keyboard.Keyboard is using ptb backend.
+18.1432 	EXP 	EmoNback_Practice: status = STARTED
+18.2301 	EXP 	Created FaceImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeNC1.bmp', interpolate=True, mask=None, maskParams=None, name='FaceImage', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+18.2406 	EXP 	Created PlaceImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/Place1.bmp', interpolate=True, mask=None, maskParams=None, name='PlaceImage', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+18.2744 	EXP 	Created TargetImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeNC1.bmp', interpolate=True, mask=None, maskParams=None, name='TargetImage', opacity=1, ori=0.0, pos=array([0.2, 0. ]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+18.3708 	EXP 	Created CueTargetImage_1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeNC1.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_1', opacity=1, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.3863 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.4403 	EXP 	Created CueTargetImage_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/Place1.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_2', opacity=1, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.4474 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.4907 	EXP 	Created Example_Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+18.5076 	EXP 	Created One_Back_Example_Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+18.5098 	EXP 	Created Example_Stim_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+18.5253 	EXP 	Created Green_Border = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-0.60784314,  0.60784314, -0.60784314]), fillColorSpace='rgb', fillRGB=array([-0.60784314,  0.60784314, -0.60784314]), interpolate=True, lineColor=array([-0.60784314,  0.60784314, -0.60784314]), lineColorSpace='rgb', lineRGB=array([-0.60784314,  0.60784314, -0.60784314]), lineWidth=1.0, name='Green_Border', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.15, 0.15]), units='height', vertices=ndarray(...), win=Window(...))
+18.5263 	EXP 	Created Two_Back_Example_Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.13, 0.13]), texRes=128.0, units='height', win=Window(...))
+18.5283 	EXP 	Created One_Back_Example_Stim_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_2', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+18.5306 	EXP 	Created Example_Stim_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim_3', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+18.5467 	EXP 	Created Two_Back_Example_Stim_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim_2', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.13, 0.13]), texRes=128.0, units='height', win=Window(...))
+18.5477 	EXP 	Created One_Back_Example_Stim_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_3', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+18.5499 	EXP 	Created Example_Stim_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Example_Stim_4', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.22, 0.22]), texRes=128.0, units='height', win=Window(...))
+18.5735 	EXP 	Created Example_Stim_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_5', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+18.5892 	EXP 	Created Example_Stim_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_6', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+18.6056 	EXP 	Created Example_Stim_7 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_7', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+18.6217 	EXP 	Created One_Back_Example_Stim_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_4', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+18.6227 	EXP 	Created Example_Stim_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_8', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+18.6389 	EXP 	Created Example_Stim_9 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_9', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+18.6550 	EXP 	Created Two_Back_Example_Stim_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO2.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim_3', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+18.6560 	EXP 	Created One_Back_Example_Stim_5 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_5', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+18.6570 	EXP 	Created Example_Stim_10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_10', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+18.6725 	EXP 	Created Green_Border_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-0.60784314,  0.60784314, -0.60784314]), fillColorSpace='rgb', fillRGB=array([-0.60784314,  0.60784314, -0.60784314]), interpolate=True, lineColor=array([-0.60784314,  0.60784314, -0.60784314]), lineColorSpace='rgb', lineRGB=array([-0.60784314,  0.60784314, -0.60784314]), lineWidth=1.0, name='Green_Border_2', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.15, 0.15]), units='height', vertices=ndarray(...), win=Window(...))
+18.6736 	EXP 	Created Two_Back_Example_Stim_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Two_Back_Example_Stim_4', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.13, 0.13]), texRes=128.0, units='height', win=Window(...))
+18.6746 	EXP 	Created One_Back_Example_Stim_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO1.bmp', interpolate=True, mask=None, maskParams=None, name='One_Back_Example_Stim_6', opacity=1, ori=0.0, pos=array([-0.3,  0. ]), size=array([0.15, 0.15]), texRes=128.0, units='height', win=Window(...))
+18.6755 	EXP 	Created Example_Stim_11 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeFO3.bmp', interpolate=True, mask=None, maskParams=None, name='Example_Stim_11', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), texRes=128.0, units='height', win=Window(...))
+18.6978 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.7244 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.7673 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.7991 	EXP 	Created CueTargetImage_6 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/Place3.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_6', opacity=1, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.8060 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.8370 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.8693 	EXP 	Created CueTargetImage_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='VM Stimuli/PracticeNC2.bmp', interpolate=True, mask=None, maskParams=None, name='CueTargetImage_8', opacity=1, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+18.8770 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([0.4, 0.4]), texRes=128.0, units='height', win=Window(...))
+0.0189 	EXP 	NbackTitle: autoLog = True
+0.0189 	EXP 	Instructions_1: autoLog = True
+0.0189 	EXP 	Instructions_2: autoLog = True
+0.0189 	EXP 	Instructions_3: autoLog = True
+0.0189 	EXP 	Instructions_5pt5: autoLog = True
+0.0189 	EXP 	Instructions_6: autoLog = True
+0.0189 	EXP 	Instructions_6_Target: autoLog = True
+0.0189 	EXP 	Instructions_6_Match: autoLog = True
+0.0189 	EXP 	Instructions_14: autoLog = True
+0.0189 	EXP 	Instructions_6pt2: autoLog = True
+0.0189 	EXP 	CueFix_1: autoLog = True
+0.0189 	EXP 	CueTarget_1: autoLog = True
+0.0189 	EXP 	Zero_back: autoLog = True
+0.0189 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0189 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0189 	EXP 	Fix: autoLog = True
+0.0189 	EXP 	Feedback: autoLog = True
+0.0189 	EXP 	Instructions_Space: autoLog = True
+0.0189 	EXP 	CueFix_2: autoLog = True
+0.0189 	EXP 	CueTarget_2: autoLog = True
+0.0189 	EXP 	Zero_back_2: autoLog = True
+0.0189 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0189 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0189 	EXP 	Fix: autoLog = True
+0.0189 	EXP 	Feedback: autoLog = True
+0.0189 	EXP 	Instructions_Space: autoLog = True
+0.0189 	EXP 	Instructions_8: autoLog = True
+0.0189 	EXP 	Instructions_11: autoLog = True
+0.0189 	EXP 	Instructions_9: autoLog = True
+0.0189 	EXP 	Example_LeftScreenInstruction: autoLog = True
+0.0189 	EXP 	Example_RightScreenInstruction: autoLog = True
+0.0189 	EXP 	Instructions_21: autoLog = True
+0.0189 	EXP 	Example_LeftScreenInstruction_2: autoLog = True
+0.0189 	EXP 	Example_RightScreenInstruction_2: autoLog = True
+0.0189 	EXP 	Instructions_24: autoLog = True
+0.0189 	EXP 	Example_LeftScreenInstruction_3: autoLog = True
+0.0189 	EXP 	Example_RightScreenInstruction_3: autoLog = True
+0.0189 	EXP 	Instructions_25: autoLog = True
+0.0189 	EXP 	Example_LeftScreenInstruction_4: autoLog = True
+0.0189 	EXP 	Example_RightScreenInstruction_4: autoLog = True
+0.0189 	EXP 	Instructions_15: autoLog = True
+0.0189 	EXP 	Instructions_32: autoLog = True
+0.0189 	EXP 	Example_LeftScreenInstruction_5: autoLog = True
+0.0189 	EXP 	Example_RightScreenInstruction_5: autoLog = True
+0.0189 	EXP 	Instructions_27: autoLog = True
+0.0189 	EXP 	Example_LeftScreenInstruction_6: autoLog = True
+0.0189 	EXP 	Example_RightScreenInstruction_6: autoLog = True
+0.0189 	EXP 	Instructions_33: autoLog = True
+0.0189 	EXP 	Example_LeftScreenInstruction_7: autoLog = True
+0.0189 	EXP 	Example_RightScreenInstruction_7: autoLog = True
+0.0189 	EXP 	Instructions_26: autoLog = True
+0.0189 	EXP 	Example_LeftScreenInstruction_8: autoLog = True
+0.0189 	EXP 	Example_RightScreenInstruction_8: autoLog = True
+0.0189 	EXP 	Instructions: autoLog = True
+0.0189 	EXP 	Example_LeftScreenInstruction_9: autoLog = True
+0.0189 	EXP 	Example_RightScreenInstruction_9: autoLog = True
+0.0189 	EXP 	Instructions_28: autoLog = True
+0.0189 	EXP 	Example_LeftScreenInstruction_10: autoLog = True
+0.0189 	EXP 	Example_RightScreenInstruction_10: autoLog = True
+0.0189 	EXP 	Instructions_29: autoLog = True
+0.0189 	EXP 	Example_LeftScreenInstruction_11: autoLog = True
+0.0189 	EXP 	Example_RightScreenInstruction_11: autoLog = True
+0.0189 	EXP 	Instructions_22: autoLog = True
+0.0189 	EXP 	Instructions_30: autoLog = True
+0.0189 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0189 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0189 	EXP 	Fix: autoLog = True
+0.0189 	EXP 	Feedback: autoLog = True
+0.0189 	EXP 	Instructions_Space: autoLog = True
+0.0189 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0189 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0189 	EXP 	Fix: autoLog = True
+0.0189 	EXP 	Feedback: autoLog = True
+0.0189 	EXP 	Instructions_36: autoLog = True
+0.0189 	EXP 	CueFix_5: autoLog = True
+0.0189 	EXP 	Cue_2Back: autoLog = True
+0.0189 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0189 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0189 	EXP 	Fix: autoLog = True
+0.0189 	EXP 	Feedback: autoLog = True
+0.0189 	EXP 	CueFix_6: autoLog = True
+0.0189 	EXP 	CueTarget_6: autoLog = True
+0.0189 	EXP 	Zero_back_3: autoLog = True
+0.0189 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0189 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0189 	EXP 	Fix: autoLog = True
+0.0189 	EXP 	Feedback: autoLog = True
+0.0189 	EXP 	CueFix_7: autoLog = True
+0.0189 	EXP 	Cue_2Back_2: autoLog = True
+0.0189 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0189 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0189 	EXP 	Fix: autoLog = True
+0.0189 	EXP 	Feedback: autoLog = True
+0.0189 	EXP 	CueFix_8: autoLog = True
+0.0189 	EXP 	CueTarget_8: autoLog = True
+0.0189 	EXP 	Zero_back_4: autoLog = True
+0.0189 	EXP 	Stim_LeftScreenInstruction: autoLog = True
+0.0189 	EXP 	Stim_RightScreenInstruction: autoLog = True
+0.0189 	EXP 	Fix: autoLog = True
+0.0189 	EXP 	Feedback: autoLog = True
+0.0189 	EXP 	AllDone: autoLog = True
+0.0346 	INFO 	Keyboard events cleared
+0.0345 	EXP 	NbackTitle: autoDraw = True
+15.7632 	DATA 	Keypress: space
+15.7678 	INFO 	Keyboard events cleared
+15.7677 	WARNING 	t of last frame was 104.84ms (=1/9)
+15.7677 	EXP 	NbackTitle: autoDraw = False
+15.7677 	EXP 	Instructions_1: autoDraw = True
+16.3716 	DATA 	Keypress: space
+16.3755 	INFO 	Keyboard events cleared
+16.3755 	EXP 	Instructions_1: autoDraw = False
+16.3755 	EXP 	Instructions_2: autoDraw = True
+16.3755 	EXP 	FaceImage: autoDraw = True
+17.1693 	DATA 	Keypress: space
+17.1725 	INFO 	Keyboard events cleared
+17.1725 	EXP 	Instructions_2: autoDraw = False
+17.1725 	EXP 	FaceImage: autoDraw = False
+17.1725 	EXP 	Instructions_3: autoDraw = True
+17.1725 	EXP 	PlaceImage: autoDraw = True
+17.6449 	DATA 	Keypress: space
+17.6484 	INFO 	Keyboard events cleared
+17.6484 	EXP 	Instructions_3: autoDraw = False
+17.6484 	EXP 	PlaceImage: autoDraw = False
+17.6484 	EXP 	Instructions_5pt5: autoDraw = True
+18.2509 	WARNING 	t of last frame was 30.53ms (=1/32)
+18.3005 	DATA 	Keypress: space
+18.3046 	INFO 	Keyboard events cleared
+18.3046 	EXP 	Instructions_5pt5: autoDraw = False
+18.3046 	EXP 	Instructions_6: autoDraw = True
+18.3046 	EXP 	Instructions_6_Target: autoDraw = True
+18.3046 	EXP 	TargetImage: autoDraw = True
+18.3046 	EXP 	Instructions_6_Match: autoDraw = True
+19.4713 	DATA 	Keypress: left
+19.4751 	INFO 	Keyboard events cleared
+19.4750 	WARNING 	t of last frame was 76.78ms (=1/13)
+19.4750 	EXP 	Instructions_6: autoDraw = False
+19.4750 	EXP 	Instructions_6_Target: autoDraw = False
+19.4750 	EXP 	TargetImage: autoDraw = False
+19.4750 	EXP 	Instructions_6_Match: autoDraw = False
+19.4750 	EXP 	Instructions_14: autoDraw = True
+19.5168 	WARNING 	t of last frame was 20.28ms (=1/49)
+20.6929 	DATA 	Keypress: right
+20.6963 	INFO 	Keyboard events cleared
+20.6962 	EXP 	Instructions_14: autoDraw = False
+20.6962 	EXP 	Instructions_6pt2: autoDraw = True
+21.3967 	DATA 	Keypress: space
+21.4009 	EXP 	Instructions_6pt2: autoDraw = False
+21.4009 	EXP 	CueFix_1: autoDraw = True
+21.8932 	EXP 	CueTarget_1: autoDraw = True
+21.8932 	EXP 	CueTargetImage_1: autoDraw = True
+21.8932 	EXP 	Zero_back: autoDraw = True
+21.8994 	EXP 	CueFix_1: autoDraw = False
+24.3914 	EXP 	Imported PracticeTrials/PracticeTrials1.xlsx as conditions, 5 conditions, 9 params
+24.3923 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': 2, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC2.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+24.4243 	INFO 	Keyboard events cleared
+24.4243 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+24.4243 	EXP 	CueTarget_1: autoDraw = False
+24.4243 	EXP 	CueTargetImage_1: autoDraw = False
+24.4243 	EXP 	Zero_back: autoDraw = False
+24.4243 	EXP 	CueFix_1: autoDraw = False
+24.4243 	EXP 	CueTarget_1: autoDraw = False
+24.4243 	EXP 	CueTargetImage_1: autoDraw = False
+24.4243 	EXP 	Zero_back: autoDraw = False
+24.4243 	EXP 	Stim: image = 'VM Stimuli/PracticeNC2.bmp'
+24.4243 	EXP 	Stim: autoDraw = True
+24.4243 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+24.4243 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+26.4045 	EXP 	Stim: autoDraw = False
+26.4045 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+26.4045 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+26.4045 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+26.4045 	EXP 	Fix: autoDraw = True
+26.8894 	EXP 	Feedback: autoDraw = True
+26.8934 	EXP 	Fix: autoDraw = False
+28.3748 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': 3, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC1.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+28.3861 	INFO 	Keyboard events cleared
+28.3860 	EXP 	Feedback: autoDraw = False
+28.3860 	EXP 	Fix: autoDraw = False
+28.3860 	EXP 	Feedback: autoDraw = False
+28.3860 	EXP 	Stim: image = 'VM Stimuli/PracticeNC1.bmp'
+28.3860 	EXP 	Stim: autoDraw = True
+28.3860 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+28.3860 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+30.3837 	EXP 	Stim: autoDraw = False
+30.3837 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+30.3837 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+30.3837 	EXP 	Stim: autoDraw = False
+30.3837 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+30.3837 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+30.3837 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+30.3837 	EXP 	Fix: autoDraw = True
+30.8787 	EXP 	Fix: autoDraw = False
+30.8840 	EXP 	Feedback: autoDraw = True
+32.3668 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': 4, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC3.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+32.3755 	EXP 	Feedback: autoDraw = False
+32.3755 	EXP 	Fix: autoDraw = False
+32.3755 	EXP 	Feedback: autoDraw = False
+32.3755 	EXP 	Stim: image = 'VM Stimuli/PracticeNC3.bmp'
+32.3835 	INFO 	Keyboard events cleared
+32.3835 	EXP 	Stim: autoDraw = True
+32.3835 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+32.3835 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+34.3776 	EXP 	Stim: autoDraw = False
+34.3776 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+34.3776 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+34.3776 	EXP 	Stim: autoDraw = False
+34.3776 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+34.3776 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+34.3776 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+34.3833 	EXP 	Fix: autoDraw = True
+34.8788 	EXP 	Fix: autoDraw = False
+34.8858 	EXP 	Feedback: autoDraw = True
+36.3731 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': 5, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC2.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+36.3820 	EXP 	Feedback: autoDraw = False
+36.3820 	EXP 	Fix: autoDraw = False
+36.3820 	EXP 	Feedback: autoDraw = False
+36.3820 	EXP 	Stim: image = 'VM Stimuli/PracticeNC2.bmp'
+36.3909 	INFO 	Keyboard events cleared
+36.3908 	EXP 	Stim: autoDraw = True
+36.3908 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+36.3908 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+38.3834 	EXP 	Stim: autoDraw = False
+38.3834 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+38.3834 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+38.3834 	EXP 	Stim: autoDraw = False
+38.3834 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+38.3834 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+38.3834 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+38.3834 	EXP 	Fix: autoDraw = True
+38.8781 	EXP 	Fix: autoDraw = False
+38.8846 	EXP 	Feedback: autoDraw = True
+40.3741 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': 6, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC1.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+40.3909 	INFO 	Keyboard events cleared
+40.3909 	EXP 	Feedback: autoDraw = False
+40.3909 	EXP 	Fix: autoDraw = False
+40.3909 	EXP 	Feedback: autoDraw = False
+40.3909 	EXP 	Stim: image = 'VM Stimuli/PracticeNC1.bmp'
+40.3909 	EXP 	Stim: autoDraw = True
+40.3909 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+40.3909 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+42.3845 	EXP 	Stim: autoDraw = False
+42.3845 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+42.3845 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+42.3845 	EXP 	Stim: autoDraw = False
+42.3845 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+42.3845 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+42.3845 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+42.3845 	EXP 	Fix: autoDraw = True
+42.8749 	EXP 	Fix: autoDraw = False
+42.8893 	EXP 	Feedback: autoDraw = True
+44.3868 	INFO 	Keyboard events cleared
+44.3868 	EXP 	Feedback: autoDraw = False
+44.3868 	EXP 	Fix: autoDraw = False
+44.3868 	EXP 	Feedback: autoDraw = False
+44.3868 	EXP 	Instructions_Space: autoDraw = True
+45.4684 	DATA 	Keypress: space
+45.4725 	EXP 	Instructions_Space: autoDraw = False
+45.4725 	EXP 	CueFix_2: autoDraw = True
+45.9654 	EXP 	CueFix_2: autoDraw = False
+45.9654 	EXP 	CueTarget_2: autoDraw = True
+45.9654 	EXP 	CueTargetImage_2: autoDraw = True
+45.9654 	EXP 	Zero_back_2: autoDraw = True
+48.4583 	EXP 	Imported PracticeTrials/PracticeTrials2.xlsx as conditions, 5 conditions, 9 params
+48.4587 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': 2, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place1.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+48.4684 	INFO 	Keyboard events cleared
+48.4684 	EXP 	CueTarget_2: autoDraw = False
+48.4684 	EXP 	CueTargetImage_2: autoDraw = False
+48.4684 	EXP 	Zero_back_2: autoDraw = False
+48.4684 	EXP 	CueFix_2: autoDraw = False
+48.4684 	EXP 	CueTarget_2: autoDraw = False
+48.4684 	EXP 	CueTargetImage_2: autoDraw = False
+48.4684 	EXP 	Zero_back_2: autoDraw = False
+48.4684 	EXP 	Stim: image = 'VM Stimuli/Place1.bmp'
+48.4684 	EXP 	Stim: autoDraw = True
+48.4684 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+48.4684 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+50.4596 	EXP 	Stim: autoDraw = False
+50.4596 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+50.4596 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+50.4596 	EXP 	Stim: autoDraw = False
+50.4596 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+50.4596 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+50.4596 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+50.4596 	EXP 	Fix: autoDraw = True
+50.9505 	EXP 	Fix: autoDraw = False
+50.9505 	EXP 	Feedback: autoDraw = True
+52.4363 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': 3, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place3.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+52.4447 	EXP 	Feedback: autoDraw = False
+52.4447 	EXP 	Fix: autoDraw = False
+52.4447 	EXP 	Feedback: autoDraw = False
+52.4447 	EXP 	Stim: image = 'VM Stimuli/Place3.bmp'
+52.4513 	INFO 	Keyboard events cleared
+52.4513 	EXP 	Stim: autoDraw = True
+52.4513 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+52.4513 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+54.4428 	EXP 	Stim: autoDraw = False
+54.4428 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+54.4428 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+54.4428 	EXP 	Stim: autoDraw = False
+54.4428 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+54.4428 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+54.4428 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+54.4613 	EXP 	Fix: autoDraw = True
+54.9585 	EXP 	Fix: autoDraw = False
+54.9585 	EXP 	Feedback: autoDraw = True
+56.4435 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': 4, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place5.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+56.4515 	EXP 	Feedback: autoDraw = False
+56.4515 	EXP 	Fix: autoDraw = False
+56.4515 	EXP 	Feedback: autoDraw = False
+56.4515 	EXP 	Stim: image = 'VM Stimuli/Place5.bmp'
+56.4591 	INFO 	Keyboard events cleared
+56.4590 	EXP 	Stim: autoDraw = True
+56.4590 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+56.4590 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+58.4531 	EXP 	Stim: autoDraw = False
+58.4531 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+58.4531 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+58.4531 	EXP 	Stim: autoDraw = False
+58.4531 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+58.4531 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+58.4531 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+58.4585 	EXP 	Fix: autoDraw = True
+58.9538 	EXP 	Fix: autoDraw = False
+58.9597 	EXP 	Feedback: autoDraw = True
+60.4487 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': 5, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place1.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+60.4618 	INFO 	Keyboard events cleared
+60.4617 	EXP 	Feedback: autoDraw = False
+60.4617 	EXP 	Fix: autoDraw = False
+60.4617 	EXP 	Feedback: autoDraw = False
+60.4617 	EXP 	Stim: image = 'VM Stimuli/Place1.bmp'
+60.4617 	EXP 	Stim: autoDraw = True
+60.4617 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+60.4617 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+62.4543 	EXP 	Stim: autoDraw = False
+62.4543 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+62.4543 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+62.4543 	EXP 	Stim: autoDraw = False
+62.4543 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+62.4543 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+62.4543 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+62.4543 	EXP 	Fix: autoDraw = True
+62.9406 	EXP 	Fix: autoDraw = False
+62.9612 	EXP 	Feedback: autoDraw = True
+64.4470 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': 6, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place3.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+64.4592 	INFO 	Keyboard events cleared
+64.4592 	EXP 	Feedback: autoDraw = False
+64.4592 	EXP 	Fix: autoDraw = False
+64.4592 	EXP 	Feedback: autoDraw = False
+64.4592 	EXP 	Stim: image = 'VM Stimuli/Place3.bmp'
+64.4592 	EXP 	Stim: autoDraw = True
+64.4592 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+64.4592 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+66.4536 	EXP 	Stim: autoDraw = False
+66.4536 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+66.4536 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+66.4536 	EXP 	Stim: autoDraw = False
+66.4536 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+66.4536 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+66.4536 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+66.4586 	EXP 	Fix: autoDraw = True
+66.9541 	EXP 	Fix: autoDraw = False
+66.9600 	EXP 	Feedback: autoDraw = True
+68.4536 	INFO 	Keyboard events cleared
+68.4536 	EXP 	Feedback: autoDraw = False
+68.4536 	EXP 	Fix: autoDraw = False
+68.4536 	EXP 	Feedback: autoDraw = False
+68.4536 	EXP 	Instructions_Space: autoDraw = True
+69.9024 	DATA 	Keypress: space
+69.9070 	INFO 	Keyboard events cleared
+69.9069 	EXP 	Instructions_Space: autoDraw = False
+69.9069 	EXP 	Instructions_8: autoDraw = True
+72.6841 	DATA 	Keypress: space
+72.6877 	INFO 	Keyboard events cleared
+72.6877 	EXP 	Instructions_8: autoDraw = False
+72.6877 	EXP 	Instructions_11: autoDraw = True
+73.8070 	DATA 	Keypress: space
+73.8110 	INFO 	Keyboard events cleared
+73.8110 	EXP 	Instructions_11: autoDraw = False
+73.8110 	EXP 	Example_Stim: image = 'VM Stimuli/PracticeFO1.bmp'
+73.8110 	EXP 	Instructions_9: autoDraw = True
+73.8110 	EXP 	Example_Stim: autoDraw = True
+73.8110 	EXP 	Example_LeftScreenInstruction: autoDraw = True
+73.8110 	EXP 	Example_RightScreenInstruction: autoDraw = True
+74.7892 	DATA 	Keypress: space
+74.7930 	INFO 	Keyboard events cleared
+74.7930 	EXP 	Instructions_9: autoDraw = False
+74.7930 	EXP 	Example_Stim: autoDraw = False
+74.7930 	EXP 	Example_LeftScreenInstruction: autoDraw = False
+74.7930 	EXP 	Example_RightScreenInstruction: autoDraw = False
+74.7930 	EXP 	Example_Stim_2: image = 'VM Stimuli/PracticeFO2.bmp'
+74.7930 	EXP 	Instructions_21: autoDraw = True
+74.7930 	EXP 	One_Back_Example_Stim: autoDraw = True
+74.7930 	EXP 	Example_Stim_2: autoDraw = True
+74.7930 	EXP 	Example_LeftScreenInstruction_2: autoDraw = True
+74.7930 	EXP 	Example_RightScreenInstruction_2: autoDraw = True
+75.6440 	DATA 	Keypress: space
+75.6602 	INFO 	Keyboard events cleared
+75.6601 	EXP 	Instructions_21: autoDraw = False
+75.6601 	EXP 	One_Back_Example_Stim: autoDraw = False
+75.6601 	EXP 	Example_Stim_2: autoDraw = False
+75.6601 	EXP 	Example_LeftScreenInstruction_2: autoDraw = False
+75.6601 	EXP 	Example_RightScreenInstruction_2: autoDraw = False
+75.6601 	EXP 	Example_Stim_3: image = 'VM Stimuli/PracticeFO1.bmp'
+75.6601 	EXP 	Instructions_24: autoDraw = True
+75.6601 	EXP 	Green_Border: autoDraw = True
+75.6601 	EXP 	Two_Back_Example_Stim: autoDraw = True
+75.6601 	EXP 	One_Back_Example_Stim_2: autoDraw = True
+75.6601 	EXP 	Example_Stim_3: autoDraw = True
+75.6601 	EXP 	Example_LeftScreenInstruction_3: autoDraw = True
+75.6601 	EXP 	Example_RightScreenInstruction_3: autoDraw = True
+76.3575 	DATA 	Keypress: space
+76.3616 	INFO 	Keyboard events cleared
+76.3615 	EXP 	Instructions_24: autoDraw = False
+76.3615 	EXP 	Green_Border: autoDraw = False
+76.3615 	EXP 	Two_Back_Example_Stim: autoDraw = False
+76.3615 	EXP 	One_Back_Example_Stim_2: autoDraw = False
+76.3615 	EXP 	Example_Stim_3: autoDraw = False
+76.3615 	EXP 	Example_LeftScreenInstruction_3: autoDraw = False
+76.3615 	EXP 	Example_RightScreenInstruction_3: autoDraw = False
+76.3615 	EXP 	Example_Stim_4: image = 'VM Stimuli/PracticeFO3.bmp'
+76.3615 	EXP 	Instructions_25: autoDraw = True
+76.3615 	EXP 	Two_Back_Example_Stim_2: autoDraw = True
+76.3615 	EXP 	One_Back_Example_Stim_3: autoDraw = True
+76.3615 	EXP 	Example_Stim_4: autoDraw = True
+76.3615 	EXP 	Example_LeftScreenInstruction_4: autoDraw = True
+76.3615 	EXP 	Example_RightScreenInstruction_4: autoDraw = True
+77.1842 	DATA 	Keypress: space
+77.1878 	INFO 	Keyboard events cleared
+77.1878 	EXP 	Instructions_25: autoDraw = False
+77.1878 	EXP 	Two_Back_Example_Stim_2: autoDraw = False
+77.1878 	EXP 	One_Back_Example_Stim_3: autoDraw = False
+77.1878 	EXP 	Example_Stim_4: autoDraw = False
+77.1878 	EXP 	Example_LeftScreenInstruction_4: autoDraw = False
+77.1878 	EXP 	Example_RightScreenInstruction_4: autoDraw = False
+77.1878 	EXP 	Instructions_15: autoDraw = True
+80.6494 	DATA 	Keypress: space
+80.6541 	INFO 	Keyboard events cleared
+80.6540 	EXP 	Instructions_15: autoDraw = False
+80.6540 	EXP 	Instructions_32: autoDraw = True
+80.6540 	EXP 	Example_Stim_5: autoDraw = True
+80.6540 	EXP 	Example_LeftScreenInstruction_5: autoDraw = True
+80.6540 	EXP 	Example_RightScreenInstruction_5: autoDraw = True
+82.7666 	DATA 	Keypress: space
+82.7703 	INFO 	Keyboard events cleared
+82.7703 	EXP 	Instructions_32: autoDraw = False
+82.7703 	EXP 	Example_Stim_5: autoDraw = False
+82.7703 	EXP 	Example_LeftScreenInstruction_5: autoDraw = False
+82.7703 	EXP 	Example_RightScreenInstruction_5: autoDraw = False
+82.7703 	EXP 	Instructions_27: autoDraw = True
+82.7703 	EXP 	Example_Stim_6: autoDraw = True
+82.7703 	EXP 	Example_LeftScreenInstruction_6: autoDraw = True
+82.7703 	EXP 	Example_RightScreenInstruction_6: autoDraw = True
+84.3361 	DATA 	Keypress: space
+84.3397 	INFO 	Keyboard events cleared
+84.3397 	EXP 	Instructions_27: autoDraw = False
+84.3397 	EXP 	Example_Stim_6: autoDraw = False
+84.3397 	EXP 	Example_LeftScreenInstruction_6: autoDraw = False
+84.3397 	EXP 	Example_RightScreenInstruction_6: autoDraw = False
+84.3397 	EXP 	Instructions_33: autoDraw = True
+84.3397 	EXP 	Example_Stim_7: autoDraw = True
+84.3397 	EXP 	Example_LeftScreenInstruction_7: autoDraw = True
+84.3397 	EXP 	Example_RightScreenInstruction_7: autoDraw = True
+88.1419 	DATA 	Keypress: space
+88.1461 	INFO 	Keyboard events cleared
+88.1461 	EXP 	Instructions_33: autoDraw = False
+88.1461 	EXP 	Example_Stim_7: autoDraw = False
+88.1461 	EXP 	Example_LeftScreenInstruction_7: autoDraw = False
+88.1461 	EXP 	Example_RightScreenInstruction_7: autoDraw = False
+88.1461 	EXP 	Instructions_26: autoDraw = True
+88.1461 	EXP 	One_Back_Example_Stim_4: autoDraw = True
+88.1461 	EXP 	Example_Stim_8: autoDraw = True
+88.1461 	EXP 	Example_LeftScreenInstruction_8: autoDraw = True
+88.1461 	EXP 	Example_RightScreenInstruction_8: autoDraw = True
+89.7635 	DATA 	Keypress: space
+89.7674 	INFO 	Keyboard events cleared
+89.7674 	EXP 	Instructions_26: autoDraw = False
+89.7674 	EXP 	One_Back_Example_Stim_4: autoDraw = False
+89.7674 	EXP 	Example_Stim_8: autoDraw = False
+89.7674 	EXP 	Example_LeftScreenInstruction_8: autoDraw = False
+89.7674 	EXP 	Example_RightScreenInstruction_8: autoDraw = False
+89.7674 	EXP 	Instructions: autoDraw = True
+89.7674 	EXP 	Example_Stim_9: autoDraw = True
+89.7674 	EXP 	Example_LeftScreenInstruction_9: autoDraw = True
+89.7674 	EXP 	Example_RightScreenInstruction_9: autoDraw = True
+91.2452 	DATA 	Keypress: space
+91.2491 	INFO 	Keyboard events cleared
+91.2491 	EXP 	Instructions: autoDraw = False
+91.2491 	EXP 	Example_Stim_9: autoDraw = False
+91.2491 	EXP 	Example_LeftScreenInstruction_9: autoDraw = False
+91.2491 	EXP 	Example_RightScreenInstruction_9: autoDraw = False
+91.2491 	EXP 	Instructions_28: autoDraw = True
+91.2491 	EXP 	Two_Back_Example_Stim_3: autoDraw = True
+91.2491 	EXP 	One_Back_Example_Stim_5: autoDraw = True
+91.2491 	EXP 	Example_Stim_10: autoDraw = True
+91.2491 	EXP 	Example_LeftScreenInstruction_10: autoDraw = True
+91.2491 	EXP 	Example_RightScreenInstruction_10: autoDraw = True
+95.2267 	DATA 	Keypress: space
+95.2473 	INFO 	Keyboard events cleared
+95.2472 	EXP 	Instructions_28: autoDraw = False
+95.2472 	EXP 	Two_Back_Example_Stim_3: autoDraw = False
+95.2472 	EXP 	One_Back_Example_Stim_5: autoDraw = False
+95.2472 	EXP 	Example_Stim_10: autoDraw = False
+95.2472 	EXP 	Example_LeftScreenInstruction_10: autoDraw = False
+95.2472 	EXP 	Example_RightScreenInstruction_10: autoDraw = False
+95.2472 	EXP 	Instructions_29: autoDraw = True
+95.2472 	EXP 	Green_Border_2: autoDraw = True
+95.2472 	EXP 	Two_Back_Example_Stim_4: autoDraw = True
+95.2472 	EXP 	One_Back_Example_Stim_6: autoDraw = True
+95.2472 	EXP 	Example_Stim_11: autoDraw = True
+95.2472 	EXP 	Example_LeftScreenInstruction_11: autoDraw = True
+95.2472 	EXP 	Example_RightScreenInstruction_11: autoDraw = True
+97.0672 	DATA 	Keypress: space
+97.0710 	INFO 	Keyboard events cleared
+97.0710 	EXP 	Instructions_29: autoDraw = False
+97.0710 	EXP 	Green_Border_2: autoDraw = False
+97.0710 	EXP 	Two_Back_Example_Stim_4: autoDraw = False
+97.0710 	EXP 	One_Back_Example_Stim_6: autoDraw = False
+97.0710 	EXP 	Example_Stim_11: autoDraw = False
+97.0710 	EXP 	Example_LeftScreenInstruction_11: autoDraw = False
+97.0710 	EXP 	Example_RightScreenInstruction_11: autoDraw = False
+97.0710 	EXP 	Instructions_22: autoDraw = True
+98.5129 	DATA 	Keypress: space
+98.5168 	INFO 	Keyboard events cleared
+98.5168 	EXP 	Instructions_22: autoDraw = False
+98.5168 	EXP 	Instructions_30: autoDraw = True
+99.1616 	EXP 	Imported PracticeTrials/PracticeTrials3.xlsx as conditions, 5 conditions, 9 params
+99.1622 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': 1, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeFO2.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+99.1700 	DATA 	Keypress: space
+99.1740 	INFO 	Keyboard events cleared
+99.1740 	EXP 	Instructions_30: autoDraw = False
+99.1740 	EXP 	Stim: image = 'VM Stimuli/PracticeFO2.bmp'
+99.1740 	EXP 	Stim: autoDraw = True
+99.1740 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+99.1740 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+101.1614 	EXP 	Stim: autoDraw = False
+101.1614 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+101.1614 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+101.1614 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+101.1614 	EXP 	Fix: autoDraw = True
+101.6426 	EXP 	Feedback: autoDraw = True
+101.6582 	EXP 	Fix: autoDraw = False
+103.1326 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': 2, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeFO4.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+103.1456 	INFO 	Keyboard events cleared
+103.1456 	EXP 	Feedback: autoDraw = False
+103.1456 	EXP 	Fix: autoDraw = False
+103.1456 	EXP 	Feedback: autoDraw = False
+103.1456 	EXP 	Stim: image = 'VM Stimuli/PracticeFO4.bmp'
+103.1456 	EXP 	Stim: autoDraw = True
+103.1456 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+103.1456 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+105.1443 	EXP 	Stim: autoDraw = False
+105.1443 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+105.1443 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+105.1443 	EXP 	Stim: autoDraw = False
+105.1443 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+105.1443 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+105.1443 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+105.1443 	EXP 	Fix: autoDraw = True
+105.6470 	EXP 	Fix: autoDraw = False
+105.6470 	EXP 	Feedback: autoDraw = True
+107.1301 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': 3, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeFO2.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+107.1366 	EXP 	Feedback: autoDraw = False
+107.1366 	EXP 	Fix: autoDraw = False
+107.1366 	EXP 	Feedback: autoDraw = False
+107.1366 	EXP 	Stim: image = 'VM Stimuli/PracticeFO2.bmp'
+107.1430 	INFO 	Keyboard events cleared
+107.1430 	EXP 	Stim: autoDraw = True
+107.1430 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+107.1430 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+109.1387 	EXP 	Stim: autoDraw = False
+109.1387 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+109.1387 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+109.1387 	EXP 	Stim: autoDraw = False
+109.1387 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+109.1387 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+109.1387 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+109.1433 	EXP 	Fix: autoDraw = True
+109.6433 	EXP 	Fix: autoDraw = False
+109.6433 	EXP 	Feedback: autoDraw = True
+111.1379 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': 4, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeFO4.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+111.1490 	INFO 	Keyboard events cleared
+111.1489 	EXP 	Feedback: autoDraw = False
+111.1489 	EXP 	Fix: autoDraw = False
+111.1489 	EXP 	Feedback: autoDraw = False
+111.1489 	EXP 	Stim: image = 'VM Stimuli/PracticeFO4.bmp'
+111.1489 	EXP 	Stim: autoDraw = True
+111.1489 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+111.1489 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+113.1447 	EXP 	Stim: autoDraw = False
+113.1447 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+113.1447 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+113.1447 	EXP 	Stim: autoDraw = False
+113.1447 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+113.1447 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+113.1447 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+113.1447 	EXP 	Fix: autoDraw = True
+113.6450 	EXP 	Fix: autoDraw = False
+113.6450 	EXP 	Feedback: autoDraw = True
+115.1392 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': 5, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeFO1.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NegFace', 'BlockType': '2-Back', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+115.1496 	INFO 	Keyboard events cleared
+115.1495 	EXP 	Feedback: autoDraw = False
+115.1495 	EXP 	Fix: autoDraw = False
+115.1495 	EXP 	Feedback: autoDraw = False
+115.1495 	EXP 	Stim: image = 'VM Stimuli/PracticeFO1.bmp'
+115.1495 	EXP 	Stim: autoDraw = True
+115.1495 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+115.1495 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+117.1425 	EXP 	Stim: autoDraw = False
+117.1425 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+117.1425 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+117.1425 	EXP 	Stim: autoDraw = False
+117.1425 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+117.1425 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+117.1425 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+117.1425 	EXP 	Fix: autoDraw = True
+117.6432 	EXP 	Fix: autoDraw = False
+117.6432 	EXP 	Feedback: autoDraw = True
+119.1330 	EXP 	Feedback: autoDraw = False
+119.1330 	EXP 	Fix: autoDraw = False
+119.1330 	EXP 	Feedback: autoDraw = False
+119.1464 	INFO 	Keyboard events cleared
+119.1463 	EXP 	Instructions_Space: autoDraw = True
+141.4793 	EXP 	Imported PracticeTrials/PracticeTrials4.xlsx as conditions, 5 conditions, 9 params
+141.4798 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': 1, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place1.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+141.4904 	DATA 	Keypress: space
+141.4938 	INFO 	Keyboard events cleared
+141.4938 	EXP 	Instructions_Space: autoDraw = False
+141.4938 	EXP 	Stim: image = 'VM Stimuli/Place1.bmp'
+141.4938 	EXP 	Stim: autoDraw = True
+141.4938 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+141.4938 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+143.4749 	EXP 	Stim: autoDraw = False
+143.4749 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+143.4749 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+143.4749 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+143.4749 	EXP 	Fix: autoDraw = True
+143.9622 	EXP 	Feedback: autoDraw = True
+143.9668 	EXP 	Fix: autoDraw = False
+145.4468 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': 2, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place5.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+145.4563 	EXP 	Feedback: autoDraw = False
+145.4563 	EXP 	Fix: autoDraw = False
+145.4563 	EXP 	Feedback: autoDraw = False
+145.4563 	EXP 	Stim: image = 'VM Stimuli/Place5.bmp'
+145.4639 	INFO 	Keyboard events cleared
+145.4639 	EXP 	Stim: autoDraw = True
+145.4639 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+145.4639 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+147.4611 	EXP 	Stim: autoDraw = False
+147.4611 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+147.4611 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+147.4611 	EXP 	Stim: autoDraw = False
+147.4611 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+147.4611 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+147.4611 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+147.4611 	EXP 	Fix: autoDraw = True
+147.9617 	EXP 	Fix: autoDraw = False
+147.9617 	EXP 	Feedback: autoDraw = True
+149.4452 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': 3, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place1.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+149.4509 	EXP 	Feedback: autoDraw = False
+149.4509 	EXP 	Fix: autoDraw = False
+149.4509 	EXP 	Feedback: autoDraw = False
+149.4509 	EXP 	Stim: image = 'VM Stimuli/Place1.bmp'
+149.4587 	INFO 	Keyboard events cleared
+149.4587 	EXP 	Stim: autoDraw = True
+149.4587 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+149.4587 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+151.4503 	EXP 	Stim: autoDraw = False
+151.4503 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+151.4503 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+151.4503 	EXP 	Stim: autoDraw = False
+151.4503 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+151.4503 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+151.4503 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+151.4633 	EXP 	Fix: autoDraw = True
+151.9602 	EXP 	Fix: autoDraw = False
+151.9602 	EXP 	Feedback: autoDraw = True
+153.4551 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': 4, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place6.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+153.4684 	INFO 	Keyboard events cleared
+153.4684 	EXP 	Feedback: autoDraw = False
+153.4684 	EXP 	Fix: autoDraw = False
+153.4684 	EXP 	Feedback: autoDraw = False
+153.4684 	EXP 	Stim: image = 'VM Stimuli/Place6.bmp'
+153.4684 	EXP 	Stim: autoDraw = True
+153.4684 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+153.4684 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+155.4674 	EXP 	Stim: autoDraw = False
+155.4674 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+155.4674 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+155.4674 	EXP 	Stim: autoDraw = False
+155.4674 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+155.4674 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+155.4674 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+155.4674 	EXP 	Fix: autoDraw = True
+155.9638 	EXP 	Fix: autoDraw = False
+155.9638 	EXP 	Feedback: autoDraw = True
+157.4545 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'ID': 5, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place1.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+157.4651 	INFO 	Keyboard events cleared
+157.4651 	EXP 	Feedback: autoDraw = False
+157.4651 	EXP 	Fix: autoDraw = False
+157.4651 	EXP 	Feedback: autoDraw = False
+157.4651 	EXP 	Stim: image = 'VM Stimuli/Place1.bmp'
+157.4651 	EXP 	Stim: autoDraw = True
+157.4651 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+157.4651 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+159.4614 	EXP 	Stim: autoDraw = False
+159.4614 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+159.4614 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+159.4614 	EXP 	Stim: autoDraw = False
+159.4614 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+159.4614 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+159.4614 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+159.4671 	EXP 	Fix: autoDraw = True
+159.9596 	EXP 	Fix: autoDraw = False
+159.9596 	EXP 	Feedback: autoDraw = True
+161.4548 	EXP 	Feedback: autoDraw = False
+161.4548 	EXP 	Fix: autoDraw = False
+161.4548 	EXP 	Feedback: autoDraw = False
+161.4617 	INFO 	Keyboard events cleared
+161.4617 	EXP 	Instructions_36: autoDraw = True
+171.4365 	DATA 	Keypress: space
+171.4411 	EXP 	Instructions_36: autoDraw = False
+171.4411 	EXP 	CueFix_5: autoDraw = True
+171.9246 	EXP 	Cue_2Back: autoDraw = True
+171.9298 	EXP 	CueFix_5: autoDraw = False
+173.9224 	EXP 	Imported PracticeTrials/PracticeTrials5.xlsx as conditions, 4 conditions, 9 params
+173.9228 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': 2, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeHO1.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+173.9298 	EXP 	Cue_2Back: autoDraw = False
+173.9298 	EXP 	CueFix_5: autoDraw = False
+173.9298 	EXP 	Cue_2Back: autoDraw = False
+173.9298 	EXP 	Stim: image = 'VM Stimuli/PracticeHO1.bmp'
+173.9375 	INFO 	Keyboard events cleared
+173.9375 	EXP 	Stim: autoDraw = True
+173.9375 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+173.9375 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+175.9354 	EXP 	Stim: autoDraw = False
+175.9354 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+175.9354 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+175.9354 	EXP 	Stim: autoDraw = False
+175.9354 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+175.9354 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+175.9354 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+175.9354 	EXP 	Fix: autoDraw = True
+176.4309 	EXP 	Fix: autoDraw = False
+176.4309 	EXP 	Feedback: autoDraw = True
+177.9169 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': 3, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeHO2.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+177.9288 	INFO 	Keyboard events cleared
+177.9288 	EXP 	Feedback: autoDraw = False
+177.9288 	EXP 	Fix: autoDraw = False
+177.9288 	EXP 	Feedback: autoDraw = False
+177.9288 	EXP 	Stim: image = 'VM Stimuli/PracticeHO2.bmp'
+177.9288 	EXP 	Stim: autoDraw = True
+177.9288 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+177.9288 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+179.9167 	EXP 	Stim: autoDraw = False
+179.9167 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+179.9167 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+179.9167 	EXP 	Stim: autoDraw = False
+179.9167 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+179.9167 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+179.9167 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+179.9282 	EXP 	Fix: autoDraw = True
+180.4165 	EXP 	Fix: autoDraw = False
+180.4297 	EXP 	Feedback: autoDraw = True
+181.9128 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': 4, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeHO3.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+181.9204 	EXP 	Feedback: autoDraw = False
+181.9204 	EXP 	Fix: autoDraw = False
+181.9204 	EXP 	Feedback: autoDraw = False
+181.9204 	EXP 	Stim: image = 'VM Stimuli/PracticeHO3.bmp'
+181.9267 	INFO 	Keyboard events cleared
+181.9266 	EXP 	Stim: autoDraw = True
+181.9266 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+181.9266 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+183.9224 	EXP 	Stim: autoDraw = False
+183.9224 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+183.9224 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+183.9224 	EXP 	Stim: autoDraw = False
+183.9224 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+183.9224 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+183.9224 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+183.9291 	EXP 	Fix: autoDraw = True
+184.4272 	EXP 	Fix: autoDraw = False
+184.4272 	EXP 	Feedback: autoDraw = True
+185.9174 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': 5, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeHO2.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'PosFace', 'BlockType': '2-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+185.9319 	INFO 	Keyboard events cleared
+185.9319 	EXP 	Feedback: autoDraw = False
+185.9319 	EXP 	Fix: autoDraw = False
+185.9319 	EXP 	Feedback: autoDraw = False
+185.9319 	EXP 	Stim: image = 'VM Stimuli/PracticeHO2.bmp'
+185.9319 	EXP 	Stim: autoDraw = True
+185.9319 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+185.9319 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+187.9291 	EXP 	Stim: autoDraw = False
+187.9291 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+187.9291 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+187.9291 	EXP 	Stim: autoDraw = False
+187.9291 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+187.9291 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+187.9291 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+187.9291 	EXP 	Fix: autoDraw = True
+188.4274 	EXP 	Fix: autoDraw = False
+188.4274 	EXP 	Feedback: autoDraw = True
+189.9202 	EXP 	Feedback: autoDraw = False
+189.9202 	EXP 	Fix: autoDraw = False
+189.9202 	EXP 	Feedback: autoDraw = False
+189.9267 	EXP 	CueFix_6: autoDraw = True
+190.4306 	EXP 	CueFix_6: autoDraw = False
+190.4306 	EXP 	CueTarget_6: autoDraw = True
+190.4306 	EXP 	CueTargetImage_6: autoDraw = True
+190.4306 	EXP 	Zero_back_3: autoDraw = True
+192.9266 	EXP 	Imported PracticeTrials/PracticeTrials6.xlsx as conditions, 4 conditions, 9 params
+192.9269 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': 2, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place5.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+192.9368 	INFO 	Keyboard events cleared
+192.9367 	EXP 	CueTarget_6: autoDraw = False
+192.9367 	EXP 	CueTargetImage_6: autoDraw = False
+192.9367 	EXP 	Zero_back_3: autoDraw = False
+192.9367 	EXP 	CueFix_6: autoDraw = False
+192.9367 	EXP 	CueTarget_6: autoDraw = False
+192.9367 	EXP 	CueTargetImage_6: autoDraw = False
+192.9367 	EXP 	Zero_back_3: autoDraw = False
+192.9367 	EXP 	Stim: image = 'VM Stimuli/Place5.bmp'
+192.9367 	EXP 	Stim: autoDraw = True
+192.9367 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+192.9367 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+194.9253 	EXP 	Stim: autoDraw = False
+194.9253 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+194.9253 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+194.9253 	EXP 	Stim: autoDraw = False
+194.9253 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+194.9253 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+194.9253 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+194.9253 	EXP 	Fix: autoDraw = True
+195.4180 	EXP 	Fix: autoDraw = False
+195.4180 	EXP 	Feedback: autoDraw = True
+196.9055 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': 3, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place3.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+196.9138 	EXP 	Feedback: autoDraw = False
+196.9138 	EXP 	Fix: autoDraw = False
+196.9138 	EXP 	Feedback: autoDraw = False
+196.9138 	EXP 	Stim: image = 'VM Stimuli/Place3.bmp'
+196.9220 	INFO 	Keyboard events cleared
+196.9220 	EXP 	Stim: autoDraw = True
+196.9220 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+196.9220 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+198.9198 	EXP 	Stim: autoDraw = False
+198.9198 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+198.9198 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+198.9198 	EXP 	Stim: autoDraw = False
+198.9198 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+198.9198 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+198.9198 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+198.9253 	EXP 	Fix: autoDraw = True
+199.4199 	EXP 	Fix: autoDraw = False
+199.4199 	EXP 	Feedback: autoDraw = True
+200.9146 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': 4, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place6.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+200.9278 	INFO 	Keyboard events cleared
+200.9277 	EXP 	Feedback: autoDraw = False
+200.9277 	EXP 	Fix: autoDraw = False
+200.9277 	EXP 	Feedback: autoDraw = False
+200.9277 	EXP 	Stim: image = 'VM Stimuli/Place6.bmp'
+200.9277 	EXP 	Stim: autoDraw = True
+200.9277 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+200.9277 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+202.9205 	EXP 	Stim: autoDraw = False
+202.9205 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+202.9205 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+202.9205 	EXP 	Stim: autoDraw = False
+202.9205 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+202.9205 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+202.9205 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+202.9205 	EXP 	Fix: autoDraw = True
+203.4090 	EXP 	Fix: autoDraw = False
+203.4325 	EXP 	Feedback: autoDraw = True
+204.9216 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': 5, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place3.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '0-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+204.9331 	INFO 	Keyboard events cleared
+204.9331 	EXP 	Feedback: autoDraw = False
+204.9331 	EXP 	Fix: autoDraw = False
+204.9331 	EXP 	Feedback: autoDraw = False
+204.9331 	EXP 	Stim: image = 'VM Stimuli/Place3.bmp'
+204.9331 	EXP 	Stim: autoDraw = True
+204.9331 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+204.9331 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+206.9288 	EXP 	Stim: autoDraw = False
+206.9288 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+206.9288 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+206.9288 	EXP 	Stim: autoDraw = False
+206.9288 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+206.9288 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+206.9288 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+206.9288 	EXP 	Fix: autoDraw = True
+207.4208 	EXP 	Fix: autoDraw = False
+207.4208 	EXP 	Feedback: autoDraw = True
+208.9098 	EXP 	Feedback: autoDraw = False
+208.9098 	EXP 	Fix: autoDraw = False
+208.9098 	EXP 	Feedback: autoDraw = False
+208.9277 	EXP 	CueFix_7: autoDraw = True
+209.4208 	EXP 	CueFix_7: autoDraw = False
+209.4208 	EXP 	Cue_2Back_2: autoDraw = True
+211.4166 	EXP 	Imported PracticeTrials/PracticeTrials7.xlsx as conditions, 4 conditions, 9 params
+211.4171 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': 2, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place3.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+211.4232 	EXP 	Cue_2Back_2: autoDraw = False
+211.4232 	EXP 	CueFix_7: autoDraw = False
+211.4232 	EXP 	Cue_2Back_2: autoDraw = False
+211.4232 	EXP 	Stim: image = 'VM Stimuli/Place3.bmp'
+211.4303 	INFO 	Keyboard events cleared
+211.4302 	EXP 	Stim: autoDraw = True
+211.4302 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+211.4302 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+213.4265 	EXP 	Stim: autoDraw = False
+213.4265 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+213.4265 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+213.4265 	EXP 	Stim: autoDraw = False
+213.4265 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+213.4265 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+213.4265 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+213.4265 	EXP 	Fix: autoDraw = True
+213.9182 	EXP 	Fix: autoDraw = False
+213.9291 	EXP 	Feedback: autoDraw = True
+215.4152 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': 3, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place5.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+215.4276 	INFO 	Keyboard events cleared
+215.4276 	EXP 	Feedback: autoDraw = False
+215.4276 	EXP 	Fix: autoDraw = False
+215.4276 	EXP 	Feedback: autoDraw = False
+215.4276 	EXP 	Stim: image = 'VM Stimuli/Place5.bmp'
+215.4276 	EXP 	Stim: autoDraw = True
+215.4276 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+215.4276 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+217.4200 	EXP 	Stim: autoDraw = False
+217.4200 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+217.4200 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+217.4200 	EXP 	Stim: autoDraw = False
+217.4200 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+217.4200 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+217.4200 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+217.4200 	EXP 	Fix: autoDraw = True
+217.9087 	EXP 	Fix: autoDraw = False
+217.9305 	EXP 	Feedback: autoDraw = True
+219.4172 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': 4, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place1.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+219.4299 	INFO 	Keyboard events cleared
+219.4298 	EXP 	Feedback: autoDraw = False
+219.4298 	EXP 	Fix: autoDraw = False
+219.4298 	EXP 	Feedback: autoDraw = False
+219.4298 	EXP 	Stim: image = 'VM Stimuli/Place1.bmp'
+219.4298 	EXP 	Stim: autoDraw = True
+219.4298 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+219.4298 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+221.4275 	EXP 	Stim: autoDraw = False
+221.4275 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+221.4275 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+221.4275 	EXP 	Stim: autoDraw = False
+221.4275 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+221.4275 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+221.4275 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+221.4275 	EXP 	Fix: autoDraw = True
+221.9301 	EXP 	Fix: autoDraw = False
+221.9301 	EXP 	Feedback: autoDraw = True
+223.4168 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': 5, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/Place5.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'Place', 'BlockType': '2-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+223.4259 	INFO 	Keyboard events cleared
+223.4259 	EXP 	Feedback: autoDraw = False
+223.4259 	EXP 	Fix: autoDraw = False
+223.4259 	EXP 	Feedback: autoDraw = False
+223.4259 	EXP 	Stim: image = 'VM Stimuli/Place5.bmp'
+223.4259 	EXP 	Stim: autoDraw = True
+223.4259 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+223.4259 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+225.4166 	EXP 	Stim: autoDraw = False
+225.4166 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+225.4166 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+225.4166 	EXP 	Stim: autoDraw = False
+225.4166 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+225.4166 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+225.4166 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+225.4286 	EXP 	Fix: autoDraw = True
+225.9257 	EXP 	Fix: autoDraw = False
+225.9257 	EXP 	Feedback: autoDraw = True
+227.4182 	EXP 	Feedback: autoDraw = False
+227.4182 	EXP 	Fix: autoDraw = False
+227.4182 	EXP 	Feedback: autoDraw = False
+227.4249 	EXP 	CueFix_8: autoDraw = True
+227.9224 	EXP 	CueFix_8: autoDraw = False
+227.9348 	EXP 	CueTarget_8: autoDraw = True
+227.9348 	EXP 	CueTargetImage_8: autoDraw = True
+227.9348 	EXP 	Zero_back_4: autoDraw = True
+230.4299 	EXP 	Imported PracticeTrials/PracticeTrials8.xlsx as conditions, 4 conditions, 9 params
+230.4302 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'ID': 2, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC1.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+230.4406 	INFO 	Keyboard events cleared
+230.4405 	EXP 	CueTarget_8: autoDraw = False
+230.4405 	EXP 	CueTargetImage_8: autoDraw = False
+230.4405 	EXP 	Zero_back_4: autoDraw = False
+230.4405 	EXP 	CueFix_8: autoDraw = False
+230.4405 	EXP 	CueTarget_8: autoDraw = False
+230.4405 	EXP 	CueTargetImage_8: autoDraw = False
+230.4405 	EXP 	Zero_back_4: autoDraw = False
+230.4405 	EXP 	Stim: image = 'VM Stimuli/PracticeNC1.bmp'
+230.4405 	EXP 	Stim: autoDraw = True
+230.4405 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+230.4405 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+232.4378 	EXP 	Stim: autoDraw = False
+232.4378 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+232.4378 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+232.4378 	EXP 	Stim: autoDraw = False
+232.4378 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+232.4378 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+232.4378 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+232.4378 	EXP 	Fix: autoDraw = True
+232.9293 	EXP 	Feedback: autoDraw = True
+232.9336 	EXP 	Fix: autoDraw = False
+234.4230 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'ID': 3, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC2.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+234.4376 	INFO 	Keyboard events cleared
+234.4375 	EXP 	Feedback: autoDraw = False
+234.4375 	EXP 	Fix: autoDraw = False
+234.4375 	EXP 	Feedback: autoDraw = False
+234.4375 	EXP 	Stim: image = 'VM Stimuli/PracticeNC2.bmp'
+234.4375 	EXP 	Stim: autoDraw = True
+234.4375 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+234.4375 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+236.4371 	EXP 	Stim: autoDraw = False
+236.4371 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+236.4371 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+236.4371 	EXP 	Stim: autoDraw = False
+236.4371 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+236.4371 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+236.4371 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+236.4371 	EXP 	Fix: autoDraw = True
+236.9197 	EXP 	Feedback: autoDraw = True
+236.9302 	EXP 	Fix: autoDraw = False
+238.4049 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'ID': 4, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC3.bmp', 'TargetType': 'nontarget', 'CorrectResponse': 'Nontarget', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+238.4129 	EXP 	Feedback: autoDraw = False
+238.4129 	EXP 	Fix: autoDraw = False
+238.4129 	EXP 	Feedback: autoDraw = False
+238.4129 	EXP 	Stim: image = 'VM Stimuli/PracticeNC3.bmp'
+238.4208 	INFO 	Keyboard events cleared
+238.4208 	EXP 	Stim: autoDraw = True
+238.4208 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+238.4208 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+240.4173 	EXP 	Stim: autoDraw = False
+240.4173 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+240.4173 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+240.4173 	EXP 	Stim: autoDraw = False
+240.4173 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+240.4173 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+240.4173 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+240.4297 	EXP 	Fix: autoDraw = True
+240.9279 	EXP 	Fix: autoDraw = False
+240.9279 	EXP 	Feedback: autoDraw = True
+242.4228 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'ID': 5, 'Weight': 1, 'Nested': None, 'Procedure': 'PracticeTrialsPROC', 'Stimulus': 'VM Stimuli/PracticeNC2.bmp', 'TargetType': 'target', 'CorrectResponse': 'Target', 'StimType': 'NeutFace', 'BlockType': '0-Back', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+242.4340 	INFO 	Keyboard events cleared
+242.4340 	EXP 	Feedback: autoDraw = False
+242.4340 	EXP 	Fix: autoDraw = False
+242.4340 	EXP 	Feedback: autoDraw = False
+242.4340 	EXP 	Stim: image = 'VM Stimuli/PracticeNC2.bmp'
+242.4340 	EXP 	Stim: autoDraw = True
+242.4340 	EXP 	Stim_LeftScreenInstruction: autoDraw = True
+242.4340 	EXP 	Stim_RightScreenInstruction: autoDraw = True
+244.4291 	EXP 	Stim: autoDraw = False
+244.4291 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+244.4291 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+244.4291 	EXP 	Stim: autoDraw = False
+244.4291 	EXP 	Stim_LeftScreenInstruction: autoDraw = False
+244.4291 	EXP 	Stim_RightScreenInstruction: autoDraw = False
+244.4291 	EXP 	Feedback: foreColor = <psychopy.colors.Color: yellow, alpha=1.0>
+244.4291 	EXP 	Fix: autoDraw = True
+244.9209 	EXP 	Fix: autoDraw = False
+244.9209 	EXP 	Feedback: autoDraw = True
+246.4106 	EXP 	Feedback: autoDraw = False
+246.4106 	EXP 	Fix: autoDraw = False
+246.4106 	EXP 	Feedback: autoDraw = False
+246.4303 	INFO 	Keyboard events cleared
+246.4302 	EXP 	AllDone: autoDraw = True
+248.7809 	INFO 	saved data to /Users/akashrathi/Documents/EDC_Tasks/EmoNback/EmoNback_Practice/data/AANNNAAA_1_2.psydat
+248.7963 	INFO 	saved data to '/Users/akashrathi/Documents/EDC_Tasks/EmoNback/EmoNback_Practice/data/AANNNAAA_1_2.csv'
+248.7994 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7996 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7996 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7996 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7996 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7996 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7996 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7996 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7996 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7996 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7996 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7996 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7997 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7997 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7997 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7997 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7997 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7997 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7997 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7997 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7997 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7997 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7997 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7997 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7997 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7998 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7998 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7998 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+248.7998 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

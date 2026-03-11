@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on Thu Feb 26 14:22:01 2026
+    on Wed Mar 11 13:09:06 2026
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -60,7 +60,7 @@ or run the experiment with `--pilot` as an argument. To change what pilot
 PILOTING = core.setPilotModeFromArgs()
 # start off with values from experiment settings
 _fullScr = True
-_winSize = (1024, 768)
+_winSize = [1728, 1117]
 # if in pilot mode, apply overrides according to preferences
 if PILOTING:
     # force windowed mode
@@ -126,7 +126,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/akashrathi/Documents/EmoNback/EmoNback_Practice/EmoNback_Practice_lastrun.py',
+        originPath='/Users/akashrathi/Documents/EDC_Tasks/EmoNback/EmoNback_Practice/EmoNback_Practice_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -195,7 +195,7 @@ def setupWindow(expInfo=None, win=None):
         win = visual.Window(
             size=_winSize, fullscr=_fullScr, screen=0,
             winType='pyglet', allowGUI=False, allowStencil=True,
-            monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
+            monitor='stimpres', color=[0,0,0], colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
             blendMode='avg', useFBO=True,
             units='height',
@@ -560,7 +560,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_2 = keyboard.Keyboard(deviceName='NextPage_2')
     Instructions_1 = visual.TextBox2(
          win, text='In this game, you will see different pictures. \nThese pictures will be...', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -579,7 +579,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_3 = keyboard.Keyboard(deviceName='NextPage_3')
     Instructions_2 = visual.TextBox2(
          win, text='Faces', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.25), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.25), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -597,7 +597,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='FaceImage', 
         image='VM Stimuli/PracticeNC1.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0), draggable=False, size=(0.30, 0.30),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
@@ -606,7 +606,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_4 = keyboard.Keyboard(deviceName='NextPage_4')
     Instructions_3 = visual.TextBox2(
          win, text='Places', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.25), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.25), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -624,7 +624,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='PlaceImage', 
         image='VM Stimuli/Place1.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0), draggable=False, size=(0.30, 0.30),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
@@ -632,8 +632,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions5pt5" ---
     NextPage_5 = keyboard.Keyboard(deviceName='NextPage_5')
     Instructions_5pt5 = visual.TextBox2(
-         win, text='You will play two different games with these pictures:\n0-Back and 2-Back.', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         win, text='You will play two different \ngames with these pictures:\n0-Back and 2-Back.', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -651,8 +651,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions6" ---
     NextPage_6 = keyboard.Keyboard(deviceName='NextPage_6')
     Instructions_6 = visual.TextBox2(
-         win, text='At the beginning of 0-Back, you will see a target picture. Then, \npictures will appear one at a time. Decide if each picture \nmatches the target. For example, if you see:', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.25), draggable=False,      letterHeight=0.03,
+         win, text='At the beginning of 0-Back, you will see a target picture. Then, pictures will appear one at a time. Decide if each picture matches the target. For example, if you see:', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0.25), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -668,7 +668,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Instructions_6_Target = visual.TextBox2(
          win, text='Target          =', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(-0.1, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(-0.1, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -692,7 +692,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         texRes=128.0, interpolate=True, depth=-3.0)
     Instructions_6_Match = visual.TextBox2(
          win, text='Press MATCH with your POINTER finger \nevery time you see that picture. Please press it now.', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, -0.25), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, -0.25), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -711,7 +711,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_7 = keyboard.Keyboard(deviceName='NextPage_7')
     Instructions_14 = visual.TextBox2(
          win, text='Press NO MATCH with your MIDDLE finger for \nevery picture that is different than the target. \n\nPlease press it now.', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -730,7 +730,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_8 = keyboard.Keyboard(deviceName='NextPage_8')
     Instructions_6pt2 = visual.TextBox2(
          win, text="Let's practice now!", placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1056,8 +1056,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions8" ---
     NextPage_10 = keyboard.Keyboard(deviceName='NextPage_10')
     Instructions_8 = visual.TextBox2(
-         win, text='For 2-Back, you will see pictures one at a time on the screen.\n\nFor each picture, decide if it is the same as the one two pictures back. ', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         win, text='For 2-Back, you will see pictures \none at a time on the screen.\n\nFor each picture, decide if it is \nthe same as the one two pictures back. ', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1075,8 +1075,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions11" ---
     NextPage_11 = keyboard.Keyboard(deviceName='NextPage_11')
     Instructions_11 = visual.TextBox2(
-         win, text='If it is the same, press MATCH with your POINTER finger. \nOtherwise, NO MATCH with your MIDDLE finger. \n\n\nHere is an example:\n', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         win, text='If it is the same, press MATCH \nwith your POINTER finger.\n \nOtherwise, press NO MATCH \nwith your MIDDLE finger. \n\n\nHere is an example:\n', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1094,8 +1094,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions9" ---
     NextPage_12 = keyboard.Keyboard(deviceName='NextPage_12')
     Instructions_9 = visual.TextBox2(
-         win, text='This is a NO MATCH because nothing was shown two back.', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.03,
+         win, text='This is a NO MATCH because \nnothing was shown two back.', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1153,8 +1153,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions21" ---
     NextPage_13 = keyboard.Keyboard(deviceName='NextPage_13')
     Instructions_21 = visual.TextBox2(
-         win, text='Again, this is a NO MATCH because nothing was shown two back.', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.03,
+         win, text='Again, this is a NO MATCH because \nnothing was shown two back.', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1220,8 +1220,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions24" ---
     NextPage_14 = keyboard.Keyboard(deviceName='NextPage_14')
     Instructions_24 = visual.TextBox2(
-         win, text='This is a MATCH because it is the same as the picture shown two back.', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.03,
+         win, text='This is a MATCH because it is the \nsame as the picture shown two back.', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1302,8 +1302,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions25" ---
     NextPage_15 = keyboard.Keyboard(deviceName='NextPage_15')
     Instructions_25 = visual.TextBox2(
-         win, text='This is a NO MATCH because a different picture was shown two back.', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.03,
+         win, text='This is a NO MATCH because a \ndifferent picture was shown two back.', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1378,7 +1378,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_16 = keyboard.Keyboard(deviceName='NextPage_16')
     Instructions_15 = visual.TextBox2(
          win, text="Let's try one together!", placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1397,7 +1397,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_17 = keyboard.Keyboard(deviceName='NextPage_17')
     Instructions_32 = visual.TextBox2(
          win, text='MATCH or NO MATCH?', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.27), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1415,13 +1415,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Example_Stim_5', 
         image='VM Stimuli/PracticeFO2.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0), draggable=False, size=(0.30, 0.30),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
     Example_LeftScreenInstruction_5 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(-0.2, -0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(-0.2, -0.23), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1437,7 +1437,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Example_RightScreenInstruction_5 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0.2, -0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0.2, -0.23), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1455,8 +1455,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions27" ---
     NextPage_18 = keyboard.Keyboard(deviceName='NextPage_18')
     Instructions_27 = visual.TextBox2(
-         win, text='This is a NO MATCH because nothing was shown two back.', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.03,
+         win, text='This is a NO MATCH because \nnothing was shown two back.', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0.27), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1474,13 +1474,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Example_Stim_6', 
         image='VM Stimuli/PracticeFO2.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0), draggable=False, size=(0.30, 0.30),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
     Example_LeftScreenInstruction_6 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(-0.2, -0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(-0.2, -0.23), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1496,7 +1496,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Example_RightScreenInstruction_6 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0.2, -0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0.2, -0.23), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='limegreen', colorSpace='rgb',
          opacity=None,
@@ -1515,7 +1515,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_19 = keyboard.Keyboard(deviceName='NextPage_19')
     Instructions_33 = visual.TextBox2(
          win, text='MATCH or NO MATCH?', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.27), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1533,13 +1533,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Example_Stim_7', 
         image='VM Stimuli/PracticeFO3.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0), draggable=False, size=(0.30, 0.30),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
     Example_LeftScreenInstruction_7 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(-0.2, -0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(-0.2, -0.23), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1555,7 +1555,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Example_RightScreenInstruction_7 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0.2, -0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0.2, -0.23), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1573,8 +1573,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions26" ---
     NextPage_20 = keyboard.Keyboard(deviceName='NextPage_20')
     Instructions_26 = visual.TextBox2(
-         win, text='Again, this is a NO MATCH because nothing was shown two back.', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.03,
+         win, text='Again, this is a NO MATCH \nbecause nothing was shown two back.', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0.27), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1600,13 +1600,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Example_Stim_8', 
         image='VM Stimuli/PracticeFO3.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0), draggable=False, size=(0.30, 0.30),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-3.0)
     Example_LeftScreenInstruction_8 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(-0.2, -0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(-0.2, -0.23), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1622,7 +1622,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Example_RightScreenInstruction_8 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0.2, -0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0.2, -0.23), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='limegreen', colorSpace='rgb',
          opacity=None,
@@ -1641,7 +1641,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_21 = keyboard.Keyboard(deviceName='NextPage_21')
     Instructions = visual.TextBox2(
          win, text='MATCH or NO MATCH?', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0.27), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1659,13 +1659,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Example_Stim_9', 
         image='VM Stimuli/PracticeFO1.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0), draggable=False, size=(0.30, 0.30),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
     Example_LeftScreenInstruction_9 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(-0.2, -0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(-0.2, -0.23), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1681,7 +1681,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Example_RightScreenInstruction_9 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0.2, -0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0.2, -0.23), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1699,8 +1699,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions28" ---
     NextPage_22 = keyboard.Keyboard(deviceName='NextPage_22')
     Instructions_28 = visual.TextBox2(
-         win, text='This is a NO MATCH because this picture is different from the one that was presented two back.', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.03,
+         win, text='This is a NO MATCH because \nthis picture is different from \nthe one that was presented two back.', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0.27), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1734,13 +1734,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Example_Stim_10', 
         image='VM Stimuli/PracticeFO1.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0), draggable=False, size=(0.30, 0.30),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-4.0)
     Example_LeftScreenInstruction_10 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(-0.2, -0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(-0.2, -0.23), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1756,7 +1756,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Example_RightScreenInstruction_10 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0.2, -0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0.2, -0.23), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='limegreen', colorSpace='rgb',
          opacity=None,
@@ -1774,8 +1774,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions29" ---
     NextPage_23 = keyboard.Keyboard(deviceName='NextPage_23')
     Instructions_29 = visual.TextBox2(
-         win, text='Remember a MATCH is only when the same picture was presented two back.', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.03,
+         win, text='Remember a MATCH is only when \nthe same picture was presented two back.', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0.27), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1816,13 +1816,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win=win,
         name='Example_Stim_11', 
         image='VM Stimuli/PracticeFO3.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.22, 0.22),
+        ori=0.0, pos=(0, 0), draggable=False, size=(0.30, 0.30),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-5.0)
     Example_LeftScreenInstruction_11 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(-0.2, -0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(-0.2, -0.23), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='limegreen', colorSpace='rgb',
          opacity=None,
@@ -1838,7 +1838,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     Example_RightScreenInstruction_11 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0.2, -0.2), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0.2, -0.23), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1857,7 +1857,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_24 = keyboard.Keyboard(deviceName='NextPage_24')
     Instructions_22 = visual.TextBox2(
          win, text='In the game you will see pictures one at a time. \nYou need to remember what was shown two back.', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -1876,7 +1876,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_25 = keyboard.Keyboard(deviceName='NextPage_25')
     Instructions_30 = visual.TextBox2(
          win, text="Let's practice!", placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -2067,8 +2067,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions36" ---
     NextPage_26 = keyboard.Keyboard(deviceName='NextPage_26')
     Instructions_36 = visual.TextBox2(
-         win, text="Now let's practice switching between the two games.  The plus sign will turn purple before the games switch.\n\nMake sure you pay attention to see if the game is the 0-back or 2-back!", placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         win, text="Now let's practice switching \nbetween the two games.  \n\nThe plus sign will turn purple \nbefore the games switch.\n\nMake sure you pay attention to \nsee if the game is the 0-back or 2-back!", placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -2578,8 +2578,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Goodbye" ---
     EndProgram = keyboard.Keyboard(deviceName='EndProgram')
     AllDone = visual.TextBox2(
-         win, text='All Done!\n\n\nPlease tell the experimenter you are finished.\n\n\nPress the SPACEBAR to exit.', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
+         win, text='All Done!\n\n\nPlease tell the experimenter \nyou are finished.\n\n\nPress the SPACEBAR to exit.', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -4377,7 +4377,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             practiceLoop.addData('response.duration', response.duration)
         # Run 'End Routine' code from feedbackLogic
         if response.keys is None:
-            fbText = "No response detected."
+            fbText = "No response."
             fbColor = 'yellow'
         elif response.corr:
             fbText = "Correct!"
@@ -5221,7 +5221,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             practiceLoop2.addData('response.duration', response.duration)
         # Run 'End Routine' code from feedbackLogic
         if response.keys is None:
-            fbText = "No response detected."
+            fbText = "No response."
             fbColor = 'yellow'
         elif response.corr:
             fbText = "Correct!"
@@ -9059,7 +9059,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             practiceLoop3.addData('response.duration', response.duration)
         # Run 'End Routine' code from feedbackLogic
         if response.keys is None:
-            fbText = "No response detected."
+            fbText = "No response."
             fbColor = 'yellow'
         elif response.corr:
             fbText = "Correct!"
@@ -9677,7 +9677,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             practiceLoop4.addData('response.duration', response.duration)
         # Run 'End Routine' code from feedbackLogic
         if response.keys is None:
-            fbText = "No response detected."
+            fbText = "No response."
             fbColor = 'yellow'
         elif response.corr:
             fbText = "Correct!"
@@ -10452,7 +10452,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             practiceLoop5.addData('response.duration', response.duration)
         # Run 'End Routine' code from feedbackLogic
         if response.keys is None:
-            fbText = "No response detected."
+            fbText = "No response."
             fbColor = 'yellow'
         elif response.corr:
             fbText = "Correct!"
@@ -11154,7 +11154,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             practiceLoop6.addData('response.duration', response.duration)
         # Run 'End Routine' code from feedbackLogic
         if response.keys is None:
-            fbText = "No response detected."
+            fbText = "No response."
             fbColor = 'yellow'
         elif response.corr:
             fbText = "Correct!"
@@ -11787,7 +11787,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             practiceLoop7.addData('response.duration', response.duration)
         # Run 'End Routine' code from feedbackLogic
         if response.keys is None:
-            fbText = "No response detected."
+            fbText = "No response."
             fbColor = 'yellow'
         elif response.corr:
             fbText = "Correct!"
@@ -12489,7 +12489,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             practiceLoop8.addData('response.duration', response.duration)
         # Run 'End Routine' code from feedbackLogic
         if response.keys is None:
-            fbText = "No response detected."
+            fbText = "No response."
             fbColor = 'yellow'
         elif response.corr:
             fbText = "Correct!"
