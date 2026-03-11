@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on Fri Jan 30 14:21:11 2026
+    on Wed Mar 11 14:31:51 2026
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -73,7 +73,7 @@ or run the experiment with `--pilot` as an argument. To change what pilot
 PILOTING = core.setPilotModeFromArgs()
 # start off with values from experiment settings
 _fullScr = True
-_winSize = (1024, 768)
+_winSize = [1728, 1117]
 # if in pilot mode, apply overrides according to preferences
 if PILOTING:
     # force windowed mode
@@ -139,7 +139,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/akashrathi/Documents/Github/EmoNback/EmoNback_Behavioral/EmoNback_Behavioral_lastrun.py',
+        originPath='/Users/akashrathi/Documents/EDC_Tasks/EmoNback/EmoNback_Behavioral/EmoNback_Behavioral_lastrun.py',
         savePickle=False, saveWideText=False,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -194,9 +194,9 @@ def setupWindow(expInfo=None, win=None):
     if win is None:
         # if not given a window to setup, make one
         win = visual.Window(
-            size=_winSize, fullscr=_fullScr, screen=0,
+            size=_winSize, fullscr=_fullScr, screen=1,
             winType='pyglet', allowGUI=False, allowStencil=True,
-            monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
+            monitor='cti_monitor', color=[0,0,0], colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
             blendMode='avg', useFBO=True,
             units='height',
@@ -210,10 +210,7 @@ def setupWindow(expInfo=None, win=None):
         win.backgroundFit = 'none'
         win.units = 'height'
     if expInfo is not None:
-        # get/measure frame rate if not already in expInfo
-        if win._monitorFrameRate is None:
-            win._monitorFrameRate = win.getActualFrameRate(infoMsg='Attempting to measure frame rate of screen, please wait...')
-        expInfo['frameRate'] = win._monitorFrameRate
+        expInfo['frameRate'] = 60
     win.hideMessage()
     # show a visual indicator if we're in piloting mode
     if PILOTING and prefs.piloting['showPilotingIndicator']:
@@ -463,13 +460,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # Handedness logic
     if expInfo["Enter subject's handedness:"].lower() == 'right':
-        matchKey = '2'
-        noMatchKey = '3'
+        matchKey = '1'
+        noMatchKey = '2'
         leftSideOfScreen = "MATCH\nPOINTER"
         rightSideOfScreen = "NO MATCH\nMIDDLE"
     else:
-        matchKey = '3'
-        noMatchKey = '2'
+        matchKey = '2'
+        noMatchKey = '1'
         leftSideOfScreen = "NO MATCH\nMIDDLE"
         rightSideOfScreen = "MATCH\nPOINTER"
     
@@ -724,7 +721,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Waiting4Scanner" ---
     Continue_7 = keyboard.Keyboard(deviceName='Continue_7')
     Scanner_Instruction = visual.TextBox2(
-         win, text='Waiting for experimenter...', placeholder='Type here...', font='Arial',
+         win, text='The task will begin momentarily. Waiting for scanner. Get ready…', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
@@ -958,7 +955,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Waiting4Scanner" ---
     Continue_7 = keyboard.Keyboard(deviceName='Continue_7')
     Scanner_Instruction = visual.TextBox2(
-         win, text='Waiting for experimenter...', placeholder='Type here...', font='Arial',
+         win, text='The task will begin momentarily. Waiting for scanner. Get ready…', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.03,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
@@ -2352,7 +2349,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(Continue_7.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(Continue_7.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if Continue_7.status == STARTED and not waitOnFlip:
-            theseKeys = Continue_7.getKeys(keyList=['t'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = Continue_7.getKeys(keyList=['5'], ignoreKeys=["escape"], waitRelease=False)
             _Continue_7_allKeys.extend(theseKeys)
             if len(_Continue_7_allKeys):
                 Continue_7.keys = _Continue_7_allKeys[-1].name  # just the last key pressed
@@ -4125,7 +4122,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(Continue_7.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(Continue_7.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if Continue_7.status == STARTED and not waitOnFlip:
-            theseKeys = Continue_7.getKeys(keyList=['t'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = Continue_7.getKeys(keyList=['5'], ignoreKeys=["escape"], waitRelease=False)
             _Continue_7_allKeys.extend(theseKeys)
             if len(_Continue_7_allKeys):
                 Continue_7.keys = _Continue_7_allKeys[-1].name  # just the last key pressed
