@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on Wed Mar 11 14:29:53 2026
+    on Mon Mar 30 12:17:33 2026
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -261,18 +261,6 @@ def setupDevices(expInfo, thisExp, win):
             deviceClass='keyboard',
             deviceName='NextPage_2',
         )
-    if deviceManager.getDevice('NextPage_3') is None:
-        # initialise NextPage_3
-        NextPage_3 = deviceManager.addDevice(
-            deviceClass='keyboard',
-            deviceName='NextPage_3',
-        )
-    if deviceManager.getDevice('NextPage_4') is None:
-        # initialise NextPage_4
-        NextPage_4 = deviceManager.addDevice(
-            deviceClass='keyboard',
-            deviceName='NextPage_4',
-        )
     if deviceManager.getDevice('NextPage_5') is None:
         # initialise NextPage_5
         NextPage_5 = deviceManager.addDevice(
@@ -521,7 +509,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "TitlePage" ---
     NextPage = keyboard.Keyboard(deviceName='NextPage')
     NbackTitle = visual.TextBox2(
-         win, text='N-back', placeholder='Type here...', font='Arial',
+         win, text='Welcome to the \nFaces and Places Game!', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.05,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
@@ -557,7 +545,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_2 = keyboard.Keyboard(deviceName='NextPage_2')
     Instructions_1 = visual.TextBox2(
          win, text='In this game, you will see different pictures. \nThese pictures will be...', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
+         ori=0.0, pos=(0, 0.2), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -571,14 +559,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          name='Instructions_1',
          depth=-1, autoLog=True,
     )
-    
-    # --- Initialize components for Routine "Instructions2" ---
-    NextPage_3 = keyboard.Keyboard(deviceName='NextPage_3')
-    Instructions_2 = visual.TextBox2(
+    Label_faces = visual.TextBox2(
          win, text='Faces', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.25), draggable=False,      letterHeight=0.04,
-         size=(1, 1), borderWidth=0.0,
-         color='black', colorSpace='rgb',
+         ori=0.0, pos=(-0.3, -0.3), draggable=False,      letterHeight=0.04,
+         size=(1, 1), borderWidth=2.0,
+         color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
          opacity=None,
          bold=True, italic=False,
          lineSpacing=1.0, speechPoint=None,
@@ -587,25 +572,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          fillColor=None, borderColor=None,
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
-         name='Instructions_2',
-         depth=-1, autoLog=True,
+         name='Label_faces',
+         depth=-2, autoLog=True,
     )
-    FaceImage = visual.ImageStim(
-        win=win,
-        name='FaceImage', 
-        image='VM Stimuli/PracticeNC1.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.30, 0.30),
-        color=[1,1,1], colorSpace='rgb', opacity=None,
-        flipHoriz=False, flipVert=False,
-        texRes=128.0, interpolate=True, depth=-2.0)
-    
-    # --- Initialize components for Routine "Instructions3" ---
-    NextPage_4 = keyboard.Keyboard(deviceName='NextPage_4')
-    Instructions_3 = visual.TextBox2(
+    Places_label = visual.TextBox2(
          win, text='Places', placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0.25), draggable=False,      letterHeight=0.04,
-         size=(1, 1), borderWidth=0.0,
-         color='black', colorSpace='rgb',
+         ori=0.0, pos=(0.3, -0.3), draggable=False,      letterHeight=0.04,
+         size=(1, 1), borderWidth=2.0,
+         color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
          opacity=None,
          bold=True, italic=False,
          lineSpacing=1.0, speechPoint=None,
@@ -614,22 +588,46 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          fillColor=None, borderColor=None,
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
-         name='Instructions_3',
-         depth=-1, autoLog=True,
+         name='Places_label',
+         depth=-3, autoLog=True,
     )
-    PlaceImage = visual.ImageStim(
+    Face_image = visual.ImageStim(
         win=win,
-        name='PlaceImage', 
-        image='VM Stimuli/Place1.bmp', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), draggable=False, size=(0.30, 0.30),
+        name='Face_image', 
+        image='VM Stimuli/PracticeNC1.bmp', mask=None, anchor='center',
+        ori=0.0, pos=(-0.3, -0.10), draggable=False, size=(0.30, 0.30),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
-        texRes=128.0, interpolate=True, depth=-2.0)
+        texRes=128.0, interpolate=True, depth=-4.0)
+    Place_Image = visual.ImageStim(
+        win=win,
+        name='Place_Image', 
+        image='VM Stimuli/Place1.bmp', mask=None, anchor='center',
+        ori=0.0, pos=(0.3, -0.10), draggable=False, size=(0.30, 0.30),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-5.0)
+    OR = visual.TextBox2(
+         win, text='OR', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, -0.1), draggable=False,      letterHeight=0.04,
+         size=(1, 1), borderWidth=2.0,
+         color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+         opacity=None,
+         bold=True, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='OR',
+         depth=-6, autoLog=True,
+    )
     
     # --- Initialize components for Routine "Instructions5pt5" ---
     NextPage_5 = keyboard.Keyboard(deviceName='NextPage_5')
     Instructions_5pt5 = visual.TextBox2(
-         win, text='You will play two different \ngames with these pictures:\n0-Back and 2-Back.', placeholder='Type here...', font='Arial',
+         win, text='You will play two different \ngames with these pictures.', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
@@ -648,7 +646,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions6" ---
     NextPage_6 = keyboard.Keyboard(deviceName='NextPage_6')
     Instructions_6 = visual.TextBox2(
-         win, text='At the beginning of 0-Back, you will see a target picture. Then, pictures will appear one at a time. Decide if each picture matches the target. For example, if you see:', placeholder='Type here...', font='Arial',
+         win, text='The first game is called the 0-back.\nYou will first see a picture called the target. \nHere is an example of the target:', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0.25), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
@@ -688,7 +686,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-3.0)
     Instructions_6_Match = visual.TextBox2(
-         win, text='Press MATCH with your POINTER finger \nevery time you see that picture. Please press it now.', placeholder='Type here...', font='Arial',
+         win, text='After the target, more pictures will appear on the screen one at a time. If you see the target image, press MATCH with your POINTER finger. Please press with your POINTER finger now.', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.25), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
@@ -707,7 +705,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions14" ---
     NextPage_7 = keyboard.Keyboard(deviceName='NextPage_7')
     Instructions_14 = visual.TextBox2(
-         win, text='Press NO MATCH with your MIDDLE finger for \nevery picture that is different than the target. \n\nPlease press it now.', placeholder='Type here...', font='Arial',
+         win, text='If you see a picture that is different from the target, press NO MATCH with your MIDDLE finger.\n\nPlease press with your MIDDLE finger now.', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
@@ -1053,7 +1051,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions8" ---
     NextPage_10 = keyboard.Keyboard(deviceName='NextPage_10')
     Instructions_8 = visual.TextBox2(
-         win, text='For 2-Back, you will see pictures \none at a time on the screen.\n\nFor each picture, decide if it is \nthe same as the one two pictures back. ', placeholder='Type here...', font='Arial',
+         win, text='The second game is called the 2-back. In this game, pictures will appear on the screen one at at a time.\n\nEach time you see a picture, it is your job to decide if it is the same picture that was shown two pictures before. ', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
@@ -1072,7 +1070,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions11" ---
     NextPage_11 = keyboard.Keyboard(deviceName='NextPage_11')
     Instructions_11 = visual.TextBox2(
-         win, text='If it is the same, press MATCH \nwith your POINTER finger.\n \nOtherwise, press NO MATCH \nwith your MIDDLE finger. \n\n\nHere is an example:\n', placeholder='Type here...', font='Arial',
+         win, text='Press MATCH with your POINTER finger if it is the same picture that was shown two pictures before.\n \nPress NO MATCH with your MIDDLE finger if it is a different than the picture shown two pictures before. \n\n\nHere is an example:\n', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
@@ -1853,7 +1851,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Instructions22" ---
     NextPage_24 = keyboard.Keyboard(deviceName='NextPage_24')
     Instructions_22 = visual.TextBox2(
-         win, text='In the game you will see pictures one at a time. \nYou need to remember what was shown two back.', placeholder='Type here...', font='Arial',
+         win, text='REMEMBER: \nIn the game you will see pictures one at a time. \nYou need to remember what was shown two pictures back.', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
@@ -2065,7 +2063,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_26 = keyboard.Keyboard(deviceName='NextPage_26')
     Instructions_36 = visual.TextBox2(
          win, text="Now let's practice switching \nbetween the two games.  \n\nThe plus sign will turn purple \nbefore the games switch.\n\nMake sure you pay attention to \nsee if the game is the 0-back or 2-back!", placeholder='Type here...', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.04,
+         ori=0.0, pos=(0, 0.1), draggable=False,      letterHeight=0.04,
          size=(1, 1), borderWidth=0.0,
          color='black', colorSpace='rgb',
          opacity=None,
@@ -2078,6 +2076,22 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          editable=False,
          name='Instructions_36',
          depth=-1, autoLog=True,
+    )
+    magenta_fixcross = visual.TextBox2(
+         win, text='+', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, -0.2), draggable=False,      letterHeight=0.25,
+         size=(0.5, 0.5), borderWidth=2.0,
+         color=[1.0000, -1.0000, 1.0000], colorSpace='rgb',
+         opacity=None,
+         bold=False, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='magenta_fixcross',
+         depth=-2, autoLog=True,
     )
     
     # --- Initialize components for Routine "PracticeTrial5_Cue" ---
@@ -2765,7 +2779,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine Instructions1
     Instructions1 = data.Routine(
         name='Instructions1',
-        components=[NextPage_2, Instructions_1],
+        components=[NextPage_2, Instructions_1, Label_faces, Places_label, Face_image, Place_Image, OR],
     )
     Instructions1.status = NOT_STARTED
     continueRoutine = True
@@ -2775,6 +2789,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_2.rt = []
     _NextPage_2_allKeys = []
     Instructions_1.reset()
+    Label_faces.reset()
+    Places_label.reset()
+    OR.reset()
     # store start times for Instructions1
     Instructions1.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     Instructions1.tStart = globalClock.getTime(format='float')
@@ -2853,6 +2870,106 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # update params
             pass
         
+        # *Label_faces* updates
+        
+        # if Label_faces is starting this frame...
+        if Label_faces.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            Label_faces.frameNStart = frameN  # exact frame index
+            Label_faces.tStart = t  # local t and not account for scr refresh
+            Label_faces.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Label_faces, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'Label_faces.started')
+            # update status
+            Label_faces.status = STARTED
+            Label_faces.setAutoDraw(True)
+        
+        # if Label_faces is active this frame...
+        if Label_faces.status == STARTED:
+            # update params
+            pass
+        
+        # *Places_label* updates
+        
+        # if Places_label is starting this frame...
+        if Places_label.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            Places_label.frameNStart = frameN  # exact frame index
+            Places_label.tStart = t  # local t and not account for scr refresh
+            Places_label.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Places_label, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'Places_label.started')
+            # update status
+            Places_label.status = STARTED
+            Places_label.setAutoDraw(True)
+        
+        # if Places_label is active this frame...
+        if Places_label.status == STARTED:
+            # update params
+            pass
+        
+        # *Face_image* updates
+        
+        # if Face_image is starting this frame...
+        if Face_image.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            Face_image.frameNStart = frameN  # exact frame index
+            Face_image.tStart = t  # local t and not account for scr refresh
+            Face_image.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Face_image, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'Face_image.started')
+            # update status
+            Face_image.status = STARTED
+            Face_image.setAutoDraw(True)
+        
+        # if Face_image is active this frame...
+        if Face_image.status == STARTED:
+            # update params
+            pass
+        
+        # *Place_Image* updates
+        
+        # if Place_Image is starting this frame...
+        if Place_Image.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            Place_Image.frameNStart = frameN  # exact frame index
+            Place_Image.tStart = t  # local t and not account for scr refresh
+            Place_Image.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Place_Image, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'Place_Image.started')
+            # update status
+            Place_Image.status = STARTED
+            Place_Image.setAutoDraw(True)
+        
+        # if Place_Image is active this frame...
+        if Place_Image.status == STARTED:
+            # update params
+            pass
+        
+        # *OR* updates
+        
+        # if OR is starting this frame...
+        if OR.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            OR.frameNStart = frameN  # exact frame index
+            OR.tStart = t  # local t and not account for scr refresh
+            OR.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(OR, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'OR.started')
+            # update status
+            OR.status = STARTED
+            OR.setAutoDraw(True)
+        
+        # if OR is active this frame...
+        if OR.status == STARTED:
+            # update params
+            pass
+        
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
             thisExp.status = FINISHED
@@ -2901,330 +3018,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         thisExp.addData('NextPage_2.duration', NextPage_2.duration)
     thisExp.nextEntry()
     # the Routine "Instructions1" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    
-    # --- Prepare to start Routine "Instructions2" ---
-    # create an object to store info about Routine Instructions2
-    Instructions2 = data.Routine(
-        name='Instructions2',
-        components=[NextPage_3, Instructions_2, FaceImage],
-    )
-    Instructions2.status = NOT_STARTED
-    continueRoutine = True
-    # update component parameters for each repeat
-    # create starting attributes for NextPage_3
-    NextPage_3.keys = []
-    NextPage_3.rt = []
-    _NextPage_3_allKeys = []
-    Instructions_2.reset()
-    # store start times for Instructions2
-    Instructions2.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    Instructions2.tStart = globalClock.getTime(format='float')
-    Instructions2.status = STARTED
-    thisExp.addData('Instructions2.started', Instructions2.tStart)
-    Instructions2.maxDuration = None
-    # keep track of which components have finished
-    Instructions2Components = Instructions2.components
-    for thisComponent in Instructions2.components:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
-    
-    # --- Run Routine "Instructions2" ---
-    Instructions2.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *NextPage_3* updates
-        waitOnFlip = False
-        
-        # if NextPage_3 is starting this frame...
-        if NextPage_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            NextPage_3.frameNStart = frameN  # exact frame index
-            NextPage_3.tStart = t  # local t and not account for scr refresh
-            NextPage_3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(NextPage_3, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'NextPage_3.started')
-            # update status
-            NextPage_3.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(NextPage_3.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(NextPage_3.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if NextPage_3.status == STARTED and not waitOnFlip:
-            theseKeys = NextPage_3.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
-            _NextPage_3_allKeys.extend(theseKeys)
-            if len(_NextPage_3_allKeys):
-                NextPage_3.keys = _NextPage_3_allKeys[-1].name  # just the last key pressed
-                NextPage_3.rt = _NextPage_3_allKeys[-1].rt
-                NextPage_3.duration = _NextPage_3_allKeys[-1].duration
-                # a response ends the routine
-                continueRoutine = False
-        
-        # *Instructions_2* updates
-        
-        # if Instructions_2 is starting this frame...
-        if Instructions_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            Instructions_2.frameNStart = frameN  # exact frame index
-            Instructions_2.tStart = t  # local t and not account for scr refresh
-            Instructions_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Instructions_2, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'Instructions_2.started')
-            # update status
-            Instructions_2.status = STARTED
-            Instructions_2.setAutoDraw(True)
-        
-        # if Instructions_2 is active this frame...
-        if Instructions_2.status == STARTED:
-            # update params
-            pass
-        
-        # *FaceImage* updates
-        
-        # if FaceImage is starting this frame...
-        if FaceImage.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            FaceImage.frameNStart = frameN  # exact frame index
-            FaceImage.tStart = t  # local t and not account for scr refresh
-            FaceImage.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(FaceImage, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'FaceImage.started')
-            # update status
-            FaceImage.status = STARTED
-            FaceImage.setAutoDraw(True)
-        
-        # if FaceImage is active this frame...
-        if FaceImage.status == STARTED:
-            # update params
-            pass
-        
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
-        if thisExp.status == FINISHED or endExpNow:
-            endExperiment(thisExp, win=win)
-            return
-        # pause experiment here if requested
-        if thisExp.status == PAUSED:
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[routineTimer], 
-                playbackComponents=[]
-            )
-            # skip the frame we paused on
-            continue
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            Instructions2.forceEnded = routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in Instructions2.components:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # --- Ending Routine "Instructions2" ---
-    for thisComponent in Instructions2.components:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    # store stop times for Instructions2
-    Instructions2.tStop = globalClock.getTime(format='float')
-    Instructions2.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('Instructions2.stopped', Instructions2.tStop)
-    # check responses
-    if NextPage_3.keys in ['', [], None]:  # No response was made
-        NextPage_3.keys = None
-    thisExp.addData('NextPage_3.keys',NextPage_3.keys)
-    if NextPage_3.keys != None:  # we had a response
-        thisExp.addData('NextPage_3.rt', NextPage_3.rt)
-        thisExp.addData('NextPage_3.duration', NextPage_3.duration)
-    thisExp.nextEntry()
-    # the Routine "Instructions2" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    
-    # --- Prepare to start Routine "Instructions3" ---
-    # create an object to store info about Routine Instructions3
-    Instructions3 = data.Routine(
-        name='Instructions3',
-        components=[NextPage_4, Instructions_3, PlaceImage],
-    )
-    Instructions3.status = NOT_STARTED
-    continueRoutine = True
-    # update component parameters for each repeat
-    # create starting attributes for NextPage_4
-    NextPage_4.keys = []
-    NextPage_4.rt = []
-    _NextPage_4_allKeys = []
-    Instructions_3.reset()
-    # store start times for Instructions3
-    Instructions3.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    Instructions3.tStart = globalClock.getTime(format='float')
-    Instructions3.status = STARTED
-    thisExp.addData('Instructions3.started', Instructions3.tStart)
-    Instructions3.maxDuration = None
-    # keep track of which components have finished
-    Instructions3Components = Instructions3.components
-    for thisComponent in Instructions3.components:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
-    
-    # --- Run Routine "Instructions3" ---
-    Instructions3.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *NextPage_4* updates
-        waitOnFlip = False
-        
-        # if NextPage_4 is starting this frame...
-        if NextPage_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            NextPage_4.frameNStart = frameN  # exact frame index
-            NextPage_4.tStart = t  # local t and not account for scr refresh
-            NextPage_4.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(NextPage_4, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'NextPage_4.started')
-            # update status
-            NextPage_4.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(NextPage_4.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(NextPage_4.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if NextPage_4.status == STARTED and not waitOnFlip:
-            theseKeys = NextPage_4.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
-            _NextPage_4_allKeys.extend(theseKeys)
-            if len(_NextPage_4_allKeys):
-                NextPage_4.keys = _NextPage_4_allKeys[-1].name  # just the last key pressed
-                NextPage_4.rt = _NextPage_4_allKeys[-1].rt
-                NextPage_4.duration = _NextPage_4_allKeys[-1].duration
-                # a response ends the routine
-                continueRoutine = False
-        
-        # *Instructions_3* updates
-        
-        # if Instructions_3 is starting this frame...
-        if Instructions_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            Instructions_3.frameNStart = frameN  # exact frame index
-            Instructions_3.tStart = t  # local t and not account for scr refresh
-            Instructions_3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(Instructions_3, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'Instructions_3.started')
-            # update status
-            Instructions_3.status = STARTED
-            Instructions_3.setAutoDraw(True)
-        
-        # if Instructions_3 is active this frame...
-        if Instructions_3.status == STARTED:
-            # update params
-            pass
-        
-        # *PlaceImage* updates
-        
-        # if PlaceImage is starting this frame...
-        if PlaceImage.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            PlaceImage.frameNStart = frameN  # exact frame index
-            PlaceImage.tStart = t  # local t and not account for scr refresh
-            PlaceImage.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(PlaceImage, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'PlaceImage.started')
-            # update status
-            PlaceImage.status = STARTED
-            PlaceImage.setAutoDraw(True)
-        
-        # if PlaceImage is active this frame...
-        if PlaceImage.status == STARTED:
-            # update params
-            pass
-        
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
-        if thisExp.status == FINISHED or endExpNow:
-            endExperiment(thisExp, win=win)
-            return
-        # pause experiment here if requested
-        if thisExp.status == PAUSED:
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[routineTimer], 
-                playbackComponents=[]
-            )
-            # skip the frame we paused on
-            continue
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            Instructions3.forceEnded = routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in Instructions3.components:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # --- Ending Routine "Instructions3" ---
-    for thisComponent in Instructions3.components:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    # store stop times for Instructions3
-    Instructions3.tStop = globalClock.getTime(format='float')
-    Instructions3.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('Instructions3.stopped', Instructions3.tStop)
-    # check responses
-    if NextPage_4.keys in ['', [], None]:  # No response was made
-        NextPage_4.keys = None
-    thisExp.addData('NextPage_4.keys',NextPage_4.keys)
-    if NextPage_4.keys != None:  # we had a response
-        thisExp.addData('NextPage_4.rt', NextPage_4.rt)
-        thisExp.addData('NextPage_4.duration', NextPage_4.duration)
-    thisExp.nextEntry()
-    # the Routine "Instructions3" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # --- Prepare to start Routine "Instructions5pt5" ---
@@ -3434,7 +3227,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(NextPage_6.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(NextPage_6.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if NextPage_6.status == STARTED and not waitOnFlip:
-            theseKeys = NextPage_6.getKeys(keyList=[matchKey], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = NextPage_6.getKeys(keyList=['space',[matchKey]], ignoreKeys=["escape"], waitRelease=False)
             _NextPage_6_allKeys.extend(theseKeys)
             if len(_NextPage_6_allKeys):
                 NextPage_6.keys = _NextPage_6_allKeys[0].name  # just the first key pressed
@@ -9863,7 +9656,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine Instructions36
     Instructions36 = data.Routine(
         name='Instructions36',
-        components=[NextPage_26, Instructions_36],
+        components=[NextPage_26, Instructions_36, magenta_fixcross],
     )
     Instructions36.status = NOT_STARTED
     continueRoutine = True
@@ -9873,6 +9666,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     NextPage_26.rt = []
     _NextPage_26_allKeys = []
     Instructions_36.reset()
+    magenta_fixcross.reset()
     # store start times for Instructions36
     Instructions36.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     Instructions36.tStart = globalClock.getTime(format='float')
@@ -9948,6 +9742,26 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         
         # if Instructions_36 is active this frame...
         if Instructions_36.status == STARTED:
+            # update params
+            pass
+        
+        # *magenta_fixcross* updates
+        
+        # if magenta_fixcross is starting this frame...
+        if magenta_fixcross.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            magenta_fixcross.frameNStart = frameN  # exact frame index
+            magenta_fixcross.tStart = t  # local t and not account for scr refresh
+            magenta_fixcross.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(magenta_fixcross, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'magenta_fixcross.started')
+            # update status
+            magenta_fixcross.status = STARTED
+            magenta_fixcross.setAutoDraw(True)
+        
+        # if magenta_fixcross is active this frame...
+        if magenta_fixcross.status == STARTED:
             # update params
             pass
         

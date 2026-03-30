@@ -156,7 +156,7 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="N-back" valType="str" updates="constant" name="text"/>
+        <Param val="Welcome to the Faces and Places Game!" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
@@ -253,7 +253,7 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="There are two games in this part of the study. &amp;#10;&amp;#10;They are &quot;0-Back&quot; and &quot;2-Back&quot;&amp;#10;&amp;#10;You will see the words &quot;Target&quot; or &quot;2-back&quot; before each game starts." valType="str" updates="constant" name="text"/>
+        <Param val="You will be playing two games: &amp;#10;&amp;#10;0-Back and 2-Back&amp;#10;&amp;#10;You will see the words &quot;0-back&quot; or &quot;2-back&quot; before each game starts." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
@@ -350,7 +350,7 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="For &quot;0-Back&quot;, press MATCH if you see a picture that is the same as the target picture. &amp;#10;Press NO MATCH if it is not the same." valType="str" updates="constant" name="text"/>
+        <Param val="For 0-Back, press MATCH with your POINTER finger if you see a picture that is the same as the target. &amp;#10;Press NO MATCH if it is not the same as the target." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
@@ -518,7 +518,7 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="For &quot;2-back&quot;, press MATCH if the picture you see is the same as two pictures back. &amp;#10;Press NO MATCH if not. " valType="str" updates="constant" name="text"/>
+        <Param val="For 2-back, press MATCH with your POINTER finger if the picture you see is the same as the picture shown two pictures before. &amp;#10;Press NO MATCH if not the same picture shown two pictures before. " valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
@@ -1354,7 +1354,7 @@
         <Param val="condition" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Great Job!&amp;#10;Again, the games will switch. &amp;#10;&amp;#10;Pay close attention when the plus sign turns purple &amp;#10;to see what game you are playing!" valType="str" updates="constant" name="text"/>
+        <Param val="Great Job!&amp;#10;&amp;#10;Pay close attention when the plus sign turns purple &amp;#10;to see what game you are playing!" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
