@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2025.1.1">
+<PsychoPy2experiment encoding="utf-8" version="2024.2.4">
   <Settings>
     <Param val="3" valType="str" updates="None" name="Audio latency priority"/>
     <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
@@ -163,7 +163,7 @@
       <CodeComponent name="handednessLogic" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="# Define response mapping based on handedness&amp;#10;if expInfo['Enter subject\'s handedness:'].lower() == 'right':&amp;#10;    matchKey = 'left'&amp;#10;    noMatchKey = 'right'&amp;#10;    leftScreenInstruction = &quot;MATCH\nPOINTER&quot;&amp;#10;    rightScreenInstruction = &quot;NO MATCH\nMIDDLE&quot;&amp;#10;else:&amp;#10;    matchKey = 'right'&amp;#10;    noMatchKey = 'left'&amp;#10;    leftScreenInstruction = &quot;NO MATCH\nMIDDLE&quot;&amp;#10;    rightScreenInstruction = &quot;MATCH\nPOINTER&quot;&amp;#10;    &amp;#10;# SAFETY: force to strings&amp;#10;matchKey = str(matchKey)&amp;#10;noMatchKey = str(noMatchKey)" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="# Define response mapping based on handedness&amp;#10;if expInfo['Enter subject\'s handedness:'].lower() == 'right':&amp;#10;    matchKey = '1'&amp;#10;    noMatchKey = '2'&amp;#10;    leftScreenInstruction = &quot;MATCH\nPOINTER&quot;&amp;#10;    rightScreenInstruction = &quot;NO MATCH\nMIDDLE&quot;&amp;#10;else:&amp;#10;    matchKey = '2'&amp;#10;    noMatchKey = '1'&amp;#10;    leftScreenInstruction = &quot;NO MATCH\nMIDDLE&quot;&amp;#10;    rightScreenInstruction = &quot;MATCH\nPOINTER&quot;&amp;#10;    &amp;#10;# SAFETY: force to strings&amp;#10;matchKey = str(matchKey)&amp;#10;noMatchKey = str(noMatchKey)" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="if ((expInfo[&quot;handedness&quot;].toLowerCase() === &quot;right&quot;)) {&amp;#10;    matchKey = &quot;left&quot;;&amp;#10;    noMatchKey = &quot;right&quot;;&amp;#10;} else {&amp;#10;    matchKey = &quot;right&quot;;&amp;#10;    noMatchKey = &quot;left&quot;;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
